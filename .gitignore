@@ -1,7 +1,10 @@
 ## Project-specific files and folders #########################################
+themes/twentyseventeen/
 themes/twentynineteen/
 themes/twentytwenty/
 themes/twentytwentyone/
+themes/disabilityjusticeproject/node_modules/
+
 
 
 ## Package Management #########################################################
