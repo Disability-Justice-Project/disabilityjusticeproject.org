@@ -22,81 +22,50 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
 
---------------------------------------------------------------*/
+// Vendor and imports
+@import "vendor/jetpack/infinite-scroll";
+@import "vendor/normalize";
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
 
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
+// Logic
+@import "abstracts/variables/colors";
+@import "abstracts/variables/typography";
+@import "abstracts/variables/structure";
+@import "abstracts/variables/columns";
+@import "abstracts/mixins/mixins";
 
-/* Normalize
---------------------------------------------- */
-@import "generic/normalize";
 
-/* Box sizing
---------------------------------------------- */
-@import "generic/box-sizing";
+// Base
+@import "base/box-sizing";
+@import "base/typography/typography";
+@import "base/typography/copy";
+@import "base/typography/headings";
+@import "base/elements/body";
+@import "base/elements/hr";
+@import "base/elements/lists";
+@import "base/elements/media";
+@import "base/elements/tables";
+@import "base/elements/links";
+@import "base/elements/buttons";
+@import "base/elements/fields";
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
+// Utilities
+@import "utilities/accessibility";
+@import "utilities/alignments";
+
+
+// Layout
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
 
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+// Components
+@import "components/navigation/navigation";
+@import "components/content/posts-and-pages";
+@import "components/comments/comments";
+@import "components/widgets/widgets";
+@import "components/media/media";
+@import "components/media/captions";
+@import "components/media/galleries";
