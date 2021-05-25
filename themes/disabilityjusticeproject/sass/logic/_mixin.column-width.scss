@@ -1,9 +1,3 @@
-// Center block
-@mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 // Column width with margin
 @mixin column-width($numberColumns: 3) {

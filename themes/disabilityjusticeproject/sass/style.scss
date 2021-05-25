@@ -29,26 +29,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 // Logic
-@import "abstracts/variables/colors";
-@import "abstracts/variables/typography";
-@import "abstracts/variables/structure";
-@import "abstracts/variables/columns";
-@import "abstracts/mixins/mixins";
+@import "logic/variables.colors";
+@import "logic/variables.typography";
+@import "logic/variables.structure";
+@import "logic/variables.columns";
+@import "logic/mixin.center-block";
+@import "logic/mixin.column-width";
 
 
 // Base
 @import "base/box-sizing";
-@import "base/typography/typography";
-@import "base/typography/copy";
-@import "base/typography/headings";
-@import "base/elements/body";
-@import "base/elements/hr";
-@import "base/elements/lists";
-@import "base/elements/media";
-@import "base/elements/tables";
-@import "base/elements/links";
-@import "base/elements/buttons";
-@import "base/elements/fields";
+@import "base/typography";
+@import "base/copy";
+@import "base/headings";
+@import "base/body";
+@import "base/hr";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/links";
+@import "base/buttons";
+@import "base/fields";
 
 
 // Utilities
@@ -62,10 +63,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 // Components
-@import "components/navigation/navigation";
-@import "components/content/posts-and-pages";
-@import "components/comments/comments";
-@import "components/widgets/widgets";
+@import "components/navigation";
+@import "components/posts-and-pages";
+@import "components/comments";
+@import "components/widgets";
+
 @import "components/media/media";
 @import "components/media/captions";
 @import "components/media/galleries";
