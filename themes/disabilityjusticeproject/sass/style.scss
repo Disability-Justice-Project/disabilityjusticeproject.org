@@ -26,7 +26,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // Vendor and imports
 @import "vendor/jetpack/infinite-scroll";
 @import "vendor/normalize";
-
+@import "wordpress/media";
 
 // Logic
 @import "logic/variables.colors";
@@ -41,10 +41,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "base/core";
 @import "base/global-attributes";
 @import "base/resets";
+@import "base/lists";
+
 
 @import "base/typography";
-@import "base/lists";
-@import "base/media";
 @import "base/tables";
 @import "base/links";
 @import "base/buttons";
