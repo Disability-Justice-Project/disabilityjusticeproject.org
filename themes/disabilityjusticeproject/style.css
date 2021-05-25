@@ -360,6 +360,20 @@ template {
 	vertical-align: baseline;
 }
 
+:root {
+	--color-white: $color-white;
+	--color-black: $color-black;
+	--color-gray-lightest: $color-gray-lightest;
+	--color-gray-light: $color-gray-light;
+	--color-gray-medium: $color-gray-medium;
+	--color-gray-dark: $color-gray-dark;
+	--color-gray-darkest: $color-gray-darkest;
+	--color-gold: $color-gold;
+	--color-brick: $color-brick;
+	--color-olive: $color-olive;
+	--color-dusk: $color-dusk;
+}
+
 html {
 	background-color: var(--color-white);
 	margin: 0;
@@ -389,6 +403,13 @@ html:lang(en-US) {
 	}
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+
+	html {
+		font-smoothing: subpixel-antialiased;
+	}
+}
+
 @-ms-viewport {
 
 	html {
@@ -404,6 +425,20 @@ body {
 	font-size: 125%;
 	line-height: 1.5;
 	min-height: 100%;
+}
+
+[aria-disabled],
+[disabled] {
+	cursor: not-allowed !important;
+	pointer-events: none !important;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+[tabindex="-1"]:focus {
+	outline: none;
 }
 
 body,
