@@ -28,10 +28,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "vendor/normalize";
 @import "wordpress/media";
 
+
 // Logic
 @import "logic/variables.colors";
-@import "logic/variables.typography";
-@import "logic/variables.columns";
 @import "logic/mixin.column-width";
 
 
@@ -41,14 +40,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "base/core";
 @import "base/global-attributes";
 @import "base/resets";
-@import "base/lists";
-
-
-@import "base/typography";
-@import "base/tables";
-@import "base/links";
 @import "base/buttons";
 @import "base/fields";
+@import "base/icons";
+@import "base/links";
+@import "base/lists";
+@import "base/tables";
 
 
 // Utilities
