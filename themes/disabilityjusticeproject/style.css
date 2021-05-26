@@ -351,6 +351,22 @@ template {
 	display: none;
 }
 
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
 *,
 *::before,
 *::after {
@@ -441,216 +457,280 @@ body {
 	outline: none;
 }
 
-body,
+a img {
+	border: none;
+}
+
+abbr[title],
+dfn[title] {
+	cursor: help;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+b b,
+b strong,
+strong b,
+strong strong {
+	font-weight: regular;
+}
+
 button,
-input,
-select,
-optgroup,
-textarea {
-	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", courier, monospace;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-big {
-	font-size: 125%;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", courier, monospace;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-big {
-	font-size: 125%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-}
-
-hr {
-	background-color: #ccc;
+input[type="button"] {
 	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+	border: 0;
+	padding: 0;
 }
 
-ul {
-	list-style: disc;
+em em,
+em cite,
+em i,
+cite em,
+cite cite,
+cite i,
+i em,
+i cite,
+i i {
+	font-style: normal;
 }
 
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: 700;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
 iframe,
-object {
-	max-width: 100%;
-}
-
-img {
+object,
+audio,
+video,
+canvas {
 	height: auto;
-	max-width: 100%;
-}
-
-figure {
-	margin: 1em 0;
-}
-
-table {
-	margin: 0 0 1.5em;
 	width: 100%;
 }
 
-a {
-	color: #4169e1;
+img,
+figure,
+picture {
+	border: 0;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
-a:visited {
-	color: #800080;
+img[height],
+img[width],
+figure[height],
+figure[width],
+picture[height],
+picture[width] {
+	max-width: none;
 }
 
-a:hover,
-a:focus,
-a:active {
-	color: #191970;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: regular;
 }
 
-a:focus {
-	outline: thin dotted;
+ins {
+	border-bottom: var(--border-width-thin) double;
+	text-decoration: none;
 }
 
-a:hover,
-a:active {
-	outline: 0;
+input:not([type="button"]):not([type="checkbox"]):not([type="radio"]):read-only,
+textarea:read-only {
+	user-select: all;
+}
+
+label {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input datalist,
+select,
+textarea {
+	font-size: var(--scale0);
+	line-height: 1.05;
+}
+
+sub {
+	text-transform: lowercase;
+	font-size: inherit;
+	font-variant-position: sub;
+}
+
+@supports not (font-variant-position: sub) {
+
+	sub {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "subs", "subs";
+		font-feature-settings: "subs", "subs";
+	}
+
+	@supports (-webkit-font-feature-settings: "subs") or (font-feature-settings: "subs") {
+
+		sub {
+			vertical-align: baseline;
+		}
+	}
+
+	@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+
+		sub {
+			vertical-align: sub;
+			font-size: smaller;
+		}
+	}
+}
+
+sup {
+	text-transform: lowercase;
+	font-variant-position: super;
+}
+
+@supports not (font-variant-position: sup) {
+
+	sup {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "sups", "sups";
+		font-feature-settings: "sups", "sups";
+	}
+
+	@supports (-webkit-font-feature-settings: "sups") or (font-feature-settings: "sups") {
+
+		sup {
+			vertical-align: baseline;
+		}
+	}
+
+	@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+
+		sup {
+			vertical-align: super;
+		}
+	}
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+table caption {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+table col,
+table th,
+table td {
+	padding: 0.25em;
+	text-align: left;
+}
+
+table col[colspan],
+table th[colspan],
+table td[colspan] {
+	text-align: center;
+}
+
+table col[colspan="1"],
+table th[colspan="1"],
+table td[colspan="1"] {
+	text-align: left;
+}
+
+table col[rowspan],
+table th[rowspan],
+table td[rowspan] {
+	vertical-align: middle;
+}
+
+table col[rowspan="1"],
+table th[rowspan="1"],
+table td[rowspan="1"] {
+	vertical-align: top;
+}
+
+table thead tr th {
+	font-weight: regular;
+}
+
+table tbody tr th {
+	font-weight: regular;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+time {
+	font-variant-numeric: tabular-nums;
+	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+	font-variant-numeric: oldstyle-nums;
+	/* stylelint-disable-next-line property-no-vendor-prefix */
+	-ms-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+	/* stylelint-disable-next-line property-no-vendor-prefix, declaration-block-no-duplicate-properties */
+	-ms-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+}
+
+@supports not (font-variant-numeric: tabular-nums) {
+
+	time {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "pnum" 0, "tnum", "tnum";
+		font-feature-settings: "pnum" 0, "tnum", "tnum";
+	}
+}
+
+@supports not (font-variant-numeric: oldstyle-nums) {
+
+	time {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "lnum" 0, "onum", "onum";
+		font-feature-settings: "lnum" 0, "onum", "onum";
+	}
+}
+
+@supports not ((-webkit-font-feature-settings: "onum" inherit) or (font-feature-settings: "onum" inherit)) {
+
+	time {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+		font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+	}
+}
+
+@supports not ((-webkit-font-feature-settings: "onum" inherit) or (font-feature-settings: "onum" inherit)) {
+
+	time {
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+		font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+	}
+}
+
+var {
+	font-style: normal;
 }
 
 button,
@@ -731,6 +811,84 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+.icon-sprite {
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden;
+	width: 0;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	display: inline-block;
+	fill: currentColor;
+	height: 1em;
+	pointer-events: none;
+	speak: none;
+	stroke: currentColor;
+	stroke-width: 0;
+	width: 1em;
+}
+
+a {
+	color: #4169e1;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #191970;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+table col,
+table th,
+table td {
+	border-color: currentColor;
+	padding: 0.75rem;
+}
+
+table th {
+	vertical-align: bottom;
+}
+
+table thead {
+	border-bottom: 1px solid currentColor;
+}
+
+table tbody tr th {
+	border-top: 1px solid currentColor;
+}
+
+table tbody tr td {
+	border-top: 1px solid currentColor;
+}
+
+table tfoot tr td {
+	border-top: 1px solid currentColor;
 }
 
 /* Text meant only for screen readers. */
