@@ -22,81 +22,48 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
 
---------------------------------------------------------------*/
+// Vendor and imports
+@import "vendor/jetpack/infinite-scroll";
+@import "vendor/normalize";
+@import "wordpress/media";
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
 
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
+// Logic
+@import "logic/variables.colors";
+@import "logic/mixin.column-width";
 
-/* Normalize
---------------------------------------------- */
-@import "generic/normalize";
 
-/* Box sizing
---------------------------------------------- */
-@import "generic/box-sizing";
+// Base
+@import "base/all";
+@import "base/root";
+@import "base/core";
+@import "base/global-attributes";
+@import "base/resets";
+@import "base/buttons";
+@import "base/fields";
+@import "base/icons";
+@import "base/links";
+@import "base/lists";
+@import "base/tables";
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
+// Utilities
+@import "utilities/accessibility";
+@import "utilities/alignments";
+
+
+// Layout
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
 
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
+// Components
+@import "components/navigation";
+@import "components/posts-and-pages";
+@import "components/comments";
+@import "components/widgets";
 
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+@import "components/media/media";
+@import "components/media/captions";
+@import "components/media/galleries";

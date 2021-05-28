@@ -55,7 +55,7 @@
 		top: 0;
 		position: absolute;
 		left: 0;
-		color: $color__link;
+		color: #4169e1;
 	}
 }
 
@@ -82,7 +82,7 @@ p.stars {
 			line-height: 1;
 			font-family: star;
 			content: "\53";
-			color: $color__text-main;
+			color: #404040;
 			text-indent: 0;
 			opacity: 0.25;
 		}
@@ -91,7 +91,7 @@ p.stars {
 
 			~ a::before {
 				content: "\53";
-				color: $color__text-main;
+				color: #404040;
 				opacity: 0.25;
 			}
 		}
@@ -103,7 +103,7 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__link;
+				color: #4169e1;
 				opacity: 1;
 			}
 		}
@@ -115,13 +115,13 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__link;
+				color: #4169e1;
 				opacity: 1;
 			}
 
 			~ a::before {
 				content: "\53";
-				color: $color__text-main;
+				color: #404040;
 				opacity: 0.25;
 			}
 		}
@@ -130,7 +130,7 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__link;
+				color: #4169e1;
 				opacity: 1;
 			}
 		}

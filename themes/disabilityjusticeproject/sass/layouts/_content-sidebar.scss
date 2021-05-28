@@ -1,6 +1,6 @@
 .site {
 	display: grid;
-	grid-template-columns: auto ($size__site-sidebar);
+	grid-template-columns: auto (1fr);
 	grid-template-areas:
 		"header header"
 		"main sidebar"
