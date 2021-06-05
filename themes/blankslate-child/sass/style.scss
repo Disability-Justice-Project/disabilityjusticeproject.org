@@ -1,0 +1,60 @@
+/*
+Theme Name: Disabiltiy Justice Project Child
+Theme URI: https://wordpress.org/plugins/blank-slate/
+description: >-
+  Blank Slate Child Theme for the Disability Justice Project.
+Author: Eric Bailey
+Author URI: https://github.com/Disability-Justice-Project/disabilityjusticeproject.org
+Template: blankslate
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, responsive-layout, accessibility-ready
+Text Domain: blankslate-child
+*/
+
+
+// Vendor and imports
+@import "vendor/jetpack/infinite-scroll";
+@import "vendor/normalize";
+@import "wordpress/media";
+
+
+// Logic
+@import "logic/variables.colors";
+@import "logic/mixin.column-width";
+
+
+// Base
+@import "base/all";
+@import "base/root";
+@import "base/core";
+@import "base/global-attributes";
+@import "base/resets";
+@import "base/buttons";
+@import "base/fields";
+@import "base/icons";
+@import "base/links";
+@import "base/lists";
+@import "base/tables";
+
+
+// Utilities
+@import "utilities/accessibility";
+@import "utilities/alignments";
+
+
+// Layout
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+
+// Components
+@import "components/navigation";
+@import "components/posts-and-pages";
+@import "components/comments";
+@import "components/widgets";
+
+@import "components/media/media";
+@import "components/media/captions";
+@import "components/media/galleries";
