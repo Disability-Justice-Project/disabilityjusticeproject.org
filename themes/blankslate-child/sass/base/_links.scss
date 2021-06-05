@@ -1,0 +1,22 @@
+a {
+	color: #4169e1;
+
+	&:visited {
+		color: #800080;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #191970;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
