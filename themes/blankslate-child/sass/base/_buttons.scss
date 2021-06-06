@@ -2,20 +2,22 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+  background-color: transparent;
+  border: var(--border-thin) solid var(--color-white);
+  border-radius: 0;
+  color: var(--color-white);
+  cursor: pointer;
+  line-height: var(--line-height-single);
 
-	&:hover {
-		border-color: #ccc #bbb #aaa;
+  &:hover,
+  &:focus {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-black);
 	}
 
-	&:active,
-	&:focus {
-		border-color: #aaa #bbb #bbb;
-	}
+  &:active {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+  }
 }

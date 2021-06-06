@@ -5,6 +5,7 @@ themes/twentytwenty/
 themes/twentytwentyone/
 themes/disabilityjusticeproject/node_modules/
 themes/blankslate-child/node_modules/
+*.css.map
 
 
 ## Package Management #########################################################
