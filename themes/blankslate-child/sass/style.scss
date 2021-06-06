@@ -42,6 +42,7 @@ Text Domain: blankslate-child
 // Utilities
 @import "utilities/accessibility";
 @import "utilities/alignments";
+@import "utilities/embeds";
 
 
 // Layout
@@ -58,3 +59,7 @@ Text Domain: blankslate-child
 @import "components/media/media";
 @import "components/media/captions";
 @import "components/media/galleries";
+
+@import "components/creator";
+@import "components/project-tease";
+@import "components/share";
