@@ -1,13 +1,18 @@
 :root {
-  --color-white: $color-white;
-  --color-black: $color-black;
-  --color-gray-lightest: $color-gray-lightest;
-  --color-gray-light: $color-gray-light;
-  --color-gray-medium: $color-gray-medium;
-  --color-gray-dark: $color-gray-dark;
-  --color-gray-darkest: $color-gray-darkest;
-  --color-gold: $color-gold;
-  --color-brick: $color-brick;
-  --color-olive: $color-olive;
-  --color-dusk: $color-dusk;
+  --border-thin: 1px;
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-gray-lightest: #{$color-gray-lightest};
+  --color-gray-light: #{$color-gray-light};
+  --color-gray-medium: #{$color-gray-medium};
+  --color-gray-dark: #{$color-gray-dark};
+  --color-gray-darkest: #{$color-gray-darkest};
+  --color-gold: #{$color-gold};
+  --color-brick: #{$color-brick};
+  --color-olive: #{$color-olive};
+  --color-dusk: #{$color-dusk};
+  --line-height-single: 1;
+  --line-height-tight: 1.2;
+  --line-height-loose: 1.5;
+  --line-height-double: 2;
 }
