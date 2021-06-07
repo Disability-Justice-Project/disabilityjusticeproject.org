@@ -43,7 +43,7 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: HalyardDisplay, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: var(--type-weight-regular);
   font-size: 125%; // 20px on most browsers
   line-height: 1.5;
   min-height: 100%;
