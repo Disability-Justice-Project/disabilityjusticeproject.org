@@ -10,7 +10,7 @@
 
 
 .c-creator__name {
-  font-weight: 400;
+  font-weight: var(--type-weight-regular);
   font-size: 1.25rem;
   line-height: var(--line-height-tight);
 }
@@ -32,7 +32,7 @@
 
 .c-creator__read-more {
   color: var(--color-gold);
-  font-weight: 600;
+  font-weight: var(--type-weight-bold);
   text-transform: uppercase;
 
   &:hover,

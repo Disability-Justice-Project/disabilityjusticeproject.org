@@ -1,0 +1,12 @@
+.l-footer {
+  border-top: var(--border-thin) solid var(--color-gray-light);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem 6rem 0;
+  justify-content: space-between;
+
+  @media (min-width: $breakpoint-medium) {
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}

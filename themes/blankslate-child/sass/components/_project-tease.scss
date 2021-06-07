@@ -6,11 +6,11 @@
   margin-top: 3rem;
   padding-bottom: 3rem;
 
-  @media (min-width: 70rem) {
+  @media (min-width: $breakpoint-medium) {
     gap: 3rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.75fr 1fr;
     grid-template-rows: 2fr;
-    padding-right: 10rem;
+    padding-right: 6rem;
   }
 }
 
@@ -19,7 +19,7 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 
-  @media (min-width: 70rem) {
+  @media (min-width: $breakpoint-medium) {
     align-self: end;
     margin-left: 0;
     margin-right: 0;
@@ -48,7 +48,7 @@
 
 
 .c-project-tease__transcript {
-  font-weight: 600;
+  font-weight: var(--type-weight-bold);
   flex-grow: 1;
   margin-right: 1rem;
 }

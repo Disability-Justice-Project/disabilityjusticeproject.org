@@ -1,5 +1,6 @@
 :root {
   --border-thin: 1px;
+  --border-thick: 3px;
   --color-white: #{$color-white};
   --color-black: #{$color-black};
   --color-gray-lightest: #{$color-gray-lightest};
@@ -15,4 +16,6 @@
   --line-height-tight: 1.2;
   --line-height-loose: 1.5;
   --line-height-double: 2;
+  --type-weight-regular: 400;
+  --type-weight-bold: 600;
 }
