@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 <main id="content">
 
+<div class="c-update-banner">
+  <p class="c-update-banner__message">
+    New videos <span class="color-text-gray-brick">Documentaries from Kenya and South Africa</span>
+  </p>
+</div>
+
 <div class="c-project-tease">
   <div class="c-project-tease__video">
     <div class="embed-responsive">
@@ -43,12 +49,6 @@
       </button>
     </div>
   </div>
-</div>
-
-<div class="c-update-banner">
-  <p class="c-update-banner__message">
-    New videos <span class="color-text-gray-brick">Documentaries from Kenya and South Africa</span>
-  </p>
 </div>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
