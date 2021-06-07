@@ -21,6 +21,7 @@ Text Domain: blankslate-child
 
 
 // Logic
+@import "logic/variables.breakpoints";
 @import "logic/variables.colors";
 @import "logic/mixin.column-width";
 
@@ -42,13 +43,16 @@ Text Domain: blankslate-child
 // Utilities
 @import "utilities/accessibility";
 @import "utilities/alignments";
+@import "utilities/color-text";
 @import "utilities/embeds";
+@import "utilities/weights";
 
 
 // Layout
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
+@import "layouts/footer";
+@import "layouts/header";
 
 // Components
 @import "components/navigation";
@@ -61,5 +65,8 @@ Text Domain: blankslate-child
 @import "components/media/galleries";
 
 @import "components/creator";
+@import "components/footer";
+@import "components/nav-primary";
 @import "components/project-tease";
 @import "components/share";
+@import "components/update-banner";
