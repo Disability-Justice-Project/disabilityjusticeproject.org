@@ -1,0 +1,8 @@
+.c-footer__tagline {
+  font-size: 1rem;
+  padding: 1.5rem 1rem 0 1rem;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+  }
+}
