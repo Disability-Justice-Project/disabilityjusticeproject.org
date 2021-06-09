@@ -1,0 +1,18 @@
+.l-about {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+}
+
+
+.l-about__content {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  h2:first-of-type {
+    margin-top: 4rem;
+  }
+}
