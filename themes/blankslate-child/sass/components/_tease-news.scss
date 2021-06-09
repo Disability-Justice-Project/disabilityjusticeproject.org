@@ -1,0 +1,38 @@
+.c-tease-news {
+  background-color: var(--color-white);
+  padding: 2rem;
+}
+
+
+.c-tease-news__image {
+  cursor: pointer;
+  transition: var(--transition-short) ease-in-out filter;
+
+  &:hover {
+    filter: grayscale(1);
+  }
+}
+
+.c-tease-news__title {
+  margin-top: 1.5rem;
+  max-width: 48ch;
+}
+
+
+.c-tease-news__link {
+  color: var(--color-black);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-brick);
+    text-decoration: underline;
+  }
+}
+
+
+.c-tease-news__excerpt {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  max-width: 72ch;
+}

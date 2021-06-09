@@ -46,6 +46,7 @@ Text Domain: blankslate-child
 @import "utilities/alignments";
 @import "utilities/color-text";
 @import "utilities/embeds";
+@import "utilities/max-width";
 @import "utilities/weights";
 
 
@@ -55,6 +56,7 @@ Text Domain: blankslate-child
 @import "layouts/about";
 @import "layouts/footer";
 @import "layouts/header";
+@import "layouts/tease-news";
 
 // Components
 @import "components/navigation";
@@ -72,6 +74,7 @@ Text Domain: blankslate-child
 @import "components/footer";
 @import "components/mentor";
 @import "components/nav-primary";
-@import "components/project-tease";
 @import "components/share";
+@import "components/tease-news";
+@import "components/tease-project";
 @import "components/update-banner";

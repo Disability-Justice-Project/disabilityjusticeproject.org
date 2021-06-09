@@ -14,10 +14,19 @@
   --color-dusk: #{$color-dusk};
   --font-primary: HalyardDisplay, Arial, sans-serif;
   --font-secondary: TimesNewRoman, 'Times New Roman', Times, Georgia, serif;
+  --font-size-100: 0.8rem;
+  --font-size-200: 0.9rem;
+  --font-size-300: 1rem;
+  --font-size-400: 1.25rem;
+  --font-size-500: 1.5rem;
+  --font-size-600: 1.75rem;
+  --font-size-700: 2rem;
+  --font-size-800: 3rem;
   --line-height-single: 1;
   --line-height-tight: 1.2;
   --line-height-loose: 1.5;
   --line-height-double: 2;
+  --transition-short: 150ms;
   --type-weight-regular: 400;
   --type-weight-bold: 600;
 }
