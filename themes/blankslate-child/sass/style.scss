@@ -34,6 +34,7 @@ Text Domain: blankslate-child
 @import "base/resets";
 @import "base/buttons";
 @import "base/fields";
+@import "base/headings";
 @import "base/icons";
 @import "base/links";
 @import "base/lists";
@@ -51,6 +52,7 @@ Text Domain: blankslate-child
 // Layout
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+@import "layouts/about";
 @import "layouts/footer";
 @import "layouts/header";
 
@@ -64,8 +66,11 @@ Text Domain: blankslate-child
 @import "components/media/captions";
 @import "components/media/galleries";
 
+@import "components/content";
 @import "components/creator";
+@import "components/headings";
 @import "components/footer";
+@import "components/mentor";
 @import "components/nav-primary";
 @import "components/project-tease";
 @import "components/share";
