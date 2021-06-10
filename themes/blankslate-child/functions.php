@@ -7,6 +7,7 @@
  * @package Disability_Justice_Project
  */
 
+
 // Restrict blocks available to site authors
 function my_plugin_allowed_block_types( $allowed_block_types, $post ) {
   if ( $post->post_type !== 'post' ) {
@@ -25,4 +26,5 @@ function my_plugin_allowed_block_types( $allowed_block_types, $post ) {
   );
 }
 add_filter( 'allowed_block_types', 'my_plugin_allowed_block_types', 10, 2 );
+
 ?>
