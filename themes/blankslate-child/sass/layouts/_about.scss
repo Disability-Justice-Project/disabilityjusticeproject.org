@@ -9,10 +9,10 @@
 .l-about__content {
   max-width: 52rem;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: var(--size-200);
+  padding-right: var(--size-200);
 
   h2:first-of-type {
-    margin-top: 4rem;
+    margin-top: var(--size-900);
   }
 }
