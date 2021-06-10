@@ -2,14 +2,12 @@
   border-bottom: var(--border-thin) solid var(--color-gray-light);
   display: grid;
   gap: 2rem;
-  grid-template-rows: 1fr 1fr;
   margin-top: 3rem;
   padding-bottom: 3rem;
 
   @media (min-width: $breakpoint-medium) {
     gap: 3rem;
     grid-template-columns: 1.75fr 1fr;
-    grid-template-rows: 2fr;
     padding-right: 6rem;
   }
 }
