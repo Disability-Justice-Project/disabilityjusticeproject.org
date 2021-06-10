@@ -1,11 +1,11 @@
 .c-update-banner {
-  margin-left: 4rem;
+  margin-left: var(--size-900);
 }
 
 
 .c-update-banner__message {
-  font-size: 1.75rem;
+  font-size: var(--font-size-600);
   font-weight: var(--type-weight-bold);
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
+  margin-top: var(--size-500);
+  margin-bottom: var(--size-400);
 }

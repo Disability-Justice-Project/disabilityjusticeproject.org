@@ -1,6 +1,6 @@
 .c-tease-news {
   background-color: var(--color-white);
-  padding: 2rem;
+  padding: var(--size-400);
 }
 
 
@@ -14,7 +14,7 @@
 }
 
 .c-tease-news__title {
-  margin-top: 1.5rem;
+  margin-top: var(--size-300);
   max-width: 48ch;
 }
 
@@ -32,7 +32,7 @@
 
 
 .c-tease-news__excerpt {
-  font-size: 1rem;
-  margin-top: 1.25rem;
+  font-size: var(--font-size-300);
+  margin-top: var(--size-250);
   max-width: 72ch;
 }

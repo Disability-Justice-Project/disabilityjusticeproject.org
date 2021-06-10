@@ -1,13 +1,13 @@
 .c-tease-project {
   border-bottom: var(--border-thin) solid var(--color-gray-light);
   display: grid;
-  gap: 2rem;
+  gap: var(--size-200);
   grid-template-rows: 1fr 1fr;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
+  margin-top: var(--size-600);
+  padding-bottom: var(--size-600);
 
   @media (min-width: $breakpoint-medium) {
-    gap: 3rem;
+    gap: var(--size-600);
     grid-template-columns: 1.75fr 1fr;
     grid-template-rows: 2fr;
     padding-right: 6rem;
@@ -16,8 +16,8 @@
 
 
 .c-tease-project__content {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: var(--size-300);
+  margin-right: var(--size-300);
 
   @media (min-width: $breakpoint-medium) {
     align-self: end;
@@ -28,7 +28,7 @@
 
 
 .c-tease-project__title {
-  font-size: 2rem;
+  font-size: var(--font-size-700);
   line-height: var(--line-height-tight);
   max-width: 65ch;
 }
@@ -50,20 +50,20 @@
 
 
 .c-tease-project__excerpt {
-  margin-top: 0.5rem;
+  margin-top: var(--size-100);
   max-width: 65ch;
 }
 
 
 .c-tease-project__tools {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: var(--size-200);
+  margin-top: var(--size-400);
 }
 
 
 .c-tease-project__transcript {
   font-weight: var(--type-weight-bold);
   flex-grow: 1;
-  margin-right: 1rem;
+  margin-right: var(--size-200);
 }
