@@ -1079,7 +1079,7 @@ table tfoot tr td {
 	margin-top: 1.5rem;
 }
 
-@media (min-width: 54rem) {
+@media (min-width: 70rem) {
 	.l-tease-news__posts {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -1413,6 +1413,29 @@ table tfoot tr td {
 	width: 3rem;
 }
 
+.c-share__facebook:hover .c-share__icon, .c-share__facebook:focus .c-share__icon,
+.c-share__twitter:hover .c-share__icon,
+.c-share__twitter:focus .c-share__icon,
+.c-share__email:hover .c-share__icon,
+.c-share__email:focus .c-share__icon {
+	fill: var(--color-black);
+}
+
+.c-share__facebook .c-share__icon,
+.c-share__twitter .c-share__icon,
+.c-share__email .c-share__icon {
+	fill: var(--color-white);
+	width: auto;
+}
+
+.c-share__facebook .c-share__icon {
+	height: 2.25rem;
+}
+
+.c-share__twitter .c-share__icon {
+	height: 1.5rem;
+}
+
 .c-tease-news {
 	background-color: var(--color-white);
 	padding: 2rem;
@@ -1421,6 +1444,7 @@ table tfoot tr td {
 .c-tease-news__image {
 	cursor: pointer;
 	transition: var(--transition-short) ease-in-out filter;
+	width: 100%;
 }
 
 .c-tease-news__image:hover {
@@ -1452,7 +1476,6 @@ table tfoot tr td {
 	border-bottom: var(--border-thin) solid var(--color-gray-light);
 	display: grid;
 	gap: 2rem;
-	grid-template-rows: 1fr 1fr;
 	margin-top: 3rem;
 	padding-bottom: 3rem;
 }
@@ -1461,7 +1484,6 @@ table tfoot tr td {
 	.c-tease-project {
 		gap: 3rem;
 		grid-template-columns: 1.75fr 1fr;
-		grid-template-rows: 2fr;
 		padding-right: 6rem;
 	}
 }
