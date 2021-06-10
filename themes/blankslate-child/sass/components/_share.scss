@@ -3,4 +3,30 @@
 .c-share__email {
   height: 3rem;
   width: 3rem;
+
+  &:hover,
+  &:focus {
+    .c-share__icon {
+      fill: var(--color-black);
+    }
+  }
+
+  .c-share__icon {
+    fill: var(--color-white);
+    width: auto;
+  }
+}
+
+
+.c-share__facebook {
+  .c-share__icon {
+    height: 2.25rem;
+  }
+}
+
+
+.c-share__twitter {
+  .c-share__icon {
+    height: 1.5rem;
+  }
 }
