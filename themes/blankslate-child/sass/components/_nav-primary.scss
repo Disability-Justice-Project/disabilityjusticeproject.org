@@ -1,17 +1,17 @@
 .c-nav-primary {
   li {
     list-style-type: none;
-    margin-right: 1rem;
+    margin-right: var(--size-200);
 
     a {
       color: var(--color-white);
       border-bottom: var(--border-thick) solid var(--color-white);
       display: block;
-      font-size: 1rem;
+      font-size: var(--font-size-300);
       font-weight: var(--type-weight-bold);
       text-decoration: none;
       min-width: 12ch;
-      padding-top: 0.75rem;
+      padding-top: var(--size-150);
 
       &:hover,
       &:focus {

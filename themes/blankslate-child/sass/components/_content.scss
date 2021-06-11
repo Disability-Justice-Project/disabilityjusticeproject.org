@@ -6,7 +6,7 @@
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
+    margin-top: var(--size-400);
   }
 
   blockquote,
@@ -15,7 +15,7 @@
   figcaption,
   li,
   p {
-    margin-top: 1rem;
+    margin-top: var(--size-200);
   }
 
   // Font Family

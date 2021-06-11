@@ -45,6 +45,6 @@ body {
   font-family: var(--font-primary);
   font-weight: var(--type-weight-regular);
   font-size: 125%; // 20px on most browsers
-  line-height: 1.5;
+  line-height: var(--line-height-loose);
   min-height: 100%;
 }
