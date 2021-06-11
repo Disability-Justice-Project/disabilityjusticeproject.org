@@ -30,9 +30,17 @@
     News <span class="u-color-text-gray-brick">From the Frontlines of Disability Justice</span>
   </h2>
   <div class="l-tease-news__posts">
-    <?php get_template_part('tease-news'); ?>
-    <?php get_template_part('tease-news'); ?>
-    <?php get_template_part('tease-news'); ?>
+    <?php
+      $args = array(
+        'category_name' => 'news',
+        'posts_per_page' => 3,
+        'no_found_rows' => true
+      );
+      $query = new WP_Query($args);
+
+      while($query -> have_posts()) : $query -> the_post(); ?>
+        <?php get_template_part('tease-news'); ?>
+    <?php endwhile; ?>
   </div>
 </div>
 
