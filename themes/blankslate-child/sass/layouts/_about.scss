@@ -5,6 +5,11 @@
   padding-bottom: 12rem;
 }
 
+.l-about--dark-on-light {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
 
 .l-about__content {
   max-width: 52rem;
