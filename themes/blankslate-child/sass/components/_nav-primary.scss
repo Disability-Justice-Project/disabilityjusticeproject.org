@@ -1,5 +1,13 @@
 .c-nav-primary {
+
+  .menu {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   li {
+    flex: 1;
     list-style-type: none;
     margin-right: var(--size-200);
 
@@ -10,12 +18,15 @@
       font-size: var(--font-size-300);
       font-weight: var(--type-weight-bold);
       text-decoration: none;
-      min-width: 12ch;
       padding-top: var(--size-150);
 
       &:hover,
       &:focus {
         border-bottom-color: transparent;
+      }
+
+      @media (min-width: $breakpoint-medium) {
+        min-width: 12ch;
       }
     }
   }
