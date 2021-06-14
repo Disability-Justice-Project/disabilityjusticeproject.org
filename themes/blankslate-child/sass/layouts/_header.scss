@@ -1,8 +1,14 @@
 .l-header {
-  align-items: flex-end;
   border-bottom: var(--border-thin) solid var(--color-gray-light);
   display: flex;
-  padding-bottom: var(--size-300);
-  padding-right: var(--size-200);
-  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: var(--size-200);
+
+  @media (min-width: $breakpoint-medium) {
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: var(--size-200);
+    padding-bottom: var(--size-300);
+  }
 }
