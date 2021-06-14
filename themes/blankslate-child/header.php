@@ -44,12 +44,14 @@
     id="primary-navigation"
     class="main-navigation c-nav-primary"
     aria-label="Primary">
+<!--
     <button
       class="menu-toggle"
       aria-controls="primary-menu"
       aria-expanded="false">
         <?php esc_html_e( 'Primary Menu', 'blankslate-child' ); ?>
     </button>
+-->
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-  </nav><!-- #site-navigation -->
-</header><!-- #masthead -->
+  </nav>
+</header>
