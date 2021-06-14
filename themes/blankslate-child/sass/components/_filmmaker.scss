@@ -17,5 +17,12 @@
 
 .c-filmmaker__bio {
   font-family: var(--font-primary);
-  margin-top: var(--size-150);
+
+  p {
+    margin-top: var(--size-250);
+
+    &:first-of-type {
+      margin-top: var(--size-100);;
+    }
+  }
 }
