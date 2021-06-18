@@ -25,6 +25,19 @@
   figcaption,
   li,
   p {
-    font-family: var(--font-secondary);
+    font-family: var(--font-tertiary);
   }
+
+  // Lists
+  ul,
+  ol {
+    margin-left: 2ch;
+  }
+}
+
+
+.c-content__topic {
+  color: var(--color-brick);
+  letter-spacing: var(--tracking-open);
+  padding-top: var(--size-100);
 }
