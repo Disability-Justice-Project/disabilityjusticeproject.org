@@ -459,6 +459,8 @@ figure {
 	--size-900: 4.5rem;
 	--size-950: 4.75rem;
 	--transition-short: 150ms;
+	--tracking-open: 0.05em;
+	--tracking-closed: -0.05em;
 	--type-weight-regular: 400;
 	--type-weight-bold: 600;
 }
@@ -801,6 +803,13 @@ input[type="submit"] {
 	line-height: var(--line-height-100);
 }
 
+.u-dark-on-light button, .u-dark-on-light
+input[type="button"], .u-dark-on-light
+input[type="reset"], .u-dark-on-light
+input[type="submit"] {
+	border-color: var(--color-black);
+}
+
 button:hover, button:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
@@ -811,6 +820,16 @@ input[type="submit"]:focus {
 	background-color: var(--color-gold);
 	border-color: var(--color-gold);
 	color: var(--color-black);
+}
+
+.u-dark-on-light button:hover, .u-dark-on-light button:focus, .u-dark-on-light
+input[type="button"]:hover, .u-dark-on-light
+input[type="button"]:focus, .u-dark-on-light
+input[type="reset"]:hover, .u-dark-on-light
+input[type="reset"]:focus, .u-dark-on-light
+input[type="submit"]:hover, .u-dark-on-light
+input[type="submit"]:focus {
+	border-color: var(--color-black);
 }
 
 button:active,
@@ -1072,6 +1091,11 @@ table tfoot tr td {
 	max-width: 74rem;
 }
 
+.u-dark-on-light {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
 .u-weight-regular {
 	font-weight: var(--type-weight-regular);
 }
@@ -1132,6 +1156,96 @@ table tfoot tr td {
 		justify-content: space-between;
 		padding-right: var(--size-200);
 		padding-bottom: var(--size-300);
+	}
+}
+
+.l-landing {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	margin: 0 auto;
+	padding: 0 var(--size-200) calc(var(--size-900) * 2) var(--size-200);
+	max-width: 72ch;
+}
+
+@media (min-width: 70rem) {
+	.l-landing {
+		grid-template-columns: 10rem 2rem 2fr;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.l-landing__title {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	display: flex;
+	flex-direction: column;
+	margin-top: var(--size-600);
+}
+
+@media (min-width: 70rem) {
+	.l-landing__title {
+		display: grid;
+		grid-template-columns: 10rem 2rem 2fr;
+	}
+}
+
+.l-landing__title h1 {
+	margin-top: 0;
+}
+
+.l-landing__topic {
+	border-top: var(--border-thin) solid var(--color-gray-darkest);
+}
+
+@media (min-width: 70rem) {
+	.l-landing__topic {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+}
+
+.l-landing__heading {
+	padding-top: var(--size-200);
+}
+
+@media (min-width: 70rem) {
+	.l-landing__heading {
+		grid-column-start: 3;
+		grid-column-end: 6;
+		padding-top: 0;
+	}
+}
+
+.l-landing__share {
+	display: flex;
+	gap: var(--size-100);
+	grid-column-start: 1;
+	grid-column-end: 3;
+	margin-top: var(--size-500);
+}
+
+@media (min-width: 70rem) {
+	.l-landing__share {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+@media (min-width: 70rem) {
+	.l-landing__content {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+}
+
+@media (min-width: 70rem) {
+	.l-landing__person {
+		grid-column-start: 1;
+		grid-column-end: 6;
 	}
 }
 
@@ -1356,7 +1470,18 @@ table tfoot tr td {
 .c-content figcaption,
 .c-content li,
 .c-content p {
-	font-family: var(--font-secondary);
+	font-family: var(--font-tertiary);
+}
+
+.c-content ul,
+.c-content ol {
+	margin-left: 2ch;
+}
+
+.c-content__topic {
+	color: var(--color-brick);
+	letter-spacing: var(--tracking-open);
+	padding-top: var(--size-100);
 }
 
 .c-creator {
@@ -1444,26 +1569,42 @@ table tfoot tr td {
 }
 
 .c-mentor {
-	display: flex;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr;
+	grid-template-areas: 'photo' 'content';
 	margin-top: var(--size-300);
 }
 
+@media (min-width: 70rem) {
+	.c-mentor {
+		grid-template-columns: 10rem 1fr;
+		grid-template-areas: 'photo content';
+	}
+}
+
 .c-mentor__name {
-	font-size: var(--size-300);
+	font-size: var(--size-400);
+}
+
+.c-mentor__content {
+	grid-area: content;
 }
 
 .c-mentor__photo {
+	grid-area: photo;
+	margin-top: var(--size-500);
+}
+
+.c-mentor__photo img {
 	background-color: var(--color-gold);
 	border-radius: 100%;
-	height: 8rem;
-	margin-top: var(--size-500);
-	position: absolute;
-	left: 8rem;
-	width: 8rem;
+	height: 10rem;
+	width: 10rem;
 }
 
 .c-mentor__bio {
-	font-family: var(--font-secondary);
+	font-family: var(--font-tertiary);
 	margin-top: var(--size-050);
 }
 
@@ -1546,11 +1687,13 @@ table tfoot tr td {
 	fill: var(--color-black);
 }
 
-.c-share__facebook .c-share__icon,
-.c-share__twitter .c-share__icon,
-.c-share__email .c-share__icon {
+.c-share__icon {
 	fill: var(--color-white);
 	width: auto;
+}
+
+.u-dark-on-light .c-share__icon {
+	fill: var(--color-black);
 }
 
 .c-share__facebook .c-share__icon {
