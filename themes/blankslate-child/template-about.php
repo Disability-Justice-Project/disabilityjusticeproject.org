@@ -7,7 +7,7 @@
   get_header();
 ?>
 
-<main id="content u-dark-on-light" class="u-dark-on-light">
+<main id="content" class="u-dark-on-light">
   <div class="l-landing">
 
     <div class="l-landing__title">
@@ -50,21 +50,18 @@
     </div>
 
     <div class="l-landing__person">
-      <div class="c-mentor">
-        <div class="c-mentor__photo">
-          <img
-            alt="Photo of Name Here."
-            src="https://raw.githubusercontent.com/Disability-Justice-Project/disabilityjusticeproject.org/main/uploads/2021/05/andrew-pulrang.jpg" />
-        </div>
-        <div class="c-mentor__content">
-          <h3 class="c-mentor__name">
-            Name Here
-          </h3>
-          <p class="c-mentor__bio">
-            Snout snout sodium for the ensnare bosom of the genus pathos and missing. Tundra tundra tocsin for the nutmeg isotope of the peasant ingot and ottoman. Uncle uncle udder for the dunes cloud of the hindu thou and continuum. Vulcan vulcan vocal for the alluvial ovoid of the yugoslav chekhov and revved. Whale whale woman for the meanwhile blowout of the forepaw meadow and glowworm.
-          </p>
-        </div>
-      </div>
+      <?php
+          $args = array(
+            'category_name' => 'mentor',
+            'orderby'       => 'title',
+            'order'         => 'ASC',
+            'no_found_rows' => true
+          );
+          $query = new WP_Query($args);
+
+          while($query -> have_posts()) : $query -> the_post(); ?>
+            <?php get_template_part('mentor'); ?>
+        <?php endwhile; ?>
     </div>
 
   </div>
