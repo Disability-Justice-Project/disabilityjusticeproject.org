@@ -1,0 +1,48 @@
+$_mentor-photo-size: 10rem;
+
+.c-mentor {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  'photo'
+  'content';
+  margin-top: var(--size-300);
+
+  @media (min-width: $breakpoint-medium) {
+    grid-template-columns: $_mentor-photo-size 1fr;
+    grid-template-areas:
+      'photo content';
+    margin-top: var(--size-600);
+  }
+}
+
+
+.c-mentor__name {
+  font-size: var(--size-400);
+}
+
+
+.c-mentor__content {
+  grid-area: content;
+}
+
+
+.c-mentor__photo {
+  background-color: var(--color-gold);
+  border-radius: 100%;
+  grid-area: photo;
+  height: $_mentor-photo-size;
+  margin-top: var(--size-500);
+  width: $_mentor-photo-size;
+}
+
+
+.c-mentor__bio {
+  font-family: var(--font-tertiary);
+  margin-top: var(--size-050);
+
+  * + * {
+    margin-top: var(--size-300);
+  }
+}

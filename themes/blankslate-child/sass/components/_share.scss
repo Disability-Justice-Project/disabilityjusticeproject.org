@@ -10,10 +10,14 @@
       fill: var(--color-black);
     }
   }
+}
 
-  .c-share__icon {
-    fill: var(--color-white);
-    width: auto;
+.c-share__icon {
+  fill: var(--color-white);
+  width: auto;
+
+  .u-dark-on-light & {
+    fill: var(--color-black);
   }
 }
 

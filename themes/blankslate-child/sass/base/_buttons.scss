@@ -10,12 +10,20 @@ input[type="submit"] {
   font-size: 1rem;
   line-height: var(--line-height-100);
 
+  .u-dark-on-light & {
+    border-color: var(--color-black);
+  }
+
   &:hover,
   &:focus {
     background-color: var(--color-gold);
     border-color: var(--color-gold);
     color: var(--color-black);
-	}
+
+    .u-dark-on-light & {
+      border-color: var(--color-black);
+    }
+  }
 
   &:active {
     background-color: var(--color-white);
