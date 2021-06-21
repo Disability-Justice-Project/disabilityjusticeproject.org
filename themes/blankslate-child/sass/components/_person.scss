@@ -13,6 +13,7 @@ $_mentor-photo-size: 10rem;
     grid-template-columns: $_mentor-photo-size 1fr;
     grid-template-areas:
       'photo content';
+    margin-top: var(--size-600);
   }
 }
 
@@ -28,19 +29,20 @@ $_mentor-photo-size: 10rem;
 
 
 .c-mentor__photo {
+  background-color: var(--color-gold);
+  border-radius: 100%;
   grid-area: photo;
+  height: $_mentor-photo-size;
   margin-top: var(--size-500);
-
-  img {
-    background-color: var(--color-gold);
-    border-radius: 100%;
-    height: $_mentor-photo-size;
-    width: $_mentor-photo-size;
-  }
+  width: $_mentor-photo-size;
 }
 
 
 .c-mentor__bio {
   font-family: var(--font-tertiary);
   margin-top: var(--size-050);
+
+  * + * {
+    margin-top: var(--size-300);
+  }
 }
