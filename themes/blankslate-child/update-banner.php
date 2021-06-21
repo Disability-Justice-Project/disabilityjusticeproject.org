@@ -1,6 +1,6 @@
 <?php if ( ! empty($new_video)) : ?>
   <div class="c-update-banner">
-    <p class="c-update-banner__message">
+    <p id="title" class="c-update-banner__message">
       New videos <span class="u-color-text-gray-brick"><?php echo $new_video; ?></span>
     </p>
   </div>
