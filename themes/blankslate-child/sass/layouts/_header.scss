@@ -2,6 +2,7 @@
   border-bottom: var(--border-thin) solid var(--color-gray-light);
   display: flex;
   flex-direction: column;
+  padding-top: var(--size-150);
   padding-bottom: var(--size-200);
 
   @media (min-width: $breakpoint-medium) {
@@ -11,4 +12,10 @@
     padding-right: var(--size-200);
     padding-bottom: var(--size-300);
   }
+}
+
+
+.l-header__logo {
+  height: auto;
+  width: 12rem;
 }
