@@ -2,11 +2,17 @@
   border-top: var(--border-thin) solid var(--color-gray-light);
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 2rem 6rem 0;
+  padding: var(--size-500) var(--size-400) 0 0;
   justify-content: space-between;
 
   @media (min-width: $breakpoint-medium) {
     align-items: flex-end;
     flex-direction: row;
   }
+}
+
+
+.l-footer__logo {
+  height: auto;
+  width: 12rem;
 }
