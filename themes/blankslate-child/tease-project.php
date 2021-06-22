@@ -1,13 +1,18 @@
+<?php
+  $video_id = get_field('video_id');
+  $transcript = get_field('transcript');
+?>
+
 <div class="c-tease-project">
   <div class="c-tease-project__video">
     <div class="u-embed-responsive">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SDdsD5AmKYA" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="c-tease-project__content">
     <h2 class="c-tease-project__title">
       <a class="c-tease-project__link" href="<?php the_permalink(); ?>">
-        <?php echo $video_id; ?><?php the_title(); ?>
+        <?php the_title(); ?>
       </a>
     </h2>
     <p class="c-tease-project__excerpt">
