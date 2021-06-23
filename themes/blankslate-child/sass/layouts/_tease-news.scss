@@ -10,7 +10,7 @@
     grid-template-areas:
       '. title .'
       '. news  .';
-      padding: 4rem 0 5rem 0;
+    padding: var(--size-800) 0 5rem 0;
   }
 }
 
