@@ -50,4 +50,14 @@
       </button>
     </div>
   </div>
+  <div class="c-tease-project__accordion-wrapper">
+    <section
+      aria-hidden="true"
+      aria-label="Transcript for <?php the_title(); ?>"
+      class="c-tease-project__accordion-content u-flow"
+      data-transcript="content"
+      tabindex="-1">
+      <?php echo $transcript; ?>
+    </section>
+  </div>
 </div>
