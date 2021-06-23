@@ -19,6 +19,7 @@
   <?php endif; ?>
 
 </footer>
-<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
+  <script src="/wp-content/themes/blankslate-child/js/main.js"></script>
 </body>
 </html>
