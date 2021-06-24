@@ -66,19 +66,24 @@
     <?php
   endif; ?>
 
+  <div class="l-header__accessibility-settings">
+    <button
+      id="accessibility-settings"
+      class="c-accessibility-settings__toggle"
+      type="button">
+      <svg
+        class="c-accessibility-settings__toggle-icon"
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M49.86,0A49.87,49.87,0,1,0,99.73,49.86,49.86,49.86,0,0,0,49.86,0Zm-.75,9.9a6.46,6.46,0,1,1-6.44,6.44A6.45,6.45,0,0,1,49.11,9.9ZM77.05,30.73,57.87,33.15V52.36l9.3,31a3.61,3.61,0,0,1-2.63,4.4,3.56,3.56,0,0,1-4.4-2.54L50.62,57H47.68L38.93,85.83a3.6,3.6,0,0,1-4.71,2A3.74,3.74,0,0,1,32,83.12l8-30.45V33.15l-17.67-2.4a3.21,3.21,0,0,1-2.9-3.56,3.33,3.33,0,0,1,3.59-3L44.5,26h9.41l22.87-1.89a3.31,3.31,0,0,1,.27,6.62Z"/></svg>
+      <span class="c-accessibility-settings__toggle-label"><span class="c-accessibility-settings__phrase-switch">Accessibility </span>Settings</span>
+    </button>
+  </div>
 
   <nav
     id="primary-navigation"
-    class="main-navigation c-nav-primary"
+    class="main-navigation l-header__nav c-nav-primary"
     aria-label="Primary">
-<!--
-    <button
-      class="menu-toggle"
-      aria-controls="primary-menu"
-      aria-expanded="false">
-        <?php esc_html_e( 'Primary Menu', 'blankslate-child' ); ?>
-    </button>
--->
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
   </nav>
 </header>

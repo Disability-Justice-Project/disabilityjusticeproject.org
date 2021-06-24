@@ -1,5 +1,9 @@
 .c-update-banner {
-  margin-left: var(--size-900);
+  margin-left: var(--size-400);
+
+  @media (min-width: $breakpoint-medium) {
+    margin-left: var(--size-900);
+  }
 }
 
 
