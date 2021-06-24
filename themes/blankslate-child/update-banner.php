@@ -1,7 +1,7 @@
 <?php if ( ! empty($new_video)) : ?>
   <div class="c-update-banner">
     <p id="title" class="c-update-banner__message">
-      New videos <span class="u-color-text-gray-brick"><?php echo $new_video; ?></span>
+      New videos<span class="screen-reader-text">:</span> <span class="u-color-text-gray-brick"><?php echo $new_video; ?><span class="screen-reader-text">.</span></span>
     </p>
   </div>
 <?php endif; ?>

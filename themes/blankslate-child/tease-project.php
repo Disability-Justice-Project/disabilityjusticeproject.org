@@ -32,7 +32,7 @@
             class="c-creator__photo"
             src="<?php echo $temp_filmmaker_photo['url']; ?>">
         <?php endif; ?>
-        <div class="c-creator__excerpt">
+        <div class="c-creator__bio">
           <?php echo $temp_filmmaker_bio; ?>
         </div>
       </div>
