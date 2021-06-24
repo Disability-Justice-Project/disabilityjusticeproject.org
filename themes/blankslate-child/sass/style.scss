@@ -64,6 +64,7 @@ Text Domain: blankslate-child
 @import "layouts/tease-news";
 
 // Components
+// WordPress
 @import "components/navigation";
 @import "components/posts-and-pages";
 @import "components/comments";
@@ -73,6 +74,8 @@ Text Domain: blankslate-child
 @import "components/media/captions";
 @import "components/media/galleries";
 
+// blankslate_child
+@import "components/accessibility-settings";
 @import "components/content";
 @import "components/creator";
 @import "components/headings";
