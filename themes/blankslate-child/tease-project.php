@@ -1,6 +1,9 @@
 <?php
   $video_id = get_field('video_id');
   $transcript = get_field('transcript');
+  $temp_filmmaker_name = get_field('temp_filmmaker_name');
+  $temp_filmmaker_photo = get_field('temp_filmmaker_photo');
+  $temp_filmmaker_bio = get_field('temp_filmmaker_bio');
 ?>
 
 <div class="c-tease-project">
@@ -16,20 +19,22 @@
       </a>
     </h2>
     <p class="c-tease-project__excerpt">
-    <?php the_excerpt(); ?>
+      <?php the_excerpt(); ?>
     </p>
     <div class="c-creator">
       <h3 class="c-creator__name">
-        Creator Name Here
+        <?php echo $temp_filmmaker_name; ?>
       </h3>
       <div class="c-creator__bio">
-        <img
-          alt="Photo of Creator Name."
-          class="c-creator__photo"
-          src="https://raw.githubusercontent.com/Disability-Justice-Project/disabilityjusticeproject.org/main/uploads/2021/05/britt-young-300x300.jpg" />
-        <p class="c-creator__excerpt">
-          Nam id iaculis justo. Duis dignissim est metus. Nam placerat turpis ut bibendum venenatis. In in egestas purus. <a class="c-creator__read-more" href="<?php the_permalink(); ?>">Read more</a>
-        </p>
+        <?php if ( ! empty($temp_filmmaker_photo)) : ?>
+          <img
+            alt="Photo of <?php echo $temp_filmmaker_name; ?>."
+            class="c-creator__photo"
+            src="<?php echo $temp_filmmaker_photo['url']; ?>">
+        <?php endif; ?>
+        <div class="c-creator__excerpt">
+          <?php echo $temp_filmmaker_bio; ?>
+        </div>
       </div>
     </div>
     <div class="c-tease-project__tools">
