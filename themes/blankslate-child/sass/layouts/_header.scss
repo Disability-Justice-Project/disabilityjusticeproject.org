@@ -1,14 +1,18 @@
 .l-header {
   border-bottom: var(--border-thin) solid var(--color-gray-light);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo a11y"
+    "nav  nav";
   padding-top: var(--size-150);
   padding-bottom: var(--size-200);
 
   @media (min-width: $breakpoint-medium) {
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: end;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo nav a11y";
     padding-right: var(--size-200);
     padding-bottom: var(--size-300);
   }
@@ -16,6 +20,30 @@
 
 
 .l-header__logo {
+  grid-area: logo;
   height: auto;
   width: 12rem;
+}
+
+
+.l-header__accessibility-settings {
+  grid-area: a11y;
+  justify-self: end;
+  margin-right: var(--size-200);
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 0;
+  }
+}
+
+
+.l-header__nav {
+  border-top: var(--border-thin) solid var(--color-gray-lightest);
+  grid-area: nav;
+  margin-top: var(--size-300);
+
+  @media (min-width: $breakpoint-medium) {
+    border-top: none;
+    margin-top: 0;
+  }
 }
