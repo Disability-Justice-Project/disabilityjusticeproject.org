@@ -1,0 +1,19 @@
+.c-logo {
+  height: auto;
+  width: 12rem;
+
+  #logo {
+    fill: var(--color-gold);
+  }
+
+  #logotype {
+    fill: var(--color-white);
+  }
+
+  a:hover &,
+  a:focus &, {
+    #logotype {
+      fill: var(--color-gold);
+    }
+  }
+}
