@@ -1179,8 +1179,6 @@ table tfoot tr td {
 
 .l-header__logo {
 	grid-area: logo;
-	height: auto;
-	width: 12rem;
 }
 
 .l-header__accessibility-settings {
@@ -1792,6 +1790,24 @@ table tfoot tr td {
 	.c-footer__tagline {
 		padding: 0;
 	}
+}
+
+.c-logo {
+	height: auto;
+	width: 12rem;
+}
+
+.c-logo #logo {
+	fill: var(--color-gold);
+}
+
+.c-logo #logotype {
+	fill: var(--color-white);
+}
+
+a:hover .c-logo #logotype,
+a:focus .c-logo #logotype {
+	fill: var(--color-gold);
 }
 
 .c-nav-primary .menu {
