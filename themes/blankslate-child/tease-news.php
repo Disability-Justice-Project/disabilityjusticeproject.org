@@ -1,5 +1,6 @@
 <?php
   $featured_image = get_the_post_thumbnail_url();
+  $byline = get_field('byline');
 ?>
 
 <div class="c-tease-news">
@@ -11,7 +12,13 @@
       <?php the_title(); ?>
     </a>
   </h3>
+  <p>
+    <?php echo $byline; ?>
+  </p>
   <div class="c-tease-news__excerpt">
     <?php the_excerpt(); ?>
+    <p>
+      <a class="c-tease-news__read-more" href="<?php the_permalink(); ?>">Read more<span class="screen-reader-text"> about <?php the_title(); ?></span></a>
+    </p>
   </div>
 </div>
