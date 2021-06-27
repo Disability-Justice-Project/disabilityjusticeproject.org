@@ -51,20 +51,13 @@
     if ( is_front_page() && is_home() ) :
     ?>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img
-          alt="Disability Justice Project."
-          role="img"
-          class="l-header__logo"
-          src="/wp-content/uploads/2021/06/logo-light-on-dark.svg" />
+        <?php get_template_part('logo');?>
       </a>
     <?php
     else :
     ?>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img
-          alt="Disability Justice Project."
-          class="l-header__logo"
-          src="/wp-content/uploads/2021/06/logo-light-on-dark.svg" />
+        <?php get_template_part('logo');?>
       </a>
     <?php
   endif; ?>
