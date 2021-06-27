@@ -106,5 +106,10 @@
 .c-tease-project__accordion-content {
   max-width: 74ch;
   margin: 0 auto;
-  padding: var(--size-800) var(--size-200);
+  margin-top: var(--size-800);
+  margin-bottom: var(--size-800);
+  overflow-y: scroll;
+  padding-right: var(--size-200);
+  padding-left: var(--size-200);
+  max-height: 70vh;
 }

@@ -65,7 +65,7 @@
       aria-label="Transcript for <?php the_title(); ?>"
       class="c-tease-project__accordion-content u-flow"
       data-transcript="content"
-      tabindex="-1">
+      tabindex="0">
       <?php echo $transcript; ?>
     </section>
   </div>
