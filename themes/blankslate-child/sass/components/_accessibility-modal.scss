@@ -1,0 +1,122 @@
+$_modal-icon-size: var(--size-600);
+
+.c-accessibility-modal {
+  background-color: var(--color-gray-lightest);
+  color: var(--color-black);
+  padding: var(--size-300) 5vw;
+}
+
+
+.c-accessibility-modal__wrapper {
+  display: grid;
+  gap: var(--size-200);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  @media (min-width: $breakpoint-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.c-accessibility-modal__setting {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-250);
+}
+
+
+.c-accessibility-modal__title {
+  font-size: var(--font-size-250);
+}
+
+
+.c-accessibility-modal__controls {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--size-200);
+
+  label {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+
+.c-accessibility-modal__label {
+  font-size: var(--font-size-100);
+  letter-spacing: var(--tracking-open);
+  padding-top: var(--size-050);
+  text-transform: uppercase;
+}
+
+
+.c-accessibility-modal__radio {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  white-space: nowrap;
+
+  &:focus + .c-accessibility-modal__icon,
+  &:focus + .c-accessibility-modal__button,
+  &:checked + .c-accessibility-modal__icon,
+  &:checked + .c-accessibility-modal__button {
+    box-shadow:
+      0 0 0 0.2rem var(--color-white),
+      0 0 0 0.4rem var(--color-black);
+  }
+}
+
+
+.c-accessibility-modal__icon {
+  height: $_modal-icon-size;
+  width: $_modal-icon-size;
+  border-radius: 100%;
+}
+
+
+.c-accessibility-modal__button {
+  height: auto;
+  margin-top: var(--size-050);
+  width: 7rem;
+}
+
+
+.c-accessibility-modal__commit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-200);
+  justify-content: flex-end;
+  margin-top: var(--size-350);
+
+  @media (min-width: $breakpoint-small) {
+    flex-direction: row;
+  }
+}
+
+
+.c-accessibility-modal__control {
+  background-color: var(--color-white);
+  border: var(--border-thin) solid var(--color-black);
+  color: var(--color-black);
+  min-width: 10rem;
+  padding: var(--size-200) var(--size-400);
+}
+
+
+.c-accessibility-modal__control--primary {
+  background-color: var(--color-black);
+  border: var(--border-thin) solid var(--color-white);
+  color: var(--color-white);
+}
