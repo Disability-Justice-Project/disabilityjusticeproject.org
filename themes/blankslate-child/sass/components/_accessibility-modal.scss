@@ -3,7 +3,11 @@ $_modal-icon-size: var(--size-600);
 .c-accessibility-modal {
   background-color: var(--color-gray-lightest);
   color: var(--color-black);
-  padding: var(--size-300) 5vw;
+  padding: var(--size-300) var(--size-200);
+
+  @media (min-width: $breakpoint-small) {
+    padding: var(--size-300) 5vw;
+  }
 }
 
 
