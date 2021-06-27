@@ -36,6 +36,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php get_template_part('accessibility-settings-modal');?>
+
 <?php wp_body_open(); ?>
 
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'disabilityjusticeproject' ); ?></a>
@@ -69,7 +72,9 @@
   <div class="l-header__accessibility-settings">
     <button
       id="accessibility-settings"
+      data-modal-open="accessibility-settings-modal"
       class="c-accessibility-settings__toggle"
+      hidden
       type="button">
       <svg
         class="c-accessibility-settings__toggle-icon"
@@ -87,3 +92,5 @@
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
   </nav>
 </header>
+
+</div>
