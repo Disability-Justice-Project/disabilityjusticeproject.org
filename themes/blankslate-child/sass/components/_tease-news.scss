@@ -46,14 +46,19 @@
 
 
 .c-tease-news__read-more {
+  background-color: var(--color-gold);
   color: var(--color-black);
   display: inline-block;
   font-family: var(--font-primary);
-  margin-top: var(--size-200);
+  font-weight: bold;
+  padding-right: var(--size-050);
+  padding-left: var(--size-050);
+  text-decoration: none;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: var(--color-brick);
-    text-decoration: none;
+    background-color: var(--color-black);
+    color: var(--color-gold);
   }
 }
