@@ -118,6 +118,12 @@ textarea {
   line-height: 1.05; // https://twitter.com/simevidas/status/1312784025833136128
 }
 
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 sub {
   text-transform: lowercase;
