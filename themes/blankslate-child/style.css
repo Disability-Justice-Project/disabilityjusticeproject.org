@@ -1984,9 +1984,26 @@ a:focus .c-logo #logotype {
 }
 
 .c-tease-news__excerpt {
-	font-size: var(--font-size-200);
+	font-family: var(--font-tertiary);
+	font-size: var(--font-size-250);
 	margin-top: var(--size-250);
 	max-width: 72ch;
+}
+
+.c-tease-news__excerpt .more-link {
+	display: none;
+}
+
+.c-tease-news__read-more {
+	color: var(--color-black);
+	display: inline-block;
+	font-family: var(--font-primary);
+	margin-top: var(--size-200);
+}
+
+.c-tease-news__read-more:hover, .c-tease-news__read-more:focus {
+	color: var(--color-brick);
+	text-decoration: none;
 }
 
 .c-tease-project {
