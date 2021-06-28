@@ -17,7 +17,5 @@
 </footer>
   <?php wp_footer(); ?>
   <script src="/wp-content/themes/blankslate-child/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/inert-polyfill@0.2.5/inert-polyfill.min.js" integrity="sha256-Eyd34WbRWISxSokarNMU5jEfiZNTno6r8zrbV/CFHrE=" crossorigin="anonymous"></script>
-  <script src="/wp-content/themes/blankslate-child/js/aria.modal.min.js"></script>
 </body>
 </html>
