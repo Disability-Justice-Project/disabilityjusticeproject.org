@@ -2,6 +2,10 @@
   height: auto;
   width: 12rem;
 
+  .l-footer & {
+    width: 9rem;
+  }
+
   #logo {
     fill: var(--color-gold);
   }
