@@ -7,7 +7,16 @@
   get_header();
   $byline = get_field('byline');
   $audio_version = get_field('audio_version');
+  $hero = get_the_post_thumbnail_url();
 ?>
+
+<?php if ( ! empty($hero)) : ?>
+  <div class="u-dark-on-light">
+    <div class="l-landing__hero">
+      <?php the_post_thumbnail('full'); ?>
+    </div>
+  </div>
+<?php endif; ?>
 
 <main id="content" class="u-dark-on-light">
   <div class="l-landing">
