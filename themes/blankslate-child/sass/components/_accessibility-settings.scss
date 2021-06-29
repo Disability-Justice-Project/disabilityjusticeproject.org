@@ -40,7 +40,7 @@ $_toggle-icon-size: var(--size-500);
   display: initial;
   font-size: var(--font-size-200);
   font-weight: var(--type-weight-bold);
-  padding-bottom: var(--size-050);
+  padding-bottom: var(--size-100);
   pointer-events: none; // Allows click through to toggle modal button. SEE: https://github.com/scottaohara/accessible_modal_window/issues/24
   text-decoration: none;
 
