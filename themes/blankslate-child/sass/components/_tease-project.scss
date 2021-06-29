@@ -32,7 +32,7 @@
 
 .c-tease-project__title {
   font-size: var(--font-size-400);
-  line-height: var(--line-height-200);
+  line-height: var(--line-height-100);
   max-width: 65ch;
 }
 
@@ -85,8 +85,8 @@
   // }
 
   &[aria-pressed="true"] {
-    background: var(--color-gray-lightest) url('/wp-content/themes/blankslate-child/images/icon-close.svg') no-repeat center left -25%;
-    background-size: 50% 50%;
+    background: var(--color-gray-lightest) url('/wp-content/themes/blankslate-child/images/icon-close.svg') no-repeat center left -10%;
+    background-size: 30% 30%;
     border-color: var(--color-gray-lightest);
     color: var(--color-black);
   }

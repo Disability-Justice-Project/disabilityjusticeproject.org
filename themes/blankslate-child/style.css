@@ -1764,7 +1764,7 @@ table tfoot tr td {
 }
 
 .c-creator__name {
-	font-weight: var(--type-weight-regular);
+	font-weight: var(--type-weight-bold);
 	font-size: var(--size-250);
 }
 
@@ -2038,7 +2038,7 @@ a:focus .c-logo #logotype {
 	color: var(--color-black);
 	display: inline-block;
 	font-family: var(--font-primary);
-	font-weight: bold;
+	font-weight: var(--type-weight-bold);
 	padding-right: var(--size-050);
 	padding-left: var(--size-050);
 	text-decoration: none;
@@ -2086,7 +2086,7 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__title {
 	font-size: var(--font-size-400);
-	line-height: var(--line-height-200);
+	line-height: var(--line-height-100);
 	max-width: 65ch;
 }
 
@@ -2122,8 +2122,8 @@ a:focus .c-logo #logotype {
 }
 
 .c-tease-project__transcript[aria-pressed="true"] {
-	background: var(--color-gray-lightest) url("/wp-content/themes/blankslate-child/images/icon-close.svg") no-repeat center left -25%;
-	background-size: 50% 50%;
+	background: var(--color-gray-lightest) url("/wp-content/themes/blankslate-child/images/icon-close.svg") no-repeat center left -10%;
+	background-size: 30% 30%;
 	border-color: var(--color-gray-lightest);
 	color: var(--color-black);
 }
