@@ -1,15 +1,14 @@
 (function($) {
 
+  // Toggle accessibility settings modal
   var accessibilitySettingsToggle = $('#accessibility-settings-toggle');
   var accessibilitySettingsModal = $('#accessibility-settings-modal');
 
   accessibilitySettingsToggle.click(function(event) {
     if ( accessibilitySettingsModal.attr('hidden') ) {
       accessibilitySettingsModal.removeAttr('hidden');
-      console.log("modal open");
     } else {
       accessibilitySettingsModal.prop('hidden', true);
-      console.log("modal closed");
     }
     return false;
   });
@@ -33,6 +32,12 @@
       transcriptContent.hide();
       transcriptButton.focus();
     }
+    return false;
+  });
+
+  var accessibilitySettingsCloseButton = $('[data-modal-close-button]');
+  accessibilitySettingsCloseButton.click(function(event) {
+    accessibilitySettingsModal.prop('hidden', true);
     return false;
   });
 
