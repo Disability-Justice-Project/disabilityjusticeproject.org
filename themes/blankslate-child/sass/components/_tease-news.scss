@@ -36,7 +36,7 @@
 .c-tease-news__excerpt {
   font-family: var(--font-tertiary);
   font-size: var(--font-size-250);
-  margin-top: var(--size-250);
+  margin-top: var(--size-100);
   max-width: 72ch;
 
   .more-link {
@@ -50,6 +50,7 @@
   color: var(--color-black);
   display: inline-block;
   font-family: var(--font-primary);
+  font-size: var(--font-size-200);
   font-weight: var(--type-weight-bold);;
   padding-right: var(--size-050);
   padding-left: var(--size-050);
