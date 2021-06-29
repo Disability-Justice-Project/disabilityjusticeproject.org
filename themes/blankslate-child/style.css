@@ -1339,7 +1339,7 @@ table tfoot tr td {
 	padding: var(--size-600) var(--size-200) var(--size-400) var(--size-200);
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 30em) {
 	.l-tease-news {
 		display: grid;
 		grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -1363,7 +1363,13 @@ table tfoot tr td {
 	margin-top: var(--size-300);
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 50em) {
+	.l-tease-news__posts {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 80em) {
 	.l-tease-news__posts {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -2025,7 +2031,7 @@ a:focus .c-logo #logotype {
 .c-tease-news__excerpt {
 	font-family: var(--font-tertiary);
 	font-size: var(--font-size-250);
-	margin-top: var(--size-250);
+	margin-top: var(--size-100);
 	max-width: 72ch;
 }
 
@@ -2038,6 +2044,7 @@ a:focus .c-logo #logotype {
 	color: var(--color-black);
 	display: inline-block;
 	font-family: var(--font-primary);
+	font-size: var(--font-size-200);
 	font-weight: var(--type-weight-bold);
 	padding-right: var(--size-050);
 	padding-left: var(--size-050);
