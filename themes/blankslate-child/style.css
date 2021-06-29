@@ -2067,6 +2067,12 @@ a:focus .c-logo #logotype {
 	margin-bottom: var(--size-600);
 }
 
+@media (min-width: 50em) {
+	.c-tease-project:nth-of-type(n+3) .c-tease-project__video {
+		margin-left: var(--size-900);
+	}
+}
+
 @media (min-width: 70rem) {
 	.c-tease-project {
 		display: grid;
@@ -2165,10 +2171,10 @@ a:focus .c-logo #logotype {
 }
 
 .c-update-banner {
-	margin-left: var(--size-400);
+	margin-left: var(--size-200);
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 50em) {
 	.c-update-banner {
 		margin-left: var(--size-900);
 	}

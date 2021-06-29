@@ -1,8 +1,8 @@
 .c-update-banner {
-  margin-left: var(--size-400);
+  margin-left: var(--size-200);
 
-  @media (min-width: $breakpoint-medium) {
-    margin-left: var(--size-900);
+  @media (min-width: $breakpoint-500) {
+    margin-left: var(--size-900); // SEE: _tease-project.scss
   }
 }
 
