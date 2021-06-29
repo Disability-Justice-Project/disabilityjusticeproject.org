@@ -1,4 +1,12 @@
 .c-audio-player {
   height: var(--size-600);
-  margin-top: var(--size-300);
+  margin-top: var(--size-150);
+}
+
+
+.c-audio-player__title {
+
+  .c-content & {
+    margin-top: var(--size-200);
+  }
 }
