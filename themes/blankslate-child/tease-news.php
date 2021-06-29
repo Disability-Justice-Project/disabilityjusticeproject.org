@@ -5,16 +5,15 @@
 
 <div class="c-tease-news">
   <?php if ( ! empty($featured_image)) : ?>
-    <?php the_post_thumbnail('full', array('class' => 'c-tease-news__image')); ?>
+    <div onclick="location.href='<?php the_permalink(); ?>'">
+      <?php the_post_thumbnail('full', array('class' => 'c-tease-news__image')); ?>
+    </div>
   <?php endif; ?>
   <h3 class="c-tease-news__title">
     <a class="c-tease-news__link" href="<?php the_permalink(); ?>">
       <?php the_title(); ?>
     </a>
   </h3>
-  <p>
-    <?php echo $byline; ?>
-  </p>
   <div class="c-tease-news__excerpt">
     <?php the_excerpt(); ?>
     <p>
