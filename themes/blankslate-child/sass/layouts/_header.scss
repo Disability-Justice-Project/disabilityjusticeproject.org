@@ -1,5 +1,4 @@
 .l-header {
-  border-bottom: var(--border-thin) solid var(--color-gray-light);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -9,8 +8,9 @@
   padding-top: var(--size-150);
   padding-bottom: var(--size-200);
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-500) {
     align-items: end;
+    border-bottom: var(--border-thin) solid var(--color-gray-light);
     grid-template-columns: 1fr;
     grid-template-areas: "logo nav a11y";
     padding-right: var(--size-200);
@@ -29,7 +29,7 @@
   justify-self: end;
   margin-right: var(--size-200);
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-500) {
     margin-right: 0;
   }
 }
@@ -40,7 +40,7 @@
   grid-area: nav;
   margin-top: var(--size-300);
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-500) {
     border-top: none;
     margin-top: 0;
   }
