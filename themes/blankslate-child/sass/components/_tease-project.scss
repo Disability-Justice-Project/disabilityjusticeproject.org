@@ -3,6 +3,12 @@
   margin-top: var(--size-600);
   margin-bottom: var(--size-600);
 
+  &:nth-of-type(n+3) .c-tease-project__video {
+    @media (min-width: $breakpoint-500) {
+      margin-left: var(--size-900); // SEE: _update-banner.scss
+    }
+  }
+
   @media (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
