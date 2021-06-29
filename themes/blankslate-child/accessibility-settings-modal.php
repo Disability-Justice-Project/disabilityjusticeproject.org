@@ -1,7 +1,4 @@
-<div
-  id="accessibility-settings-modal"
-  data-modal
-  hidden>
+<div hidden id="accessibility-settings-modal">
   <div
     class="c-accessibility-modal"
     data-modal-document>

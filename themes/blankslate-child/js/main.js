@@ -1,5 +1,19 @@
 (function($) {
 
+  var accessibilitySettingsToggle = $('#accessibility-settings-toggle');
+  var accessibilitySettingsModal = $('#accessibility-settings-modal');
+
+  accessibilitySettingsToggle.click(function(event) {
+    if ( accessibilitySettingsModal.attr('hidden') ) {
+      accessibilitySettingsModal.removeAttr('hidden');
+      console.log("modal open");
+    } else {
+      accessibilitySettingsModal.prop('hidden', true);
+      console.log("modal closed");
+    }
+    return false;
+  });
+
   // Toggle transcripts
   var transcriptButtons = $('[data-transcript="button"]');
   var transcriptContent = $('[data-transcript="content"]').hide();
@@ -21,6 +35,5 @@
     }
     return false;
   });
-
 
 })(jQuery);
