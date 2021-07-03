@@ -1278,8 +1278,11 @@ table tfoot tr td {
 .l-landing__byline {
 	border-top: var(--border-thin) solid var(--color-gray-darkest);
 	color: var(--color-gray-darkest);
+	font-family: var(--font-primary);
 	font-size: var(--font-size-200);
+	font-weight: var(--type-weight-bold);
 	margin-top: var(--size-300);
+	padding-top: var(--size-100);
 	grid-column: 1 / 10;
 }
 
@@ -1734,6 +1737,19 @@ table tfoot tr td {
 .c-content ul,
 .c-content ol {
 	margin-left: 2ch;
+}
+
+.c-content__hero {
+	border-top: none;
+	margin-top: 0;
+}
+
+.c-content__hero figcaption {
+	margin-top: var(--size-150);
+}
+
+.c-content__hero figcaption:empty {
+	display: none;
 }
 
 .c-content__topic {

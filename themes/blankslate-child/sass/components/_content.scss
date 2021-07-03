@@ -36,6 +36,20 @@
 }
 
 
+.c-content__hero {
+  border-top: none;
+  margin-top: 0;
+
+  figcaption {
+    margin-top: var(--size-150);
+  }
+
+  figcaption:empty {
+    display: none;
+  }
+}
+
+
 .c-content__topic {
   color: var(--color-brick);
   letter-spacing: var(--tracking-open);

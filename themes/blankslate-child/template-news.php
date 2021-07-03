@@ -15,11 +15,19 @@
 <main id="content" class="u-dark-on-light">
   <div class="l-landing">
 
-    <div class="l-landing__hero">
-      <?php if ( ! empty($hero)) : ?>
-        <?php the_post_thumbnail('full'); ?>
-      <?php endif; ?>
-    </div>
+    <?php if ( ! empty($hero)) : ?>
+      <div class="l-landing__hero">
+        <figure
+          class="c-content__hero"
+          role="figure"
+          aria-label="<?php the_post_thumbnail_caption() ?>">
+          <?php the_post_thumbnail('full'); ?>
+          <figcaption>
+            <?php the_post_thumbnail_caption() ?>
+          </figcaption>
+        </figure>
+      </div>
+    <?php endif; ?>
 
     <p class="l-landing__topic c-content__topic">
       News
