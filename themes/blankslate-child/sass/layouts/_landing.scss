@@ -63,8 +63,11 @@
 .l-landing__byline {
   border-top: var(--border-thin) solid var(--color-gray-darkest);
   color: var(--color-gray-darkest);
+  font-family: var(--font-primary);
   font-size: var(--font-size-200);
+  font-weight: var(--type-weight-bold);
   margin-top: var(--size-300);
+  padding-top: var(--size-100);
   grid-column: 1 / 10;
 
   @media (min-width: $breakpoint-700) {
