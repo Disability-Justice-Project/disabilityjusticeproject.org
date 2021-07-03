@@ -10,27 +10,25 @@
 <main id="content">
   <div class="l-landing">
 
-    <div class="l-landing__title">
-      <h1 id="title" class="l-landing__heading c-heading__large">
-        <?php the_title(); ?>
-      </h1>
-    </div>
+    <div class="l-landing__hero"></div>
 
-    <div class="l-landing__person">
-      <?php
-        $args = array(
-          'category_name' => 'filmmaker',
-          'orderby'       => 'title',
-          'order'         => 'ASC',
-          'no_found_rows' => true
-        );
-        $query = new WP_Query($args);
+    <h1 id="title" class="l-landing__heading c-heading__large">
+      <?php the_title(); ?>
+    </h1>
 
-        while($query -> have_posts()) : $query -> the_post(); ?>
-          <?php get_template_part('filmmaker'); ?>
-      <?php endwhile; ?>
+    <?php
+      $args = array(
+        'category_name' => 'filmmaker',
+        'orderby'       => 'title',
+        'order'         => 'ASC',
+        'no_found_rows' => true
+      );
+      $query = new WP_Query($args);
 
-    </div>
+      while($query -> have_posts()) : $query -> the_post(); ?>
+        <?php get_template_part('filmmaker'); ?>
+    <?php endwhile; ?>
+
   </div>
 </main>
 
