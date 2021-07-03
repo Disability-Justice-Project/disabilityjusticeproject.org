@@ -8,7 +8,7 @@
   padding-top: var(--size-150);
   padding-bottom: var(--size-200);
 
-  @media (min-width: $breakpoint-500) {
+  @media (min-width: $breakpoint-600) {
     align-items: end;
     border-bottom: var(--border-thin) solid var(--color-gray-light);
     grid-template-columns: 1fr;
@@ -29,7 +29,7 @@
   justify-self: end;
   margin-right: var(--size-200);
 
-  @media (min-width: $breakpoint-500) {
+  @media (min-width: $breakpoint-600) {
     margin-right: 0;
   }
 }
@@ -40,7 +40,7 @@
   grid-area: nav;
   margin-top: var(--size-300);
 
-  @media (min-width: $breakpoint-500) {
+  @media (min-width: $breakpoint-600) {
     border-top: none;
     margin-top: 0;
   }
