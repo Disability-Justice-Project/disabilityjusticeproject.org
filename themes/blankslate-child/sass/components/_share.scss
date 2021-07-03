@@ -1,8 +1,11 @@
+$_share-icon-size: var(--size-550);
+
+
 .c-share__facebook,
 .c-share__twitter,
-.c-share__email {
-  height: 3rem;
-  width: 3rem;
+.c-share__whatsapp {
+  height: $_share-icon-size;
+  width: $_share-icon-size;
 
   &:hover,
   &:focus {
@@ -24,22 +27,22 @@
 
 .c-share__facebook {
   .c-share__icon {
-    height: 1.8rem;
-    margin-top: 0.25rem;
+    height: var(--size-250);
+    margin-top: var(--size-050);
   }
 }
 
 
 .c-share__twitter {
   .c-share__icon {
-    height: 1.75rem;
+    height: var(--size-250);
+    margin-top: var(--size-050);
   }
 }
 
 
-.c-share__email {
+.c-share__whatsapp {
   .c-share__icon {
-    height: 2rem;
-    margin-top: 0.2rem;
+    height: var(--size-250);
   }
 }

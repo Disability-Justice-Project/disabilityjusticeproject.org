@@ -1958,16 +1958,16 @@ a:focus .c-logo #logotype {
 
 .c-share__facebook,
 .c-share__twitter,
-.c-share__email {
-	height: 3rem;
-	width: 3rem;
+.c-share__whatsapp {
+	height: var(--size-550);
+	width: var(--size-550);
 }
 
 .c-share__facebook:hover .c-share__icon, .c-share__facebook:focus .c-share__icon,
 .c-share__twitter:hover .c-share__icon,
 .c-share__twitter:focus .c-share__icon,
-.c-share__email:hover .c-share__icon,
-.c-share__email:focus .c-share__icon {
+.c-share__whatsapp:hover .c-share__icon,
+.c-share__whatsapp:focus .c-share__icon {
 	fill: var(--color-black);
 }
 
@@ -1981,17 +1981,17 @@ a:focus .c-logo #logotype {
 }
 
 .c-share__facebook .c-share__icon {
-	height: 1.8rem;
-	margin-top: 0.25rem;
+	height: var(--size-250);
+	margin-top: var(--size-050);
 }
 
 .c-share__twitter .c-share__icon {
-	height: 1.75rem;
+	height: var(--size-250);
+	margin-top: var(--size-050);
 }
 
-.c-share__email .c-share__icon {
-	height: 2rem;
-	margin-top: 0.2rem;
+.c-share__whatsapp .c-share__icon {
+	height: var(--size-250);
 }
 
 .c-tease-news {
@@ -2122,7 +2122,6 @@ a:focus .c-logo #logotype {
 .c-tease-project__transcript {
 	font-weight: var(--type-weight-bold);
 	flex-grow: 1;
-	margin-right: var(--size-200);
 }
 
 .c-tease-project__transcript[aria-pressed="true"] {
