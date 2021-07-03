@@ -5,8 +5,8 @@
 
 <div class="c-tease-news">
   <?php if ( ! empty($featured_image)) : ?>
-    <div onclick="location.href='<?php the_permalink(); ?>'">
-      <?php the_post_thumbnail('full', array('class' => 'c-tease-news__image')); ?>
+    <div class="u-effect-gold-screen" onclick="location.href='<?php the_permalink(); ?>'">
+      <?php the_post_thumbnail('full', array('class' => 'u-effect-gold-screen c-tease-news__image')); ?>
     </div>
   <?php endif; ?>
   <h3 class="c-tease-news__title">
