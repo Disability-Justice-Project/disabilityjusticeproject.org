@@ -74,6 +74,7 @@
 .c-tease-project__transcript {
   font-weight: var(--type-weight-bold);
   flex-grow: 1;
+  min-height: var(--size-550); // SEE: `$_share-icon-size`
 
   // &::after {
   //   background-color: var(--color-gray-light);

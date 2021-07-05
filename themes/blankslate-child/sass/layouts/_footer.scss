@@ -2,7 +2,7 @@
   border-top: var(--border-thin) solid var(--color-gray-light);
   display: flex;
   flex-direction: column;
-  padding: var(--size-500) var(--size-400) 0 0;
+  padding: var(--size-500) var(--size-400) var(--size-400) 0;
   justify-content: space-between;
 
   @media (min-width: $breakpoint-medium) {
