@@ -26,7 +26,7 @@
 
     <div class="c-creator">
       <h3 class="c-creator__name">
-        <?php echo $temp_filmmaker_name; ?>
+        Filmmaker: <?php echo $temp_filmmaker_name; ?>
       </h3>
       <div class="c-creator__bio">
         <?php if ( ! empty($temp_filmmaker_photo)) : ?>
