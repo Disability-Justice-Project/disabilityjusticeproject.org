@@ -1781,13 +1781,14 @@ img.u-effect-gold-screen:hover {
 
 .c-content--project p:first-of-type {
 	font-size: var(--font-size-300);
+	margin-bottom: var(--size-350);
 }
 
 .c-creator {
 	margin-top: var(--size-300);
 }
 
-.c-creator__bio {
+.c-creator__info {
 	display: flex;
 	margin-top: var(--size-050);
 }
@@ -1812,6 +1813,7 @@ img.u-effect-gold-screen:hover {
 
 .c-creator__read-more {
 	color: var(--color-gold);
+	display: inline;
 	font-weight: var(--type-weight-bold);
 	text-transform: uppercase;
 }

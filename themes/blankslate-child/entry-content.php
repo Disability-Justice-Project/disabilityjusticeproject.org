@@ -1,8 +1,6 @@
 <?php
+  $associated_filmmaker = get_field('associated_filmmaker');
   $transcript = get_field('transcript');
-  $temp_filmmaker_name = get_field('temp_filmmaker_name');
-  $temp_filmmaker_photo = get_field('temp_filmmaker_photo');
-  $temp_filmmaker_bio = get_field('temp_filmmaker_bio');
 ?>
 
   <div class="l-landing__byline">
@@ -38,18 +36,16 @@
 
   </div>
 
-  <?php if ( ! empty($temp_filmmaker_photo)) : ?>
-    <img
-      alt="Photo of <?php echo $temp_filmmaker_name; ?>."
-      class="c-filmmaker__photo"
-      src="<?php echo $temp_filmmaker_photo['url']; ?>" />
-  <?php endif; ?>
+  <img
+    alt="Photo of <?php echo esc_html( $associated_filmmaker->post_title ); ?>."
+    class="c-filmmaker__photo"
+    src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
   <div class="c-filmmaker__content">
     <h3 class="c-filmmaker__name">
-      <?php echo $temp_filmmaker_name; ?>
+      <?php echo esc_html( $associated_filmmaker->post_title ); ?>
     </h3>
     <div class="c-filmmaker__bio">
-      <?php echo $temp_filmmaker_bio; ?>
+      <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>
     </div>
   </div>
 
