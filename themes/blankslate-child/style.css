@@ -1716,8 +1716,52 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-audio-player {
-	height: var(--size-600);
-	margin-top: var(--size-150);
+	align-items: center;
+	border: var(--border-thin) solid var(--color-gray-darkest);
+	display: flex;
+	gap: var(--size-200);
+	margin-top: var(--size-200);
+	margin-bottom: var(--size-400);
+	padding: var(--size-150) var(--size-250);
+}
+
+.c-audio-player__label,
+.c-audio-player__timestamp {
+	color: var(--color-black);
+	font-family: var(--font-primary) !important;
+	font-size: var(--font-size-200);
+	line-height: var(--line-height-100);
+	margin-top: 0 !important;
+}
+
+.c-audio-player__label {
+	font-weight: var(--type-weight-bold);
+	letter-spacing: var(--tracking-open);
+	text-transform: uppercase;
+}
+
+.c-audio-player__button {
+	align-items: center;
+	background-color: var(--color-brick);
+	border-radius: 100%;
+	border: none;
+	display: flex;
+	justify-content: center;
+	height: var(--size-450);
+	width: var(--size-450);
+}
+
+.c-audio-player__icon {
+	height: calc(var(--size-450) / 2);
+	margin-left: 0.15rem;
+	width: calc(var(--size-450) / 2);
+}
+
+.c-audio-player__track {
+	background-color: var(--color-gray-light);
+	border-radius: calc(var(--size-100) / 2);
+	flex: 1;
+	height: var(--size-100);
 }
 
 .c-content .c-audio-player__title {
