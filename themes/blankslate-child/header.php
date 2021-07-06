@@ -48,15 +48,19 @@
     the_custom_logo();
     if ( is_front_page() && is_home() ) :
     ?>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <?php get_template_part('logo');?>
-      </a>
+      <div>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <?php get_template_part('logo');?>
+        </a>
+      </div>
     <?php
     else :
     ?>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <?php get_template_part('logo');?>
-      </a>
+      <div>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <?php get_template_part('logo');?>
+        </a>
+      </div>
     <?php
   endif; ?>
 

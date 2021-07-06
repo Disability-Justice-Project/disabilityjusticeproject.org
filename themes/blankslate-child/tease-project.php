@@ -1,9 +1,8 @@
 <?php
-  $video_id = get_field('video_id');
+  $associated_filmmaker = get_field('associated_filmmaker');
+  $page_slug = $post->post_name;
   $transcript = get_field('transcript');
-  $temp_filmmaker_name = get_field('temp_filmmaker_name');
-  $temp_filmmaker_photo = get_field('temp_filmmaker_photo');
-  $temp_filmmaker_bio = get_field('temp_filmmaker_bio');
+  $video_id = get_field('video_id');
 ?>
 
 <div class="c-tease-project">
@@ -21,22 +20,23 @@
   </h2>
 
     <p class="c-tease-project__excerpt">
-      <?php the_excerpt(); ?>
+      <?php echo excerpt(35); ?>
     </p>
 
     <div class="c-creator">
       <h3 class="c-creator__name">
-        Filmmaker: <?php echo $temp_filmmaker_name; ?>
+        Filmmaker: <?php echo esc_html( $associated_filmmaker->post_title ); ?>
       </h3>
-      <div class="c-creator__bio">
-        <?php if ( ! empty($temp_filmmaker_photo)) : ?>
-          <img
-            alt="Photo of <?php echo $temp_filmmaker_name; ?>."
-            class="c-creator__photo"
-            src="<?php echo $temp_filmmaker_photo['url']; ?>">
-        <?php endif; ?>
+      <div class="c-creator__info">
+        <img
+          alt="Photo of <?php echo esc_html( $associated_filmmaker->post_title ); ?>."
+          class="c-creator__photo"
+          src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
         <div class="c-creator__bio">
-          <?php echo $temp_filmmaker_bio; ?>
+          <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>&nbsp;
+          <a class="c-creator__read-more" href="/filmmakers/#<?php echo sanitize_title( $associated_filmmaker->post_title ) ?>">
+            Read&nbsp;more<span class="screen-reader-text"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
+          </a>
         </div>
       </div>
     </div>
