@@ -10,8 +10,6 @@
   $hero = get_the_post_thumbnail_url();
 ?>
 
-
-
 <main id="content" class="u-dark-on-light">
   <div class="l-landing">
 
@@ -55,12 +53,7 @@
           <h2 class="c-audio-player__title">
             Listen now
           </h2>
-          <audio
-            class="c-audio-player"
-            controls
-            src="<?php echo $audio_version['url']; ?>">
-              Your browser does not support the <code>audio</code> element. <a download href="<?php echo $audio_version['url']; ?>">Download the audio</a> instead.
-          </audio>
+          <?php get_template_part('audio-player'); ?>
         <?php endif; ?>
         <?php the_content(); ?>
       </div>
