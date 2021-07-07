@@ -1,8 +1,15 @@
-<div hidden id="accessibility-settings-modal">
-  <div
+<div
+  hidden
+  id="accessibility-settings-modal">
+  <section
+    aria-describedby="accessibility-settings-modal-title"
     class="c-accessibility-modal"
-    data-modal-document>
-    <h1 class="screen-reader-text">
+    role="dialog"
+    aria-modal="false">
+    <h1
+      id="accessibility-settings-modal-title"
+      class="screen-reader-text"
+      tabindex="-1">
       Accessibility settings
     </h1>
     <div class="c-accessibility-modal__wrapper">
@@ -104,5 +111,5 @@
       <button data-modal-close-button class="c-accessibility-modal__control" type="button">Restore default</button>
       <button data-modal-close-button class="c-accessibility-modal__control c-accessibility-modal__control--primary" type="button">Save</button>
     </div>
-  </div>
+  </section>
 </div>

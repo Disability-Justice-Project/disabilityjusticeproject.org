@@ -118,9 +118,4 @@
   padding-right: var(--size-200);
   padding-left: var(--size-200);
   max-height: 70vh;
-
-  &:focus {
-    border-right: var(--border-thick) solid var(--color-gray-dark);
-    outline: var(--border-thick) solid transparent;
-  }
 }

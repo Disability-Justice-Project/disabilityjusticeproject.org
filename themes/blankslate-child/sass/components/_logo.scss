@@ -15,9 +15,13 @@
   }
 
   a:hover &,
-  a:focus &, {
+  a:focus & {
     #logotype {
       fill: var(--color-gold);
     }
+  }
+
+  &:active {
+    fill: var(--color-white);
   }
 }

@@ -66,6 +66,7 @@
 
   <div class="l-header__accessibility-settings">
     <button
+      aria-expanded="false"
       id="accessibility-settings-toggle"
       class="c-accessibility-settings__toggle"
       type="button">
