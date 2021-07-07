@@ -522,7 +522,7 @@ body {
 }
 
 [hidden] {
-	display: none !important;
+	display: none;
 }
 
 [tabindex="-1"]:focus {
@@ -1908,6 +1908,10 @@ a:focus .c-logo #logotype {
 	fill: var(--color-gold);
 }
 
+.c-logo:active {
+	fill: var(--color-white);
+}
+
 .c-nav-primary .menu {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -1952,16 +1956,32 @@ a:focus .c-logo #logotype {
 	border-bottom-color: var(--color-gold);
 }
 
+.c-nav-primary li:nth-of-type(1) a:hover, .c-nav-primary li:nth-of-type(1) a:focus {
+	border-bottom-color: var(--color-white);
+}
+
 .c-nav-primary li:nth-of-type(2) a {
 	border-bottom-color: var(--color-brick);
+}
+
+.c-nav-primary li:nth-of-type(2) a:hover, .c-nav-primary li:nth-of-type(2) a:focus {
+	border-bottom-color: var(--color-white);
 }
 
 .c-nav-primary li:nth-of-type(3) a {
 	border-bottom-color: var(--color-dusk);
 }
 
+.c-nav-primary li:nth-of-type(3) a:hover, .c-nav-primary li:nth-of-type(3) a:focus {
+	border-bottom-color: var(--color-white);
+}
+
 .c-nav-primary li:nth-of-type(4) a {
 	border-bottom-color: var(--color-olive);
+}
+
+.c-nav-primary li:nth-of-type(4) a:hover, .c-nav-primary li:nth-of-type(4) a:focus {
+	border-bottom-color: var(--color-white);
 }
 
 .c-filmmaker__photo,
@@ -2212,11 +2232,6 @@ a:focus .c-logo #logotype {
 	padding-right: var(--size-200);
 	padding-left: var(--size-200);
 	max-height: 70vh;
-}
-
-.c-tease-project__accordion-content:focus {
-	border-right: var(--border-thick) solid var(--color-gray-dark);
-	outline: var(--border-thick) solid transparent;
 }
 
 .c-update-banner {
