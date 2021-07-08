@@ -64,7 +64,7 @@
   </div>
   <div class="l-tease-news">
     <h2 class="l-tease-news__title">
-      News <span class="u-color-text-gray-brick">From the Frontlines of Disability Justice</span>
+      News <span class="u-color-text-gray-brick">From the Global Frontlines of Disability Justice</span>
     </h2>
     <div class="l-tease-news__posts">
       <?php
