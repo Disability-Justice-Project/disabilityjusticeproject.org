@@ -58,10 +58,16 @@
 
 
 .c-content--project {
-  margin-bottom: var(--font-size-900);
+  margin-bottom: var(--size-900);
 
   p:first-of-type {
     font-size: var(--font-size-300);
     margin-bottom: var(--size-350);
   }
+}
+
+
+.c-content--behind-the-scenes {
+  font-family: var(--font-tertiary);
+  margin-bottom: var(--size-900);
 }
