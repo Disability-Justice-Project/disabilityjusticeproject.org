@@ -12,10 +12,10 @@
   </div>
 
   <p class="l-landing__topic c-content__topic">
-      Film
-    </p>
-    <h1 id="title" class="l-landing__heading c-heading__large">
-      <?php the_title(); ?>
-    </h1>
+    Film
+  </p>
+  <h1 id="title" class="l-landing__heading c-heading__large">
+    <?php the_title(); ?>
+  </h1>
 
   <?php get_template_part( 'entry', ( is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() ? 'summary' : 'content' ) ); ?>

@@ -1820,12 +1820,17 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-content--project {
-	margin-bottom: var(--font-size-900);
+	margin-bottom: var(--size-900);
 }
 
 .c-content--project p:first-of-type {
 	font-size: var(--font-size-300);
 	margin-bottom: var(--size-350);
+}
+
+.c-content--behind-the-scenes {
+	font-family: var(--font-tertiary);
+	margin-bottom: var(--size-900);
 }
 
 .c-creator {
@@ -1868,10 +1873,12 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-heading__large {
+	font-family: var(--font-primary);
 	font-size: var(--font-size-700);
 }
 
 .c-heading__medium {
+	font-family: var(--font-primary);
 	font-size: var(--font-size-450);
 }
 

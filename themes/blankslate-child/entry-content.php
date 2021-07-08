@@ -1,5 +1,6 @@
 <?php
   $associated_filmmaker = get_field('associated_filmmaker');
+  $behind_the_scenes = get_field('behind_the_scenes');
   $transcript = get_field('transcript');
 ?>
 
@@ -24,16 +25,24 @@
     </div>
 
     <div class="c-tease-project__accordion-wrapper">
-    <section
-      aria-hidden="true"
-      aria-label="Transcript for <?php the_title(); ?>"
-      class="c-tease-project__accordion-content u-flow"
-      data-transcript="content"
-      tabindex="0">
+      <section
+        aria-hidden="true"
+        aria-label="Transcript for <?php the_title(); ?>"
+        class="c-tease-project__accordion-content u-flow"
+        data-transcript="content"
+        tabindex="0">
       <?php echo $transcript; ?>
-    </section>
-  </div>
+      </section>
+    </div>
 
+    <?php if ( ! empty($behind_the_scenes)) : ?>
+      <div class="c-content c-content--behind-the-scenes">
+        <h1 class="c-heading__large">
+          Behind the scenes
+        </h1>
+        <?php echo $behind_the_scenes; ?>
+      </div>
+    <?php endif; ?>
   </div>
 
   <img
