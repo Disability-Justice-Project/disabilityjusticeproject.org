@@ -49,7 +49,7 @@
     alt="Photo of <?php echo esc_html( $associated_filmmaker->post_title ); ?>."
     class="c-filmmaker__photo"
     src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
-  <div class="c-filmmaker__content">
+  <div id="filmmaker" class="c-filmmaker__content">
     <h3 class="c-filmmaker__name">
       <?php echo esc_html( $associated_filmmaker->post_title ); ?>
     </h3>

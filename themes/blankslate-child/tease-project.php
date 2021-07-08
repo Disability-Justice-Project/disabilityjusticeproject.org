@@ -13,11 +13,11 @@
   </div>
   <div class="c-tease-project__content">
 
-  <h2 class="c-tease-project__title">
-    <a class="c-tease-project__link" href="<?php the_permalink(); ?>">
-      <?php the_title(); ?>
-    </a>
-  </h2>
+    <h2 class="c-tease-project__title">
+      <a class="c-tease-project__link" href="<?php the_permalink(); ?>">
+        <?php the_title(); ?>
+      </a>
+    </h2>
 
     <p class="c-tease-project__excerpt">
       <?php echo excerpt(35); ?>
@@ -34,7 +34,7 @@
           src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
         <div class="c-creator__bio">
           <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>&nbsp;
-          <a class="c-creator__read-more" href="/filmmakers/#<?php echo sanitize_title( $associated_filmmaker->post_title ) ?>">
+          <a class="c-creator__read-more" href="<?php the_permalink(); ?>#filmmaker">
             Read&nbsp;more<span class="screen-reader-text"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
           </a>
         </div>
