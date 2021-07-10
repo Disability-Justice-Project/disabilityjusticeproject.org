@@ -1,0 +1,15 @@
+@mixin homepage-inset($property, $location) {
+  @if ($location == "left") {
+    #{$property}-left: var(--size-900);
+  }
+  @else if ($location == "right") {
+    #{$property}-right: var(--size-900);
+  }
+  @else if ($location == "both") {
+    #{$property}-left: var(--size-900);
+    #{$property}-right: var(--size-900);
+  }
+  @else {
+    @error "Please use an argument of `left`, `right`, or `both`."
+  }
+}

@@ -5,11 +5,11 @@
 
   &:nth-of-type(n+3) .c-tease-project__video {
     @media (min-width: $breakpoint-500) {
-      margin-left: var(--size-900); // SEE: _update-banner.scss
+      @include homepage-inset("margin", "left");
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
@@ -17,7 +17,7 @@
 
 
 .c-tease-project__video {
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     margin-bottom: var(--size-200);
   }
 }
@@ -27,10 +27,10 @@
   margin-right: var(--size-300);
   margin-left: var(--size-300);
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     align-self: end;
     margin: 0 0 var(--size-200) 0;
-    padding-right: 6rem;
+    padding-right: var(--size-950);
     padding-left: var(--font-size-600);
   }
 }

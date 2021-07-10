@@ -2,10 +2,10 @@
   border-top: var(--border-thin) solid var(--color-gray-light);
   display: flex;
   flex-direction: column;
-  padding: var(--size-500) var(--size-400) var(--size-400) 0;
+  padding: var(--size-500) 0 var(--size-400) 0;
   justify-content: space-between;
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     align-items: flex-end;
     flex-direction: row;
   }
