@@ -5,12 +5,16 @@
 
   @media (min-width: $breakpoint-300) {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      '. title .'
-      '. news  .';
-    padding: var(--size-800) 0 5rem 0;
+      'title'
+      'news';
+    padding: var(--size-800) var(--size-200) 5rem var(--size-200);
+  }
+
+  @media (min-width: $breakpoint-500) {
+    @include homepage-inset("padding", "both");
   }
 }
 

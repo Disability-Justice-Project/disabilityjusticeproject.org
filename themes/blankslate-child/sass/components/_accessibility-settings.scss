@@ -17,7 +17,7 @@ $_toggle-icon-size: var(--size-500);
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     flex-direction: row;
   }
 }
@@ -29,7 +29,7 @@ $_toggle-icon-size: var(--size-500);
   pointer-events: none; // Allows click through to toggle modal button. SEE: https://github.com/scottaohara/accessible_modal_window/issues/24
   width: $_toggle-icon-size;
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     margin-right: var(--size-100);
   }
 }
@@ -44,7 +44,7 @@ $_toggle-icon-size: var(--size-500);
   pointer-events: none; // Allows click through to toggle modal button. SEE: https://github.com/scottaohara/accessible_modal_window/issues/24
   text-decoration: none;
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
   }
 }
 
@@ -52,7 +52,7 @@ $_toggle-icon-size: var(--size-500);
 .c-accessibility-settings__phrase-switch {
   display: none;
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     display: initial;
   }
 }

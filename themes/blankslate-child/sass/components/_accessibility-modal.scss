@@ -21,7 +21,7 @@ $_modal-icon-size: var(--size-600);
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-700) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

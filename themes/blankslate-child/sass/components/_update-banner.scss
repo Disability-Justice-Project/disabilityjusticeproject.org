@@ -2,7 +2,7 @@
   margin-left: var(--size-200);
 
   @media (min-width: $breakpoint-500) {
-    margin-left: var(--size-900); // SEE: _tease-project.scss
+    @include homepage-inset("margin", "left");
   }
 }
 
