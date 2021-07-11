@@ -1,0 +1,11 @@
+@mixin read-more-link() {
+  font-weight: var(--type-weight-bold);
+  padding-right: var(--size-050);
+  padding-left: var(--size-050);
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
