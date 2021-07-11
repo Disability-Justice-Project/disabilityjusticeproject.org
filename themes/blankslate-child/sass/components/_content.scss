@@ -38,9 +38,10 @@
 
 .c-content__hero {
   border-top: none;
-  margin-top: 0;
+  margin-top: var(--size-450);
 
   figcaption {
+    color: var(--color-gray-dark);
     margin-top: var(--size-150);
   }
 
