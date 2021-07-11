@@ -19,6 +19,10 @@
       </a>
     </h2>
 
+    <h3 class="c-creator__about-this-video">
+      About this video
+    </h3>
+
     <p class="c-tease-project__excerpt">
       <?php echo excerpt(35); ?>
     </p>
@@ -32,12 +36,12 @@
           alt="Photo of <?php echo esc_html( $associated_filmmaker->post_title ); ?>."
           class="c-creator__photo"
           src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
-        <div class="c-creator__bio">
+        <p class="c-creator__bio">
           <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>&nbsp;
           <a class="c-creator__read-more" href="<?php the_permalink(); ?>#filmmaker">
             Read&nbsp;more<span class="screen-reader-text"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
           </a>
-        </div>
+        </p>
       </div>
     </div>
 
