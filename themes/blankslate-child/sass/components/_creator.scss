@@ -23,6 +23,14 @@
 }
 
 
+.c-creator__about-this-video {
+  color: var(--color-brick);
+  font-weight: var(--type-weight-bold);
+  font-size: var(--size-250);
+  margin-top: var(--size-250);
+}
+
+
 .c-creator__bio {
   font-size: var(--font-size-150);
   margin-left: var(--size-200);
@@ -31,14 +39,15 @@
 
 
 .c-creator__read-more {
+  @include read-more-link();
+
   color: var(--color-gold);
   display: inline;
-  font-weight: var(--type-weight-bold);
-  text-transform: uppercase;
+  text-underline-offset: 0.3rem;
 
   &:hover,
   &:focus {
-    color: var(--color-gold);
-    text-decoration: none;
+    background-color: var(--color-gold);
+    color: var(--color-black);
   }
 }
