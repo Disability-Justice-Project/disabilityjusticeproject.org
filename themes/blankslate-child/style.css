@@ -465,6 +465,46 @@ figure {
 	--type-weight-bold: 600;
 }
 
+:root .js-font-size-large {
+	--font-size-100: 1rem;
+	--font-size-150: 1.125rem;
+	--font-size-200: 1.25rem;
+	--font-size-250: 1.5625rem;
+	--font-size-300: 1.875rem;
+	--font-size-350: 2.1875rem;
+	--font-size-400: 2.5rem;
+	--font-size-450: 2.8125rem;
+	--font-size-500: 3.125rem;
+	--font-size-550: 3.4375rem;
+	--font-size-600: 3.75rem;
+	--font-size-650: 4.0625rem;
+	--font-size-700: 4.375rem;
+	--font-size-750: 4.6875rem;
+	--font-size-800: 5rem;
+	--font-size-850: 5.3125rem;
+	--font-size-900: 5.625rem;
+}
+
+:root .js-font-size-extra-large {
+	--font-size-100: 1.12rem;
+	--font-size-150: 1.26rem;
+	--font-size-200: 1.4rem;
+	--font-size-250: 1.75rem;
+	--font-size-300: 2.1rem;
+	--font-size-350: 2.45rem;
+	--font-size-400: 2.8rem;
+	--font-size-450: 3.15rem;
+	--font-size-500: 3.5rem;
+	--font-size-550: 3.85rem;
+	--font-size-600: 4.2rem;
+	--font-size-650: 4.55rem;
+	--font-size-700: 4.9rem;
+	--font-size-750: 5.25rem;
+	--font-size-800: 5.6rem;
+	--font-size-850: 5.95rem;
+	--font-size-900: 6.3rem;
+}
+
 html {
 	background-color: var(--color-black);
 	margin: 0;
@@ -513,6 +553,14 @@ body {
 	font-size: 125%;
 	line-height: var(--line-height-500);
 	min-height: 100%;
+}
+
+body.js-font-size-large {
+	font-size: 135%;
+}
+
+body.js-font-size-extra-large {
+	font-size: 150%;
 }
 
 [aria-disabled],
