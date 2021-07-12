@@ -98,6 +98,10 @@
     $(document.body)
       .removeClass('js-font-size-default js-font-size-large js-font-size-extra-large js-line-height-default js-line-height-more js-line-height-max js-contrast-default js-contrast-yellow js-contrast-white js-contrast-blue js-no-highlight js-highlighted')
       .addClass('js-font-size-default js-line-height-default js-contrast-default js-no-highlight');
+    fontSizeDefault.prop("checked", true);
+    lineHeightDefault.prop("checked", true);
+    contrastDefault.prop("checked", true);
+    noHighlight.prop("checked", true);
     return false;
   });
 
