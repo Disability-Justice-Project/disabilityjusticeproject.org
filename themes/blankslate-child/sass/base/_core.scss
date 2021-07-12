@@ -47,4 +47,12 @@ body {
   font-size: 125%; // 20px on most browsers
   line-height: var(--line-height-500);
   min-height: 100%;
+
+  &.js-font-size-large {
+    font-size: 135%;
+  }
+
+  &.js-font-size-extra-large {
+    font-size: 150%;
+  }
 }
