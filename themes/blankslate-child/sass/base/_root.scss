@@ -65,4 +65,44 @@
   --tracking-closed: -0.05em;
   --type-weight-regular: 400;
   --type-weight-bold: 600;
+
+  .js-font-size-large {
+    --font-size-100: #{0.8rem * 1.25};
+    --font-size-150: #{0.9rem * 1.25};
+    --font-size-200: #{1rem * 1.25};
+    --font-size-250: #{1.25rem * 1.25};
+    --font-size-300: #{1.5rem * 1.25};
+    --font-size-350: #{1.75rem * 1.25};
+    --font-size-400: #{2rem * 1.25};
+    --font-size-450: #{2.25rem * 1.25};
+    --font-size-500: #{2.5rem * 1.25};
+    --font-size-550: #{2.75rem * 1.25};
+    --font-size-600: #{3rem * 1.25};
+    --font-size-650: #{3.25rem * 1.25};
+    --font-size-700: #{3.5rem * 1.25};
+    --font-size-750: #{3.75rem * 1.25};
+    --font-size-800: #{4rem * 1.25};
+    --font-size-850: #{4.25rem * 1.25};
+    --font-size-900: #{4.5rem * 1.25};
+  }
+
+  .js-font-size-extra-large {
+    --font-size-100: #{0.8rem * 1.4};
+    --font-size-150: #{0.9rem * 1.4};
+    --font-size-200: #{1rem * 1.4};
+    --font-size-250: #{1.25rem * 1.4};
+    --font-size-300: #{1.5rem * 1.4};
+    --font-size-350: #{1.75rem * 1.4};
+    --font-size-400: #{2rem * 1.4};
+    --font-size-450: #{2.25rem * 1.4};
+    --font-size-500: #{2.5rem * 1.4};
+    --font-size-550: #{2.75rem * 1.4};
+    --font-size-600: #{3rem * 1.4};
+    --font-size-650: #{3.25rem * 1.4};
+    --font-size-700: #{3.5rem * 1.4};
+    --font-size-750: #{3.75rem * 1.4};
+    --font-size-800: #{4rem * 1.4};
+    --font-size-850: #{4.25rem * 1.4};
+    --font-size-900: #{4.5rem * 1.4};
+  }
 }
