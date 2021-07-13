@@ -3,16 +3,21 @@
   margin-top: var(--size-600);
   margin-bottom: var(--size-600);
 
-  &:nth-of-type(n+3) .c-tease-project__video {
+  @media (min-width: $breakpoint-700) {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .page-template-template-homepage &:nth-of-type(n+3) .c-tease-project__video {
     @media (min-width: $breakpoint-500) {
       @include homepage-inset("margin", "left");
     }
   }
 
-  @media (min-width: $breakpoint-700) {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
+  .category-film &:last-of-type {
+    border-bottom: none;
   }
+
 }
 
 
