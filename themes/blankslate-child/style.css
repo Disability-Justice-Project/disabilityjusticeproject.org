@@ -2200,8 +2200,7 @@ a:focus .c-logo #logotype {
 }
 
 .c-tease-news__excerpt {
-	font-family: var(--font-tertiary);
-	font-size: var(--font-size-250);
+	font-size: var(--font-size-200);
 	margin-top: var(--size-100);
 	max-width: 72ch;
 }
