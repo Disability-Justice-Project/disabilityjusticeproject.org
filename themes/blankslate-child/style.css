@@ -2139,8 +2139,49 @@ a:focus .c-logo #logotype {
 .c-share__facebook,
 .c-share__twitter,
 .c-share__whatsapp {
+	background-color: transparent;
+	border: var(--border-thin) solid var(--color-white);
+	border-radius: 0;
+	color: var(--color-white);
+	cursor: pointer;
+	font-size: 1rem;
+	line-height: var(--line-height-100);
+	align-items: center;
+	display: flex;
 	height: var(--size-550);
+	justify-content: center;
 	width: var(--size-550);
+}
+
+.u-dark-on-light .c-share__facebook, .u-dark-on-light
+.c-share__twitter, .u-dark-on-light
+.c-share__whatsapp {
+	border-color: var(--color-black);
+}
+
+.c-share__facebook:hover, .c-share__facebook:focus,
+.c-share__twitter:hover,
+.c-share__twitter:focus,
+.c-share__whatsapp:hover,
+.c-share__whatsapp:focus {
+	background-color: var(--color-gold);
+	border-color: var(--color-gold);
+	color: var(--color-black);
+}
+
+.u-dark-on-light .c-share__facebook:hover, .u-dark-on-light .c-share__facebook:focus, .u-dark-on-light
+.c-share__twitter:hover, .u-dark-on-light
+.c-share__twitter:focus, .u-dark-on-light
+.c-share__whatsapp:hover, .u-dark-on-light
+.c-share__whatsapp:focus {
+	border-color: var(--color-black);
+}
+
+.c-share__facebook:active,
+.c-share__twitter:active,
+.c-share__whatsapp:active {
+	background-color: var(--color-white);
+	border-color: var(--color-white);
 }
 
 .c-share__facebook:hover .c-share__icon, .c-share__facebook:focus .c-share__icon,
@@ -2162,12 +2203,10 @@ a:focus .c-logo #logotype {
 
 .c-share__facebook .c-share__icon {
 	height: var(--size-250);
-	margin-top: var(--size-050);
 }
 
 .c-share__twitter .c-share__icon {
 	height: var(--size-250);
-	margin-top: var(--size-050);
 }
 
 .c-share__whatsapp .c-share__icon {
