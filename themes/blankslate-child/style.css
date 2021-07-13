@@ -2238,17 +2238,21 @@ a:focus .c-logo #logotype {
 	margin-bottom: var(--size-600);
 }
 
-@media (min-width: 50em) {
-	.c-tease-project:nth-of-type(n+3) .c-tease-project__video {
-		margin-left: var(--size-900);
-	}
-}
-
 @media (min-width: 70em) {
 	.c-tease-project {
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
 	}
+}
+
+@media (min-width: 50em) {
+	.page-template-template-homepage .c-tease-project:nth-of-type(n+3) .c-tease-project__video {
+		margin-left: var(--size-900);
+	}
+}
+
+.category-film .c-tease-project:last-of-type {
+	border-bottom: none;
 }
 
 @media (min-width: 70em) {
