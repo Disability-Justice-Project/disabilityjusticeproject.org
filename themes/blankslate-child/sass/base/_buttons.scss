@@ -2,31 +2,5 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: transparent;
-  border: var(--border-thin) solid var(--color-white);
-  border-radius: 0;
-  color: var(--color-white);
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: var(--line-height-100);
-
-  .u-dark-on-light & {
-    border-color: var(--color-black);
-  }
-
-  &:hover,
-  &:focus {
-    background-color: var(--color-gold);
-    border-color: var(--color-gold);
-    color: var(--color-black);
-
-    .u-dark-on-light & {
-      border-color: var(--color-black);
-    }
-  }
-
-  &:active {
-    background-color: var(--color-white);
-    border-color: var(--color-white);
-  }
+  @include button();
 }

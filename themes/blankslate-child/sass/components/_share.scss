@@ -4,7 +4,12 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
 .c-share__facebook,
 .c-share__twitter,
 .c-share__whatsapp {
+  @include button();
+
+  align-items: center;
+  display: flex;
   height: $_share-icon-size;
+  justify-content: center;
   width: $_share-icon-size;
 
   &:hover,
@@ -28,7 +33,6 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
 .c-share__facebook {
   .c-share__icon {
     height: var(--size-250);
-    margin-top: var(--size-050);
   }
 }
 
@@ -36,7 +40,6 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
 .c-share__twitter {
   .c-share__icon {
     height: var(--size-250);
-    margin-top: var(--size-050);
   }
 }
 
