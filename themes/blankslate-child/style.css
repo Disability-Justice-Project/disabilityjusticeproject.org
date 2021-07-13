@@ -2011,14 +2011,11 @@ a:focus .c-logo #logotype {
 }
 
 .c-nav-primary .menu {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-columns: auto auto;
+	display: flex;
 }
 
 @media (min-width: 30em) {
 	.c-nav-primary .menu {
-		display: flex;
 		margin-left: var(--size-200);
 	}
 }
@@ -2029,11 +2026,15 @@ a:focus .c-logo #logotype {
 	margin-right: var(--size-200);
 }
 
+.c-nav-primary li:first-of-type {
+	margin-left: var(--size-200);
+}
+
 .c-nav-primary li a {
 	color: var(--color-white);
 	border-bottom: var(--border-thick) solid var(--color-white);
 	display: block;
-	font-size: var(--font-size-200);
+	font-size: var(--font-size-100);
 	font-weight: var(--type-weight-bold);
 	text-decoration: none;
 	padding-top: var(--size-150);
@@ -2042,6 +2043,15 @@ a:focus .c-logo #logotype {
 
 .c-nav-primary li a:hover, .c-nav-primary li a:focus {
 	color: var(--color-gold);
+}
+
+@media (min-width: 30em) {
+	.c-nav-primary li a {
+		font-size: var(--font-size-200);
+	}
+	.c-nav-primary li a:first-of-type {
+		margin-left: 0;
+	}
 }
 
 @media (min-width: 50em) {
