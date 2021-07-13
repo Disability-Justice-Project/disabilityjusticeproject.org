@@ -20,6 +20,7 @@
 <?php
   $args = array(
     'category_name' => 'film',
+    'posts_per_page' => 3,
     'no_found_rows' => true
   );
   $query = new WP_Query($args);

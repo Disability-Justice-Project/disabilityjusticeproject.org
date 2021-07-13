@@ -3,7 +3,8 @@
 * The Film Archive Template
 */
 
-get_header(); ?>
+  get_header();
+?>
 
 <main id="content">
 
@@ -17,7 +18,9 @@ get_header(); ?>
   <?php
     $args = array(
       'category_name' => 'film',
-      'no_found_rows' => true
+      'orderby' => 'title',
+      'order'   => 'ASC',
+      'no_found_rows' => true,
     );
     $query = new WP_Query($args);
 
