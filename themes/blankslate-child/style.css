@@ -1924,9 +1924,18 @@ img.u-effect-gold-screen:hover {
 	font-size: var(--size-250);
 }
 
+.c-creator__name-link {
+	cursor: pointer;
+}
+
+.c-creator__name-link:hover {
+	text-decoration: underline;
+}
+
 .c-creator__photo {
 	background-color: var(--color-gold);
 	border-radius: 100%;
+	cursor: pointer;
 	height: var(--size-900);
 	width: var(--size-900);
 }
@@ -1934,8 +1943,6 @@ img.u-effect-gold-screen:hover {
 .c-creator__about-this-video {
 	color: var(--color-brick);
 	font-weight: var(--type-weight-bold);
-	font-size: var(--size-250);
-	margin-top: var(--size-250);
 }
 
 .c-creator__bio {
@@ -2299,6 +2306,12 @@ a:focus .c-logo #logotype {
 	}
 }
 
+@media (min-width: 50em) {
+	.category-film .c-tease-project {
+		padding-left: var(--size-900);
+	}
+}
+
 .category-film .c-tease-project:last-of-type {
 	border-bottom: none;
 }
@@ -2345,7 +2358,7 @@ a:focus .c-logo #logotype {
 }
 
 .c-tease-project__excerpt {
-	margin-top: var(--size-100);
+	margin-top: var(--size-200);
 	max-width: 65ch;
 }
 

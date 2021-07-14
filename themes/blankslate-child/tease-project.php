@@ -19,26 +19,23 @@
       </a>
     </h2>
 
-    <h3 class="c-creator__about-this-video">
-      About this video
-    </h3>
-
     <p class="c-tease-project__excerpt">
-      <?php echo excerpt(35); ?>
+      <span class="c-creator__about-this-video">About this video:</span> <?php echo excerpt(35); ?>
     </p>
 
     <div class="c-creator">
       <h3 class="c-creator__name">
-        Filmmaker: <?php echo esc_html( $associated_filmmaker->post_title ); ?>
+        Filmmaker: <span class="c-creator__name-link" onclick="location.href='<?php the_permalink(); ?>'"><?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
       </h3>
       <div class="c-creator__info">
         <img
           alt="Photo of <?php echo esc_html( $associated_filmmaker->post_title ); ?>."
           class="c-creator__photo"
+          onclick="location.href='<?php the_permalink(); ?>'"
           src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
         <p class="c-creator__bio">
           <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>&nbsp;
-          <a class="c-creator__read-more" href="<?php the_permalink(); ?>#filmmaker">
+          <a class="c-creator__read-more" href="<?php the_permalink(); ?>">
             Read&nbsp;more<span class="screen-reader-text"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
           </a>
         </p>
