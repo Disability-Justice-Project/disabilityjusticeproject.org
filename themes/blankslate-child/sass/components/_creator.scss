@@ -15,9 +15,19 @@
 }
 
 
+.c-creator__name-link {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
 .c-creator__photo {
   background-color: var(--color-gold);
   border-radius: 100%;
+  cursor: pointer;
   height: var(--size-900);
   width: var(--size-900);
 }
@@ -26,8 +36,6 @@
 .c-creator__about-this-video {
   color: var(--color-brick);
   font-weight: var(--type-weight-bold);
-  font-size: var(--size-250);
-  margin-top: var(--size-250);
 }
 
 

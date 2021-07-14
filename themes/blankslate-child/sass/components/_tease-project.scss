@@ -14,6 +14,12 @@
     }
   }
 
+  .category-film & {
+    @media (min-width: $breakpoint-500) {
+      @include homepage-inset("padding", "left");
+    }
+  }
+
   .category-film &:last-of-type {
     border-bottom: none;
   }
@@ -64,7 +70,7 @@
 
 
 .c-tease-project__excerpt {
-  margin-top: var(--size-100);
+  margin-top: var(--size-200);
   max-width: 65ch;
 }
 
