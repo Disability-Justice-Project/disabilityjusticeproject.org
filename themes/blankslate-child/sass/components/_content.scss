@@ -43,6 +43,10 @@
   figcaption {
     color: var(--color-gray-dark);
     margin-top: var(--size-150);
+
+    .js-contrast-blue & {
+      color: var(--color-gray-darkest);
+    }
   }
 
   figcaption:empty {
@@ -55,6 +59,10 @@
   color: var(--color-brick);
   letter-spacing: var(--tracking-open);
   padding-top: var(--size-100);
+
+  .js-contrast-blue & {
+    color: var(--color-gold);
+  }
 }
 
 

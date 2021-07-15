@@ -60,4 +60,9 @@ body {
     background-color: var(--color-gold);
     color: var(--color-black);
   }
+
+  &.js-contrast-blue {
+    background-color: var(--color-dusk);
+    color: var(--color-black);
+  }
 }

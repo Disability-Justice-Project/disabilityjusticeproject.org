@@ -27,7 +27,8 @@
     border-color: var(--color-white);
   }
 
-  .js-contrast-yellow & {
+  .js-contrast-yellow &,
+  .js-contrast-blue & {
     border: var(--border-thin) solid var(--color-black);
     color: var(--color-black);
   }

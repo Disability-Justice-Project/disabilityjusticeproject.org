@@ -39,11 +39,19 @@
   .js-contrast-yellow & {
     color: var(--color-brick);
   }
+
+  .js-contrast-blue & {
+    color: var(--color-white);
+  }
 }
 
 
-.u-color-text-gray-brick {
+.u-color-text-brick {
   color: var(--color-brick);
+
+  .js-contrast-blue & {
+    color: var(--color-gold);
+  }
 }
 
 

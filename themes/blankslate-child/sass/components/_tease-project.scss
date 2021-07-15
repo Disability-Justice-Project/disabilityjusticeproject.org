@@ -27,6 +27,10 @@
   .js-contrast-yellow & {
     border-bottom-color: var(--color-gray-dark);
   }
+
+  .js-contrast-blue & {
+    border-bottom-color: var(--color-gray-light);
+  }
 }
 
 
@@ -76,6 +80,15 @@
     &:hover,
     &:focus {
       color: var(--color-brick);
+    }
+  }
+
+  .js-contrast-blue & {
+    color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      color: var(--color-gold);
     }
   }
 }

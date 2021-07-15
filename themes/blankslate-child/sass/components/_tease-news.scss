@@ -5,6 +5,10 @@
   .js-contrast-yellow & {
     background-color: var(--color-gold);
   }
+
+  .js-contrast-blue & {
+    background-color: var(--color-dusk);
+  }
 }
 
 
@@ -28,6 +32,13 @@
   &:focus {
     color: var(--color-brick);
     text-decoration: underline;
+  }
+
+  .js-contrast-blue & {
+    &:hover,
+    &:focus {
+      color: var(--color-gold);
+    }
   }
 }
 
