@@ -1,8 +1,8 @@
 .u-effect-gold-screen {
   background-color: var(--color-gold);
 
-  .js-contrast-yellow &,
-  .js-contrast-blue & {
+  .js-contrast-blue &,
+  .js-contrast-yellow & {
     background-color: var(--color-gray-dark);
   }
 }

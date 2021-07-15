@@ -63,6 +63,16 @@
     color: var(--color-black);
   }
 
+  .js-contrast-white & {
+    color: var(--color-brick);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+  }
+
   .js-contrast-yellow & {
     color: var(--color-brick);
 

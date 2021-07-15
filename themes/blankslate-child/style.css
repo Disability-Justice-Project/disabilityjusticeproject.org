@@ -585,13 +585,18 @@ body.js-font-size-extra-large {
 	font-size: 150%;
 }
 
-body.js-contrast-yellow {
-	background-color: var(--color-gold);
+body.js-contrast-blue {
+	background-color: var(--color-dusk);
 	color: var(--color-black);
 }
 
-body.js-contrast-blue {
-	background-color: var(--color-dusk);
+body.js-contrast-white {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+body.js-contrast-yellow {
+	background-color: var(--color-gold);
 	color: var(--color-black);
 }
 
@@ -926,16 +931,23 @@ input[type="submit"]:active {
 	border-color: var(--color-white);
 }
 
-.js-contrast-yellow button,
-.js-contrast-blue button, .js-contrast-yellow
+.js-contrast-blue button,
+.js-contrast-white button,
+.js-contrast-yellow button, .js-contrast-blue
 input[type="button"],
-.js-contrast-blue
-input[type="button"], .js-contrast-yellow
+.js-contrast-white
+input[type="button"],
+.js-contrast-yellow
+input[type="button"], .js-contrast-blue
 input[type="reset"],
-.js-contrast-blue
-input[type="reset"], .js-contrast-yellow
+.js-contrast-white
+input[type="reset"],
+.js-contrast-yellow
+input[type="reset"], .js-contrast-blue
 input[type="submit"],
-.js-contrast-blue
+.js-contrast-white
+input[type="submit"],
+.js-contrast-yellow
 input[type="submit"] {
 	border: var(--border-thin) solid var(--color-black);
 	color: var(--color-black);
@@ -1168,16 +1180,17 @@ table tfoot tr td {
 	color: var(--color-gray-darkest);
 }
 
-.u-color-text-gray-gold {
+.u-color-text-gold {
 	color: var(--color-gold);
 }
 
-.js-contrast-yellow .u-color-text-gray-gold {
-	color: var(--color-brick);
+.js-contrast-blue .u-color-text-gold {
+	color: var(--color-white);
 }
 
-.js-contrast-blue .u-color-text-gray-gold {
-	color: var(--color-white);
+.js-contrast-white .u-color-text-gold,
+.js-contrast-yellow .u-color-text-gold {
+	color: var(--color-brick);
 }
 
 .u-color-text-brick {
@@ -1200,8 +1213,8 @@ table tfoot tr td {
 	background-color: var(--color-gold);
 }
 
-.js-contrast-yellow .u-effect-gold-screen,
-.js-contrast-blue .u-effect-gold-screen {
+.js-contrast-blue .u-effect-gold-screen,
+.js-contrast-yellow .u-effect-gold-screen {
 	background-color: var(--color-gray-dark);
 }
 
@@ -1238,12 +1251,12 @@ img.u-effect-gold-screen:hover {
 	color: var(--color-black);
 }
 
-.js-contrast-yellow .u-dark-on-light {
-	background-color: var(--color-gold);
-}
-
 .js-contrast-blue .u-dark-on-light {
 	background-color: var(--color-dusk);
+}
+
+.js-contrast-yellow .u-dark-on-light {
+	background-color: var(--color-gold);
 }
 
 .u-weight-regular {
@@ -1292,8 +1305,9 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
-.js-contrast-yellow .l-footer,
-.js-contrast-blue .l-footer {
+.js-contrast-blue .l-footer,
+.js-contrast-white .l-footer,
+.js-contrast-yellow .l-footer {
 	background-color: var(--color-black);
 	color: var(--color-white);
 }
@@ -1323,8 +1337,9 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
-.js-contrast-yellow .l-header,
-.js-contrast-blue .l-header {
+.js-contrast-blue .l-header,
+.js-contrast-white .l-header,
+.js-contrast-yellow .l-header {
 	background-color: var(--color-black);
 }
 
@@ -1500,8 +1515,8 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
-.js-contrast-yellow .l-tease-news,
-.js-contrast-blue .l-tease-news {
+.js-contrast-blue .l-tease-news,
+.js-contrast-yellow .l-tease-news {
 	background-color: var(--color-gray-darkest);
 }
 
@@ -1510,8 +1525,8 @@ img.u-effect-gold-screen:hover {
 	line-height: var(--line-height-200);
 }
 
-.js-contrast-yellow .l-tease-news__title,
-.js-contrast-blue .l-tease-news__title {
+.js-contrast-blue .l-tease-news__title,
+.js-contrast-yellow .l-tease-news__title {
 	color: var(--color-gray-lightest);
 }
 
@@ -2065,6 +2080,15 @@ img.u-effect-gold-screen:hover {
 	color: var(--color-black);
 }
 
+.js-contrast-white .c-creator__read-more {
+	color: var(--color-brick);
+}
+
+.js-contrast-white .c-creator__read-more:hover, .js-contrast-white .c-creator__read-more:focus {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
+
 .js-contrast-yellow .c-creator__read-more {
 	color: var(--color-brick);
 }
@@ -2309,13 +2333,18 @@ a:focus .c-logo #logotype {
 	border-color: var(--color-white);
 }
 
-.js-contrast-yellow .c-share__facebook,
-.js-contrast-blue .c-share__facebook, .js-contrast-yellow
+.js-contrast-blue .c-share__facebook,
+.js-contrast-white .c-share__facebook,
+.js-contrast-yellow .c-share__facebook, .js-contrast-blue
 .c-share__twitter,
-.js-contrast-blue
-.c-share__twitter, .js-contrast-yellow
+.js-contrast-white
+.c-share__twitter,
+.js-contrast-yellow
+.c-share__twitter, .js-contrast-blue
 .c-share__whatsapp,
-.js-contrast-blue
+.js-contrast-white
+.c-share__whatsapp,
+.js-contrast-yellow
 .c-share__whatsapp {
 	border: var(--border-thin) solid var(--color-black);
 	color: var(--color-black);
@@ -2338,8 +2367,9 @@ a:focus .c-logo #logotype {
 	fill: var(--color-black);
 }
 
-.js-contrast-yellow .c-share__icon,
-.js-contrast-blue .c-share__icon {
+.js-contrast-blue .c-share__icon,
+.js-contrast-white .c-share__icon,
+.js-contrast-yellow .c-share__icon {
 	fill: var(--color-black);
 }
 
@@ -2463,12 +2493,12 @@ a:focus .c-logo #logotype {
 	border-bottom: none;
 }
 
-.js-contrast-yellow .c-tease-project {
-	border-bottom-color: var(--color-gray-dark);
-}
-
 .js-contrast-blue .c-tease-project {
 	border-bottom-color: var(--color-gray-light);
+}
+
+.js-contrast-yellow .c-tease-project {
+	border-bottom-color: var(--color-gray-dark);
 }
 
 @media (min-width: 70em) {
@@ -2512,20 +2542,23 @@ a:focus .c-logo #logotype {
 	text-decoration: none;
 }
 
-.js-contrast-yellow .c-tease-project__link {
-	color: var(--color-black);
-}
-
-.js-contrast-yellow .c-tease-project__link:hover, .js-contrast-yellow .c-tease-project__link:focus {
-	color: var(--color-brick);
-}
-
 .js-contrast-blue .c-tease-project__link {
 	color: var(--color-black);
 }
 
 .js-contrast-blue .c-tease-project__link:hover, .js-contrast-blue .c-tease-project__link:focus {
 	color: var(--color-gold);
+}
+
+.js-contrast-white .c-tease-project__link,
+.js-contrast-yellow .c-tease-project__link {
+	color: var(--color-black);
+}
+
+.js-contrast-white .c-tease-project__link:hover, .js-contrast-white .c-tease-project__link:focus,
+.js-contrast-yellow .c-tease-project__link:hover,
+.js-contrast-yellow .c-tease-project__link:focus {
+	color: var(--color-brick);
 }
 
 .c-tease-project__excerpt {

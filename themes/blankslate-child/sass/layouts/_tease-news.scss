@@ -17,8 +17,8 @@
     @include homepage-inset("padding", "both");
   }
 
-  .js-contrast-yellow &,
-  .js-contrast-blue & {
+  .js-contrast-blue &,
+  .js-contrast-yellow & {
     background-color: var(--color-gray-darkest);
   }
 }
@@ -28,8 +28,8 @@
   grid-area: title;
   line-height: var(--line-height-200);
 
-  .js-contrast-yellow &,
-  .js-contrast-blue & {
+  .js-contrast-blue &,
+  .js-contrast-yellow & {
     color: var(--color-gray-lightest);
   }
 }

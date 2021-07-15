@@ -28,8 +28,9 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
     fill: var(--color-black);
   }
 
-  .js-contrast-yellow &,
-  .js-contrast-blue & {
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
     fill: var(--color-black);
   }
 }

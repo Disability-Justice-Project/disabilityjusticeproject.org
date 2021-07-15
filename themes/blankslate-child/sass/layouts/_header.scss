@@ -17,8 +17,9 @@
     padding-bottom: var(--size-300);
   }
 
-  .js-contrast-yellow &,
-  .js-contrast-blue & {
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
     background-color: var(--color-black);
   }
 }

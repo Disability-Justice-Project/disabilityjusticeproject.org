@@ -24,12 +24,12 @@
     border-bottom: none;
   }
 
-  .js-contrast-yellow & {
-    border-bottom-color: var(--color-gray-dark);
-  }
-
   .js-contrast-blue & {
     border-bottom-color: var(--color-gray-light);
+  }
+
+  .js-contrast-yellow & {
+    border-bottom-color: var(--color-gray-dark);
   }
 }
 
@@ -74,21 +74,22 @@
     text-decoration: none;
   }
 
-  .js-contrast-yellow & {
-    color: var(--color-black);
-
-    &:hover,
-    &:focus {
-      color: var(--color-brick);
-    }
-  }
-
   .js-contrast-blue & {
     color: var(--color-black);
 
     &:hover,
     &:focus {
       color: var(--color-gold);
+    }
+  }
+
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brick);
     }
   }
 }

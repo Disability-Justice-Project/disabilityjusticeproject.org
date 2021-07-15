@@ -56,13 +56,18 @@ body {
     font-size: 150%;
   }
 
-  &.js-contrast-yellow {
-    background-color: var(--color-gold);
+  &.js-contrast-blue {
+    background-color: var(--color-dusk);
     color: var(--color-black);
   }
 
-  &.js-contrast-blue {
-    background-color: var(--color-dusk);
+  &.js-contrast-white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  &.js-contrast-yellow {
+    background-color: var(--color-gold);
     color: var(--color-black);
   }
 }
