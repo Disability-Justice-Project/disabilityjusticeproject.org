@@ -18,6 +18,13 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
       fill: var(--color-black);
     }
   }
+
+  .js-contrast-yellow & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-white);
+    }
+  }
 }
 
 .c-share__icon {

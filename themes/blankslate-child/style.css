@@ -950,7 +950,6 @@ input[type="submit"],
 .js-contrast-yellow
 input[type="submit"] {
 	border: var(--border-thin) solid var(--color-black);
-	color: var(--color-black);
 }
 
 .js-highlighted button, .js-highlighted
@@ -2095,6 +2094,7 @@ img.u-effect-gold-screen:hover {
 
 .js-contrast-yellow .c-creator__read-more:hover, .js-contrast-yellow .c-creator__read-more:focus {
 	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 .c-heading__large {
@@ -2347,7 +2347,6 @@ a:focus .c-logo #logotype {
 .js-contrast-yellow
 .c-share__whatsapp {
 	border: var(--border-thin) solid var(--color-black);
-	color: var(--color-black);
 }
 
 .c-share__facebook:hover .c-share__icon, .c-share__facebook:focus .c-share__icon,
@@ -2356,6 +2355,14 @@ a:focus .c-logo #logotype {
 .c-share__whatsapp:hover .c-share__icon,
 .c-share__whatsapp:focus .c-share__icon {
 	fill: var(--color-black);
+}
+
+.js-contrast-yellow .c-share__facebook:hover, .js-contrast-yellow .c-share__facebook:focus, .js-contrast-yellow
+.c-share__twitter:hover, .js-contrast-yellow
+.c-share__twitter:focus, .js-contrast-yellow
+.c-share__whatsapp:hover, .js-contrast-yellow
+.c-share__whatsapp:focus {
+	background-color: var(--color-white);
 }
 
 .c-share__icon {
@@ -2390,12 +2397,12 @@ a:focus .c-logo #logotype {
 	padding: var(--size-400);
 }
 
-.js-contrast-yellow .c-tease-news {
-	background-color: var(--color-gold);
-}
-
 .js-contrast-blue .c-tease-news {
 	background-color: var(--color-dusk);
+}
+
+.js-contrast-yellow .c-tease-news {
+	background-color: var(--color-gold);
 }
 
 .c-tease-news__image {
@@ -2583,6 +2590,16 @@ a:focus .c-logo #logotype {
 	background-size: 30% 30%;
 	border-color: var(--color-gray-lightest);
 	color: var(--color-black);
+}
+
+.js-contrast-blue .c-tease-project__transcript,
+.js-contrast-white .c-tease-project__transcript,
+.js-contrast-yellow .c-tease-project__transcript {
+	color: var(--color-black);
+}
+
+.js-contrast-yellow .c-tease-project__transcript:hover, .js-contrast-yellow .c-tease-project__transcript:focus {
+	background-color: var(--color-white);
 }
 
 .c-tease-project__accordion-wrapper {

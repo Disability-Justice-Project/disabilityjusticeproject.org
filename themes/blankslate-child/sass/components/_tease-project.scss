@@ -133,6 +133,19 @@
     border-color: var(--color-gray-lightest);
     color: var(--color-black);
   }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-black);
+  }
+
+  .js-contrast-yellow & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-white);
+    }
+  }
 }
 
 
