@@ -17,6 +17,10 @@ $_person-photo-size: 8rem;
     position: relative;
       right: var(--size-400);
   }
+
+  .js-contrast-yellow & {
+    background-color: var(--color-brick);
+  }
 }
 
 

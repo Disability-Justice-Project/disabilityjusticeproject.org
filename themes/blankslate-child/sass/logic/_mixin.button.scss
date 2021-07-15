@@ -26,4 +26,10 @@
     background-color: var(--color-white);
     border-color: var(--color-white);
   }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    border: var(--border-thin) solid var(--color-black);
+  }
 }

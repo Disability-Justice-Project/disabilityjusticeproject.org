@@ -16,6 +16,12 @@
     padding-right: var(--size-200);
     padding-bottom: var(--size-300);
   }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    background-color: var(--color-black);
+  }
 }
 
 

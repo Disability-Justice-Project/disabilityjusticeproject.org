@@ -24,6 +24,13 @@
     border-bottom: none;
   }
 
+  .js-contrast-blue & {
+    border-bottom-color: var(--color-gray-light);
+  }
+
+  .js-contrast-yellow & {
+    border-bottom-color: var(--color-gray-dark);
+  }
 }
 
 
@@ -66,6 +73,25 @@
   &:active {
     text-decoration: none;
   }
+
+  .js-contrast-blue & {
+    color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      color: var(--color-gold);
+    }
+  }
+
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brick);
+    }
+  }
 }
 
 
@@ -106,6 +132,19 @@
     background-size: 30% 30%;
     border-color: var(--color-gray-lightest);
     color: var(--color-black);
+  }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-black);
+  }
+
+  .js-contrast-yellow & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-white);
+    }
   }
 }
 

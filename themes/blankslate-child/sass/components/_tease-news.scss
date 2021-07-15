@@ -1,6 +1,14 @@
 .c-tease-news {
   background-color: var(--color-white);
   padding: var(--size-400);
+
+  .js-contrast-blue & {
+    background-color: var(--color-dusk);
+  }
+
+  .js-contrast-yellow & {
+    background-color: var(--color-gold);
+  }
 }
 
 
@@ -24,6 +32,13 @@
   &:focus {
     color: var(--color-brick);
     text-decoration: underline;
+  }
+
+  .js-contrast-blue & {
+    &:hover,
+    &:focus {
+      color: var(--color-gold);
+    }
   }
 }
 
@@ -53,5 +68,16 @@
   &:focus {
     background-color: var(--color-black);
     color: var(--color-gold);
+  }
+
+  .js-contrast-yellow & {
+    background-color: var(--color-brick);
+    color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
   }
 }

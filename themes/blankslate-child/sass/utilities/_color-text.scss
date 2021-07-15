@@ -33,13 +33,26 @@
 }
 
 
-.u-color-text-gray-gold {
+.u-color-text-gold {
   color: var(--color-gold);
+
+  .js-contrast-blue & {
+    color: var(--color-white);
+  }
+
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-brick);
+  }
 }
 
 
-.u-color-text-gray-brick {
+.u-color-text-brick {
   color: var(--color-brick);
+
+  .js-contrast-blue & {
+    color: var(--color-gold);
+  }
 }
 
 

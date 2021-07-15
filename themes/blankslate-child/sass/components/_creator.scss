@@ -36,6 +36,10 @@
 .c-creator__about-this-video {
   color: var(--color-brick);
   font-weight: var(--type-weight-bold);
+
+  .js-contrast-blue & {
+    color: var(--color-white);
+  }
 }
 
 
@@ -57,5 +61,25 @@
   &:focus {
     background-color: var(--color-gold);
     color: var(--color-black);
+  }
+
+  .js-contrast-white & {
+    color: var(--color-brick);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+  }
+
+  .js-contrast-yellow & {
+    color: var(--color-brick);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
   }
 }

@@ -18,6 +18,13 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
       fill: var(--color-black);
     }
   }
+
+  .js-contrast-yellow & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-white);
+    }
+  }
 }
 
 .c-share__icon {
@@ -25,6 +32,12 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
   width: auto;
 
   .u-dark-on-light & {
+    fill: var(--color-black);
+  }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
     fill: var(--color-black);
   }
 }
