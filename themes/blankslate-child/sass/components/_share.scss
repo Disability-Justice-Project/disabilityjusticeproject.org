@@ -27,6 +27,10 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
   .u-dark-on-light & {
     fill: var(--color-black);
   }
+
+  .js-contrast-yellow & {
+    fill: var(--color-black);
+  }
 }
 
 

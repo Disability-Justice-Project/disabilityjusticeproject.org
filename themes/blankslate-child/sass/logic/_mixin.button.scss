@@ -26,4 +26,9 @@
     background-color: var(--color-white);
     border-color: var(--color-white);
   }
+
+  .js-contrast-yellow & {
+    border: var(--border-thin) solid var(--color-black);
+    color: var(--color-black);
+  }
 }

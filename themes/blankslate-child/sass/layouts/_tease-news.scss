@@ -16,12 +16,20 @@
   @media (min-width: $breakpoint-500) {
     @include homepage-inset("padding", "both");
   }
+
+  .js-contrast-yellow & {
+    background-color: var(--color-gray-darkest);
+  }
 }
 
 
 .l-tease-news__title {
   grid-area: title;
   line-height: var(--line-height-200);
+
+  .js-contrast-yellow & {
+    color: var(--color-gray-lightest);
+  }
 }
 
 

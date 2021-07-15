@@ -1,4 +1,8 @@
 .u-dark-on-light {
   background-color: var(--color-white);
   color: var(--color-black);
+
+  .js-contrast-yellow & {
+    background-color: var(--color-gold);
+  }
 }

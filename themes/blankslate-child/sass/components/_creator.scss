@@ -58,4 +58,13 @@
     background-color: var(--color-gold);
     color: var(--color-black);
   }
+
+  .js-contrast-yellow & {
+    color: var(--color-brick);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+    }
+  }
 }

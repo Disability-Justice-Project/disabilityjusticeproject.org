@@ -55,4 +55,9 @@ body {
   &.js-font-size-extra-large {
     font-size: 150%;
   }
+
+  &.js-contrast-yellow {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+  }
 }

@@ -24,6 +24,9 @@
     border-bottom: none;
   }
 
+  .js-contrast-yellow & {
+    border-bottom-color: var(--color-gray-dark);
+  }
 }
 
 
@@ -65,6 +68,15 @@
 
   &:active {
     text-decoration: none;
+  }
+
+  .js-contrast-yellow & {
+    color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brick);
+    }
   }
 }
 

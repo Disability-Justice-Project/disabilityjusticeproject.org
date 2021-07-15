@@ -1,5 +1,9 @@
 .u-effect-gold-screen {
   background-color: var(--color-gold);
+
+  .js-contrast-yellow & {
+    background-color: var(--color-gray-dark);
+  }
 }
 
 img.u-effect-gold-screen:hover {
