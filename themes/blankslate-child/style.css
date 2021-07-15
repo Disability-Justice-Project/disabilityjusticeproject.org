@@ -399,6 +399,7 @@ figure {
 :root {
 	--border-thin: 1px;
 	--border-thick: 3px;
+	--border-outline: 0.3rem;
 	--color-white: #ffffff;
 	--color-black: #000000;
 	--color-gray-lightest: #ebe8e7;
@@ -915,6 +916,13 @@ input[type="submit"]:active {
 	border-color: var(--color-white);
 }
 
+.js-highlighted button, .js-highlighted
+input[type="button"], .js-highlighted
+input[type="reset"], .js-highlighted
+input[type="submit"] {
+	outline: var(--border-outline) solid var(--color-gold);
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1003,6 +1011,10 @@ a:hover, a:focus, a:active {
 
 a:focus {
 	outline: thin dotted;
+}
+
+.js-highlighted a {
+	outline: var(--border-outline) solid var(--color-gold);
 }
 
 ol {

@@ -3,4 +3,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   @include button();
+
+  .js-highlighted & {
+    outline: var(--border-outline) solid var(--color-gold);
+  }
 }

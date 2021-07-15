@@ -10,4 +10,8 @@ a {
   &:focus {
     outline: thin dotted;
   }
+
+  .js-highlighted & {
+    outline: var(--border-outline) solid var(--color-gold);
+  }
 }
