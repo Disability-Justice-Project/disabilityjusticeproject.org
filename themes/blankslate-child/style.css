@@ -2511,14 +2511,6 @@ a:focus .c-logo #logotype {
 	padding: var(--size-400);
 }
 
-.js-contrast-blue .c-tease-news {
-	background-color: var(--color-dusk-tint);
-}
-
-.js-contrast-yellow .c-tease-news {
-	background-color: var(--color-gold);
-}
-
 .c-tease-news__image {
 	cursor: pointer;
 	width: 100%;
@@ -2537,10 +2529,6 @@ a:focus .c-logo #logotype {
 .c-tease-news__link:hover, .c-tease-news__link:focus {
 	color: var(--color-brick);
 	text-decoration: underline;
-}
-
-.js-contrast-blue .c-tease-news__link:hover, .js-contrast-blue .c-tease-news__link:focus {
-	color: var(--color-gold);
 }
 
 .c-tease-news__excerpt {
@@ -2573,16 +2561,6 @@ a:focus .c-logo #logotype {
 .c-tease-news__read-more:hover, .c-tease-news__read-more:focus {
 	background-color: var(--color-black);
 	color: var(--color-gold);
-}
-
-.js-contrast-yellow .c-tease-news__read-more {
-	background-color: var(--color-brick);
-	color: var(--color-white);
-}
-
-.js-contrast-yellow .c-tease-news__read-more:hover, .js-contrast-yellow .c-tease-news__read-more:focus {
-	background-color: var(--color-black);
-	color: var(--color-white);
 }
 
 .c-tease-project {
