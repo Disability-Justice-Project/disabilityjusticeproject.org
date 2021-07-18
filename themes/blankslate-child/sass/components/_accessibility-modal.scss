@@ -1,11 +1,15 @@
-$_modal-icon-size: var(--size-600);
+$_modal-icon-size: (
+  "small": var(--size-400),
+  "medium": var(--size-500),
+  "large": var(--size-600),
+);
 
 .c-accessibility-modal {
   background-color: var(--color-gray-lightest);
   color: var(--color-black);
   padding: var(--size-300) var(--size-200);
 
-  @media (min-width: $breakpoint-small) {
+  @media (min-width: $breakpoint-700) {
     padding: var(--size-300) 5vw;
   }
 }
@@ -17,11 +21,11 @@ $_modal-icon-size: var(--size-600);
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  @media (min-width: $breakpoint-small) {
+  @media (min-width: $breakpoint-300) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $breakpoint-700) {
+  @media (min-width: $breakpoint-750) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -31,7 +35,11 @@ $_modal-icon-size: var(--size-600);
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
-  padding: var(--size-250);
+  padding: var(--size-150);
+
+  @media (min-width: $breakpoint-300) {
+    padding: var(--size-250);
+  }
 }
 
 
@@ -41,7 +49,7 @@ $_modal-icon-size: var(--size-600);
 
 
 .c-accessibility-modal__controls {
-  align-items: center;
+  align-items: baseline;
   display: flex;
   justify-content: space-around;
   margin-top: var(--size-200);
@@ -56,10 +64,25 @@ $_modal-icon-size: var(--size-600);
 
 
 .c-accessibility-modal__label {
-  font-size: var(--font-size-100);
+  font-size: var(--font-size-050);
   letter-spacing: var(--tracking-open);
-  padding-top: var(--size-050);
+  line-height: var(--line-height-100);
+  padding-top: var(--size-100);
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-500) {
+    font-size: var(--font-size-100);
+    padding-top: var(--size-150);
+  }
+}
+
+.c-accessibility-modal__word-break {
+  display: block;
+
+  @media (min-width: $breakpoint-400) {
+    display: inline;
+  }
 }
 
 
@@ -84,16 +107,44 @@ $_modal-icon-size: var(--size-600);
 
 
 .c-accessibility-modal__icon {
-  height: $_modal-icon-size;
-  width: $_modal-icon-size;
+  height: map-get($_modal-icon-size, "medium");
+  width: map-get($_modal-icon-size, "medium");
   border-radius: 100%;
+
+  @media (min-width: $breakpoint-300) {
+    height: map-get($_modal-icon-size, "small");
+    width: map-get($_modal-icon-size, "small");
+  }
+
+  @media (min-width: $breakpoint-400) {
+    height: map-get($_modal-icon-size, "large");
+    width: map-get($_modal-icon-size, "large");
+  }
+
+  @media (min-width: $breakpoint-750) {
+    height: map-get($_modal-icon-size, "small");
+    width: map-get($_modal-icon-size, "small");
+  }
+
+  @media (min-width: $breakpoint-800) {
+    height: map-get($_modal-icon-size, "large");
+    width: map-get($_modal-icon-size, "large");
+  }
 }
 
 
 .c-accessibility-modal__button {
   height: auto;
   margin-top: var(--size-050);
-  width: 7rem;
+  width: var(--size-900);
+
+  @media (min-width: $breakpoint-500) {
+    width: calc(var(--font-size-700) * 2);
+  }
+
+  @media (min-width: $breakpoint-750) {
+    width: calc(var(--font-size-500) * 2);
+  }
 }
 
 
@@ -104,7 +155,7 @@ $_modal-icon-size: var(--size-600);
   justify-content: flex-end;
   margin-top: var(--size-350);
 
-  @media (min-width: $breakpoint-small) {
+  @media (min-width: $breakpoint-400) {
     flex-direction: row;
   }
 }
