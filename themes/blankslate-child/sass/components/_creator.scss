@@ -38,7 +38,7 @@
   font-weight: var(--type-weight-bold);
 
   .js-contrast-blue & {
-    color: var(--color-white);
+    color: var(--color-gray-darkest);
   }
 }
 
@@ -61,6 +61,16 @@
   &:focus {
     background-color: var(--color-gold);
     color: var(--color-black);
+  }
+
+  .js-contrast-blue & {
+    color: var(--color-gray-darkest);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
   }
 
   .js-contrast-white & {

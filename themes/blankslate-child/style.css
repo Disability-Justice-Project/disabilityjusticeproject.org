@@ -410,6 +410,7 @@ figure {
 	--color-gold: #ffe300;
 	--color-brick: #da4c27;
 	--color-olive: #76c43b;
+	--color-dusk-tint: #caecf6;
 	--color-dusk: #00a6d3;
 	--font-primary: 'Halyard Display', Arial, sans-serif;
 	--font-secondary: 'Halyard Text', Arial, sans-serif;
@@ -586,7 +587,7 @@ body.js-font-size-extra-large {
 }
 
 body.js-contrast-blue {
-	background-color: var(--color-dusk);
+	background-color: var(--color-dusk-tint);
 	color: var(--color-black);
 }
 
@@ -1184,7 +1185,7 @@ table tfoot tr td {
 }
 
 .js-contrast-blue .u-color-text-gold {
-	color: var(--color-white);
+	color: var(--color-gray-darkest);
 }
 
 .js-contrast-white .u-color-text-gold,
@@ -1252,7 +1253,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .js-contrast-blue .u-dark-on-light {
-	background-color: var(--color-dusk);
+	background-color: var(--color-dusk-tint);
 }
 
 .js-contrast-yellow .u-dark-on-light {
@@ -1490,6 +1491,11 @@ img.u-effect-gold-screen:hover {
 	.l-landing__section {
 		margin-top: var(--size-900);
 	}
+}
+
+.l-landing__spacer {
+	grid-column: 1 / 13;
+	min-height: calc(var(--size-900) * 2);
 }
 
 .l-recommended-videos {
@@ -2052,7 +2058,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .js-contrast-blue .c-content__topic {
-	color: var(--color-gold);
+	color: var(--color-gray-darkest);
 }
 
 .c-content--project {
@@ -2105,7 +2111,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .js-contrast-blue .c-creator__about-this-video {
-	color: var(--color-white);
+	color: var(--color-gray-darkest);
 }
 
 .c-creator__bio {
@@ -2131,6 +2137,15 @@ img.u-effect-gold-screen:hover {
 .c-creator__read-more:hover, .c-creator__read-more:focus {
 	background-color: var(--color-gold);
 	color: var(--color-black);
+}
+
+.js-contrast-blue .c-creator__read-more {
+	color: var(--color-gray-darkest);
+}
+
+.js-contrast-blue .c-creator__read-more:hover, .js-contrast-blue .c-creator__read-more:focus {
+	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 .js-contrast-white .c-creator__read-more {
@@ -2159,6 +2174,10 @@ img.u-effect-gold-screen:hover {
 .c-heading__medium {
 	font-family: var(--font-primary);
 	font-size: var(--font-size-450);
+}
+
+.js-contrast-blue .c-heading__medium {
+	color: var(--color-white);
 }
 
 .c-footer__tagline {
@@ -2367,9 +2386,17 @@ a:focus .c-logo #logotype {
 	display: inline;
 }
 
+.js-contrast-blue .c-recommended-video__about-this-video {
+	color: var(--color-gray-medium);
+}
+
 .c-recommended-video__excerpt {
 	font-size: var(--font-size-200);
 	margin-top: var(--size-100);
+}
+
+.js-contrast-blue .c-recommended-video__excerpt {
+	color: var(--color-white);
 }
 
 .c-share__facebook,
@@ -2485,7 +2512,7 @@ a:focus .c-logo #logotype {
 }
 
 .js-contrast-blue .c-tease-news {
-	background-color: var(--color-dusk);
+	background-color: var(--color-dusk-tint);
 }
 
 .js-contrast-yellow .c-tease-news {

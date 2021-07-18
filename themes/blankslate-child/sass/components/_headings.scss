@@ -7,4 +7,8 @@
 .c-heading__medium {
   font-family: var(--font-primary);
   font-size: var(--font-size-450);
+
+  .js-contrast-blue & {
+    color: var(--color-white);
+  }
 }
