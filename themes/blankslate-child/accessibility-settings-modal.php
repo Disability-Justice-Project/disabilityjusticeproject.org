@@ -30,7 +30,7 @@
             <svg class="c-accessibility-modal__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" height="52" width="52" viewBox="0 0 52 52"><circle cx="26" cy="26.2" r="26"/><circle cx="26" cy="26.2" r="24" fill="none" stroke="#000" stroke-width="4"/><g><path d="M23.5 14.5h5.1l8.5 23.4h-4.8l-2.2-6.2h-8.8L19 37.9h-4.4l8.9-23.4zM22.7 28H29l-3.1-8.7-3.2 8.7z" fill="#fff"/></g></svg>
           </label>
           <label for="font-size-extra-large">
-            <span class="c-accessibility-modal__label">Extra Large</span>
+            <span class="c-accessibility-modal__label">Extra<span class="c-accessibility-modal__word-break"> Large</span></span>
             <input id="font-size-extra-large" class="c-accessibility-modal__radio" name="font-size" value="font-size-extra-large" type="radio">
             <svg class="c-accessibility-modal__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" height="52" width="52" viewBox="0 0 52 52"><circle cx="26" cy="26" r="26"/><circle cx="26" cy="26" r="24" fill="none" stroke="#000" stroke-width="4"/><g><path d="M23.3 11.1H29L38.4 37h-5.3l-2.5-6.9h-9.7L18.4 37h-4.9l9.8-25.9zM22.4 26h6.9l-3.4-9.6-3.5 9.6z" fill="#fff"/></g></svg>
           </label>

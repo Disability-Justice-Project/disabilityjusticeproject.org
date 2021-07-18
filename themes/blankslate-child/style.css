@@ -415,6 +415,7 @@ figure {
 	--font-primary: 'Halyard Display', Arial, sans-serif;
 	--font-secondary: 'Halyard Text', Arial, sans-serif;
 	--font-tertiary: Georgia, serif;
+	--font-size-050: 0.7rem;
 	--font-size-100: 0.8rem;
 	--font-size-150: 0.9rem;
 	--font-size-200: 1rem;
@@ -1777,7 +1778,7 @@ img.u-effect-gold-screen:hover {
 	padding: var(--size-300) var(--size-200);
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 70em) {
 	.c-accessibility-modal {
 		padding: var(--size-300) 5vw;
 	}
@@ -1790,13 +1791,13 @@ img.u-effect-gold-screen:hover {
 	grid-template-rows: auto;
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 30em) {
 	.c-accessibility-modal__wrapper {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media (min-width: 70em) {
+@media (min-width: 75em) {
 	.c-accessibility-modal__wrapper {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
@@ -1806,7 +1807,13 @@ img.u-effect-gold-screen:hover {
 	background-color: var(--color-white);
 	display: flex;
 	flex-direction: column;
-	padding: var(--size-250);
+	padding: var(--size-150);
+}
+
+@media (min-width: 30em) {
+	.c-accessibility-modal__setting {
+		padding: var(--size-250);
+	}
 }
 
 .c-accessibility-modal__title {
@@ -1814,7 +1821,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-accessibility-modal__controls {
-	align-items: center;
+	align-items: baseline;
 	display: flex;
 	justify-content: space-around;
 	margin-top: var(--size-200);
@@ -1828,10 +1835,29 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-accessibility-modal__label {
-	font-size: var(--font-size-100);
+	font-size: var(--font-size-050);
 	letter-spacing: var(--tracking-open);
-	padding-top: var(--size-050);
+	line-height: var(--line-height-100);
+	padding-top: var(--size-100);
+	text-align: center;
 	text-transform: uppercase;
+}
+
+@media (min-width: 50em) {
+	.c-accessibility-modal__label {
+		font-size: var(--font-size-100);
+		padding-top: var(--size-150);
+	}
+}
+
+.c-accessibility-modal__word-break {
+	display: block;
+}
+
+@media (min-width: 40em) {
+	.c-accessibility-modal__word-break {
+		display: inline;
+	}
 }
 
 .c-accessibility-modal__radio {
@@ -1852,15 +1878,55 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-accessibility-modal__icon {
-	height: var(--size-600);
-	width: var(--size-600);
+	height: var(--size-500);
+	width: var(--size-500);
 	border-radius: 100%;
+}
+
+@media (min-width: 30em) {
+	.c-accessibility-modal__icon {
+		height: var(--size-400);
+		width: var(--size-400);
+	}
+}
+
+@media (min-width: 40em) {
+	.c-accessibility-modal__icon {
+		height: var(--size-600);
+		width: var(--size-600);
+	}
+}
+
+@media (min-width: 75em) {
+	.c-accessibility-modal__icon {
+		height: var(--size-400);
+		width: var(--size-400);
+	}
+}
+
+@media (min-width: 80em) {
+	.c-accessibility-modal__icon {
+		height: var(--size-600);
+		width: var(--size-600);
+	}
 }
 
 .c-accessibility-modal__button {
 	height: auto;
 	margin-top: var(--size-050);
-	width: 7rem;
+	width: var(--size-900);
+}
+
+@media (min-width: 50em) {
+	.c-accessibility-modal__button {
+		width: calc(var(--font-size-700) * 2);
+	}
+}
+
+@media (min-width: 75em) {
+	.c-accessibility-modal__button {
+		width: calc(var(--font-size-500) * 2);
+	}
 }
 
 .c-accessibility-modal__commit {
@@ -1871,7 +1937,7 @@ img.u-effect-gold-screen:hover {
 	margin-top: var(--size-350);
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 40em) {
 	.c-accessibility-modal__commit {
 		flex-direction: row;
 	}
