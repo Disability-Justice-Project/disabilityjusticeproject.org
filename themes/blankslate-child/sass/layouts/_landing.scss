@@ -111,6 +111,12 @@
 }
 
 
+.l-landing__spacer {
+  grid-column: 1 / 13;
+  min-height: calc(var(--size-900) * 2);
+}
+
+
 .l-recommended-videos {
   background-color: var(--color-gray-darkest);
   grid-column: 1 / 13;
