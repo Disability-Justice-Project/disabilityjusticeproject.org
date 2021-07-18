@@ -1228,7 +1228,8 @@ img.u-effect-gold-screen:hover {
 	position: relative;
 }
 
-.u-embed-responsive iframe {
+.u-embed-responsive iframe,
+.u-embed-responsive img {
 	border: 0;
 	height: 100%;
 	position: absolute;
@@ -1376,7 +1377,7 @@ img.u-effect-gold-screen:hover {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	margin: 0 auto;
-	padding: 0 var(--size-200) calc(var(--size-900) * 2) var(--size-200);
+	padding: 0 var(--size-200) 0 var(--size-200);
 }
 
 @media (min-width: 70em) {
@@ -1488,6 +1489,59 @@ img.u-effect-gold-screen:hover {
 @media (min-width: 70em) {
 	.l-landing__section {
 		margin-top: var(--size-900);
+	}
+}
+
+.l-recommended-videos {
+	background-color: var(--color-gray-darkest);
+	grid-column: 1 / 13;
+	margin-top: calc(var(--size-250) + var(--size-400));
+	outline: var(--size-250) solid var(--color-gray-darkest);
+	padding-top: var(--size-150);
+	padding-bottom: var(--size-900);
+}
+
+@media (min-width: 70em) {
+	.l-recommended-videos {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
+		margin-top: var(--size-400);
+		outline: none;
+		padding-top: var(--size-400);
+	}
+}
+
+.l-recommended-videos__title {
+	grid-column: 1 / 13;
+	grid-row: 1 / 2;
+	margin-left: var(--size-200);
+}
+
+@media (min-width: 70em) {
+	.l-recommended-videos__title {
+		margin-left: 0;
+		grid-column: 2 / 12;
+	}
+}
+
+.l-recommended-videos__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-500);
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+	margin-top: var(--size-500);
+	margin-right: var(--size-200);
+	margin-left: var(--size-200);
+}
+
+@media (min-width: 70em) {
+	.l-recommended-videos__list {
+		flex-direction: row;
+		grid-column: 2 / 12;
+		margin-right: 0;
+		margin-left: 0;
 	}
 }
 
@@ -2283,6 +2337,39 @@ a:focus .c-logo #logotype {
 
 .c-mentor__bio {
 	font-family: var(--font-tertiary);
+}
+
+.c-recommended-video {
+	flex: 1;
+}
+
+.c-recommended-video__thumbnail {
+	background-color: var(--color-gold);
+	cursor: pointer;
+}
+
+.c-recommended-video__title {
+	margin-top: var(--size-200);
+}
+
+.c-recommended-video__link {
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.c-recommended-video__link:hover, .c-recommended-video__link:focus {
+	color: var(--color-white);
+	text-decoration: underline;
+}
+
+.c-recommended-video__about-this-video {
+	color: var(--color-brick);
+	display: inline;
+}
+
+.c-recommended-video__excerpt {
+	font-size: var(--font-size-200);
+	margin-top: var(--size-100);
 }
 
 .c-share__facebook,

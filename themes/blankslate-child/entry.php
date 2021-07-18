@@ -3,7 +3,7 @@
   $transcript = get_field('transcript');
 ?>
 
-<div id="post-<?php the_ID(); ?>" class="l-landing <?php post_class(); ?>">
+<div id="post-<?php the_ID(); ?>" class="l-landing">
 
   <div class="l-landing__hero">
     <div class="u-embed-responsive">
@@ -19,3 +19,6 @@
   </h1>
 
   <?php get_template_part( 'entry', ( is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() ? 'summary' : 'content' ) ); ?>
+</div>
+
+<?php get_template_part('tease-videos');?>

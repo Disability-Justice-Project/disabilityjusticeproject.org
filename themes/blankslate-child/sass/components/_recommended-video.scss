@@ -1,0 +1,36 @@
+.c-recommended-video {
+  flex: 1;
+}
+
+.c-recommended-video__thumbnail {
+  background-color: var(--color-gold);
+  cursor: pointer;
+}
+
+.c-recommended-video__title {
+  margin-top: var(--size-200);
+}
+
+
+.c-recommended-video__link {
+  color: var(--color-white);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-white);
+    text-decoration: underline;
+  }
+}
+
+
+.c-recommended-video__about-this-video {
+  color: var(--color-brick);
+  display: inline;
+}
+
+
+.c-recommended-video__excerpt {
+  font-size: var(--font-size-200);
+  margin-top: var(--size-100);
+}
