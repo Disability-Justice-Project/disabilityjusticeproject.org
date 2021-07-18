@@ -131,12 +131,13 @@
 
 
 .l-recommended-videos__title {
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
   grid-row: 1 / 2;
   margin-left: var(--size-200);
 
   @media (min-width: $breakpoint-700) {
     margin-left: 0;
+    grid-column: 2 / 12;
   }
 }
 
@@ -145,7 +146,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-500);
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
   grid-row: 2 / 3;
   margin-top: var(--size-500);
   margin-right: var(--size-200);
@@ -153,6 +154,7 @@
 
   @media (min-width: $breakpoint-700) {
     flex-direction: row;
+    grid-column: 2 / 12;
     margin-right: 0;
     margin-left: 0;
   }
