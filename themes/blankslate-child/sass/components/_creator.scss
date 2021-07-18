@@ -36,10 +36,6 @@
 .c-creator__about-this-video {
   color: var(--color-brick);
   font-weight: var(--type-weight-bold);
-
-  .js-contrast-blue & {
-    color: var(--color-gray-darkest);
-  }
 }
 
 
@@ -64,7 +60,7 @@
   }
 
   .js-contrast-blue & {
-    color: var(--color-gray-darkest);
+    color: var(--color-brick);
 
     &:hover,
     &:focus {

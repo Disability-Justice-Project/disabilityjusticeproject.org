@@ -1186,7 +1186,7 @@ table tfoot tr td {
 }
 
 .js-contrast-blue .u-color-text-gold {
-	color: var(--color-gray-darkest);
+	color: var(--color-brick);
 }
 
 .js-contrast-white .u-color-text-gold,
@@ -2176,10 +2176,6 @@ img.u-effect-gold-screen:hover {
 	font-weight: var(--type-weight-bold);
 }
 
-.js-contrast-blue .c-creator__about-this-video {
-	color: var(--color-gray-darkest);
-}
-
 .c-creator__bio {
 	font-size: var(--font-size-150);
 	margin-left: var(--size-200);
@@ -2206,7 +2202,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .js-contrast-blue .c-creator__read-more {
-	color: var(--color-gray-darkest);
+	color: var(--color-brick);
 }
 
 .js-contrast-blue .c-creator__read-more:hover, .js-contrast-blue .c-creator__read-more:focus {
