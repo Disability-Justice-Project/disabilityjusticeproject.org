@@ -6,7 +6,8 @@
   padding: 0 var(--size-200) 0 var(--size-200);
 
   @media (min-width: $breakpoint-700) {
-    grid-template-columns: repeat(12, 1fr);
+    @include grid();
+
     padding-left: 0;
     padding-right: 0;
   }
@@ -126,8 +127,9 @@
   padding-bottom: var(--size-900);
 
   @media (min-width: $breakpoint-700) {
+    @include grid();
+
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     margin-top: var(--size-400);
     outline: none;
