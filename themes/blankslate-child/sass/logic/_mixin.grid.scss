@@ -1,0 +1,18 @@
+@mixin grid() {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+@mixin grid-inset($property, $size) {
+  @if ($size == "small") {
+    #{$property}-right: 5vw;
+    #{$property}-left: 5vw;
+  }
+  @else if ($size == "large") {
+    #{$property}-right: 7vw;
+    #{$property}-left: 7vw;
+  }
+  @else {
+    @error "Please use an argument of `small`, or `right`."
+  }
+}
