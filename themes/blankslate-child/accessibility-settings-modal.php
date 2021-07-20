@@ -107,7 +107,6 @@
       </div>
     </div>
     <div class="c-accessibility-modal__commit">
-      <button data-modal-close-button class="c-accessibility-modal__control" type="button">Cancel</button>
       <button data-modal-button-reset class="c-accessibility-modal__control" type="button">Restore default</button>
       <button data-modal-close-button class="c-accessibility-modal__control c-accessibility-modal__control--primary" type="button">Save</button>
     </div>
