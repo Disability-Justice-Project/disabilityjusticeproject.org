@@ -1,5 +1,18 @@
 (function($) {
 
+  const DEFAULT_USER_SETTINGS = 'js-font-size-default js-line-height-default js-contrast-default';
+  const ALL_USER_SETTINGS_CLASSES = 'js-font-size-default js-font-size-large js-font-size-extra-large js-line-height-default js-line-height-more js-line-height-max js-contrast-default js-contrast-yellow js-contrast-white js-contrast-blue js-no-highlight js-highlighted';
+  const USER_SETTINGS_KEY = 'userSettings';
+  const BODY_EL = $('body');
+
+  function getUserSettingsFromBody () {
+    return BODY_EL[0].className.split(' ').filter((cls) => cls.match(/js\-/)).join(' ');
+  }
+
+  function updateUserSettings () {
+    localStorage.setItem(USER_SETTINGS_KEY, getUserSettingsFromBody());
+  }
+
   // Toggle transcripts
   var transcriptButtons = $('[data-transcript="button"]');
   var transcriptTitle = $('[data-transcript="title"]');
@@ -56,8 +69,12 @@
   var lineHeightDefault = $('#line-height-default').prop("checked", true);
   var contrastDefault = $('#contrast-default').prop("checked", true);
   var noHighlight = $('#no-highlight').prop("checked", true);
-  $(document.body).addClass('js-font-size-default js-line-height-default js-contrast-default');
-
+  var userSettings = localStorage.getItem(USER_SETTINGS_KEY);
+  if (!userSettings) {
+    localStorage.setItem(USER_SETTINGS_KEY, DEFAULT_USER_SETTINGS);
+    userSettings = DEFAULT_USER_SETTINGS;
+  }
+  BODY_EL.toggleClass(userSettings, true);
 
   // Toggle font size settings
   $('input[name="font-size"]').change(function(){
@@ -65,6 +82,7 @@
     $(document.body)
       .removeClass('js-font-size-default js-font-size-large js-font-size-extra-large')
       .addClass("js-" + inputVal);
+    updateUserSettings();
   });
 
   // Toggle line height settings
@@ -73,6 +91,7 @@
     $(document.body)
       .removeClass('js-line-height-default js-line-height-more js-line-height-max')
       .addClass("js-" + inputVal);
+    updateUserSettings();
   });
 
 
@@ -82,22 +101,25 @@
     $(document.body)
       .removeClass('js-contrast-default js-contrast-yellow js-contrast-white js-contrast-blue')
       .addClass("js-" + inputVal);
+    updateUserSettings();
   });
 
-  // Toggle highlight style settings
+  // Toggle highlight Cstyle settings
   $('input[name="highlight-style"]').change(function(){
     var inputVal = $('input[name="highlight-style"]:checked').val();
     $(document.body)
       .removeClass('js-no-highlight js-highlighted')
       .addClass("js-" + inputVal);
+    updateUserSettings();
   });
 
   // Restores default accessibility modal settings
   var accessibilitySettingsResetButton = $('[data-modal-button-reset]');
   accessibilitySettingsResetButton.click(function(event) {
     $(document.body)
-      .removeClass('js-font-size-default js-font-size-large js-font-size-extra-large js-line-height-default js-line-height-more js-line-height-max js-contrast-default js-contrast-yellow js-contrast-white js-contrast-blue js-no-highlight js-highlighted')
-      .addClass('js-font-size-default js-line-height-default js-contrast-default js-no-highlight');
+      .removeClass(ALL_USER_SETTINGS_CLASSES)
+      .addClass(DEFAULT_USER_SETTINGS);
+    updateUserSettings();
     fontSizeDefault.prop("checked", true);
     lineHeightDefault.prop("checked", true);
     contrastDefault.prop("checked", true);
@@ -105,5 +127,4 @@
     return false;
   });
 
-
-})(jQuery);
+  })(jQuery);
