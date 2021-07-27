@@ -33,17 +33,33 @@
     </h2>
 
     <?php
-        $args = array(
-          'category_name' => 'mentor',
-          'orderby'       => 'title',
-          'order'         => 'ASC',
-          'no_found_rows' => true
-        );
-        $query = new WP_Query($args);
+      $args = array(
+        'category_name' => 'mentor',
+        'orderby'       => 'title',
+        'order'         => 'ASC',
+        'no_found_rows' => true
+      );
+      $query = new WP_Query($args);
 
-        while($query -> have_posts()) : $query -> the_post(); ?>
-          <?php get_template_part('mentor'); ?>
-      <?php endwhile; ?>
+      while($query -> have_posts()) : $query -> the_post(); ?>
+        <?php get_template_part('mentor'); ?>
+    <?php endwhile; ?>
+
+    <h2 class="l-landing__section l-landing__heading help c-heading__large">
+      Staff
+    </h2>
+
+    <?php
+      $args = array(
+        'category_name' => 'staff',
+        'order'         => 'ASC',
+        'no_found_rows' => true
+      );
+      $query = new WP_Query($args);
+
+      while($query -> have_posts()) : $query -> the_post(); ?>
+        <?php get_template_part('mentor'); ?>
+    <?php endwhile; ?>
 
       <div class="l-landing__spacer"></div>
   </div>
