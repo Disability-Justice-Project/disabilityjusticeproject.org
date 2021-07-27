@@ -33,6 +33,16 @@
   ol {
     margin-left: 2ch;
   }
+
+  // Links
+  a {
+    color: var(--color-brick);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 
