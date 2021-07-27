@@ -2099,6 +2099,14 @@ img.u-effect-gold-screen:hover {
 	margin-left: 2ch;
 }
 
+.c-content a {
+	color: var(--color-brick);
+}
+
+.c-content a:hover, .c-content a:focus {
+	text-decoration: none;
+}
+
 .c-content__hero {
 	border-top: none;
 	margin-top: var(--size-450);
