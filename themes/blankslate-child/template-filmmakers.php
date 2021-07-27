@@ -5,6 +5,7 @@
   */
 
   get_header();
+  $order_by = get_field('order_by');
 ?>
 
 <main id="content">
@@ -19,8 +20,8 @@
     <?php
       $args = array(
         'category_name' => 'filmmaker',
-        'orderby'       => 'title',
-        'order'         => 'ASC',
+        'orderby'       => '$order_by',
+        'order'         => 'DSC',
         'no_found_rows' => true
       );
       $query = new WP_Query($args);
