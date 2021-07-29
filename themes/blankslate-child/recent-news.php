@@ -1,4 +1,4 @@
-<div class="l-tease-news">
+<div id="news" class="l-tease-news">
   <h2 class="l-tease-news__title">
     News <span class="u-color-text-brick">From the Global Frontlines of Disability Justice</span>
   </h2>

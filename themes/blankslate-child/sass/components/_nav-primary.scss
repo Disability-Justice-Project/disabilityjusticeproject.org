@@ -3,7 +3,7 @@
   .menu {
     display: flex;
 
-    @media (min-width: $breakpoint-300) {
+    @media (min-width: $breakpoint-700) {
       margin-left: var(--size-200);
     }
   }
@@ -86,6 +86,18 @@
   li:nth-of-type(4) {
     a {
       border-bottom-color: var(--color-olive);
+
+      &:hover,
+      &:focus {
+        border-bottom-color: var(--color-white);
+      }
+    }
+  }
+
+  // News
+  li:nth-of-type(5) {
+    a {
+      border-bottom-color: var(--color-wisteria);
 
       &:hover,
       &:focus {
