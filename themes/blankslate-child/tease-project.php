@@ -14,13 +14,14 @@
   <div class="c-tease-project__content">
 
     <h2 class="c-tease-project__title">
+      <span aria-hidden="true" class="c-creator__about-this-video">About this video</span>
       <a class="c-tease-project__link" href="<?php the_permalink(); ?>">
         <?php the_title(); ?>
       </a>
     </h2>
 
     <p class="c-tease-project__excerpt">
-      <span class="c-creator__about-this-video">About this video:</span> <?php echo excerpt(35); ?>
+      <?php echo excerpt(35); ?>
     </p>
 
     <div class="c-creator">
