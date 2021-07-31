@@ -12,7 +12,7 @@ $_toggle-icon-size: var(--size-500);
     background-color: transparent;
 
     .c-accessibility-settings__toggle-label {
-      border-bottom-color: transparent;
+      border-bottom-color: var(--color-gray-dark);
       color: var(--color-white);
     }
   }
@@ -43,9 +43,6 @@ $_toggle-icon-size: var(--size-500);
   padding-bottom: var(--size-100);
   pointer-events: none; // Allows click through to toggle modal button. SEE: https://github.com/scottaohara/accessible_modal_window/issues/24
   text-decoration: none;
-
-  @media (min-width: $breakpoint-700) {
-  }
 }
 
 

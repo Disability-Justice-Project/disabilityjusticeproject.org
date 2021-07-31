@@ -30,12 +30,25 @@
   cursor: pointer;
   height: var(--size-900);
   width: var(--size-900);
+
+  .js-contrast-yellow & {
+    background-color: var(--color-white);
+  }
 }
 
 
 .c-creator__about-this-video {
-  color: var(--color-brick);
+  color: var(--color-dusk-tint);
+  display: block;
   font-weight: var(--type-weight-bold);
+  font-size: var(--font-size-250);
+  margin-bottom: var(--size-100);
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-brick);
+  }
 }
 
 
