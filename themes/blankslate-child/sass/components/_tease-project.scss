@@ -1,5 +1,6 @@
 .c-tease-project {
   border-bottom: var(--border-thin) solid var(--color-gray-light);
+  grid-column: 2 / 12;
   margin-top: var(--size-600);
   margin-bottom: var(--size-600);
 
@@ -42,14 +43,14 @@
 
 .c-tease-project__content {
   margin-top: var(--size-400);
-  margin-right: var(--size-300);
-  margin-left: var(--size-300);
+  // margin-right: var(--size-300);
+  // margin-left: var(--size-300);
 
   @media (min-width: $breakpoint-700) {
     align-self: end;
     margin: 0 0 var(--size-200) 0;
-    padding-right: var(--size-950);
-    padding-left: var(--font-size-600);
+    // padding-right: var(--size-950);
+    // padding-left: var(--font-size-600);
   }
 }
 

@@ -4,17 +4,18 @@
   padding: var(--size-600) var(--size-200) var(--size-400) var(--size-200);
 
   @media (min-width: $breakpoint-300) {
+    @include grid-inset("padding", "small");
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      'title'
-      'news';
-    padding: var(--size-800) var(--size-200) 5rem var(--size-200);
+    padding-top: var(--size-800);
+    padding-bottom: var(--size-950);
   }
 
   @media (min-width: $breakpoint-500) {
-    @include homepage-inset("padding", "both");
+    @include grid();
+
+    grid-template-rows: auto;
   }
 
   .js-contrast-blue &,
@@ -25,8 +26,9 @@
 
 
 .l-tease-news__title {
-  grid-area: title;
   line-height: var(--line-height-200);
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
 
   .js-contrast-blue &,
   .js-contrast-yellow & {
@@ -38,7 +40,8 @@
 .l-tease-news__posts {
   display: grid;
   gap: var(--size-400);
-  grid-area: news;
+  grid-column: 1 / 13;
+  grid-row: 2 / 3;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin-top: var(--size-300);
