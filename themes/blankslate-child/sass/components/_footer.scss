@@ -3,6 +3,6 @@
   padding: var(--size-300) var(--size-200) 0 var(--size-200);
 
   @media (min-width: $breakpoint-700) {
-    @include homepage-inset("margin", "right");
+    padding: 0;
   }
 }
