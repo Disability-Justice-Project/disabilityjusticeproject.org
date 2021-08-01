@@ -16,6 +16,17 @@ $_share-icon-size: var(--size-550); // SEE: `.c-tease-project__transcript`
   &:focus {
     .c-share__icon {
       fill: var(--color-black);
+
+      .js-contrast-blue & {
+        fill: var(--color-white);
+      }
+    }
+  }
+
+  .js-contrast-blue & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-brick);
     }
   }
 

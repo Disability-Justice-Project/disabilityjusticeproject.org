@@ -8,8 +8,8 @@
   @media (min-width: $breakpoint-700) {
     @include grid();
 
+    align-items: end;
     display: grid;
-    margin-top: var(--size-400);
     padding-right: 0;
     padding-left: 0;
 
@@ -29,7 +29,7 @@
   }
 
   .js-contrast-blue & {
-    border-bottom-color: var(--color-gray-light);
+    border-bottom-color: var(--color-gray-darkest);
   }
 
   .js-contrast-yellow & {
@@ -84,7 +84,7 @@
 
     &:hover,
     &:focus {
-      color: var(--color-gold);
+      color: var(--color-brick);
     }
   }
 
@@ -134,6 +134,14 @@
   .js-contrast-white &,
   .js-contrast-yellow & {
     color: var(--color-black);
+  }
+
+  .js-contrast-blue & {
+    &:hover,
+    &:focus {
+      background-color: var(--color-brick);
+      color: var(--color-white);
+    }
   }
 
   .js-contrast-yellow & {

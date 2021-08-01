@@ -19,11 +19,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  .js-contrast-blue &,
-  .js-contrast-yellow & {
-    background-color: var(--color-gray-darkest);
-  }
 }
 
 
@@ -31,11 +26,11 @@
   line-height: var(--line-height-200);
   grid-column: 2 / 12;
   grid-row: 1 / 2;
+}
 
-  .js-contrast-blue &,
-  .js-contrast-yellow & {
-    color: var(--color-gray-lightest);
-  }
+
+.l-tease-news__emphasis {
+  color: var(--color-brick);
 }
 
 
