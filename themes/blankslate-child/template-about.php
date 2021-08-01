@@ -58,7 +58,7 @@
       $query = new WP_Query($args);
 
       while($query -> have_posts()) : $query -> the_post(); ?>
-        <?php get_template_part('mentor'); ?>
+        <?php get_template_part('staff'); ?>
     <?php endwhile; ?>
 
       <div class="l-landing__spacer"></div>
