@@ -1,10 +1,9 @@
 a {
-  color: #4169e1;
+  color: var(--color-brick);
 
   &:hover,
-  &:focus,
-  &:active {
-    color: #191970;
+  &:focus {
+    text-decoration: none;
   }
 
   &:focus {
