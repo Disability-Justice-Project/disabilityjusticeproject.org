@@ -16,6 +16,8 @@
     @include grid();
 
     grid-template-rows: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .js-contrast-blue &,
@@ -27,7 +29,7 @@
 
 .l-tease-news__title {
   line-height: var(--line-height-200);
-  grid-column: 1 / 13;
+  grid-column: 2 / 12;
   grid-row: 1 / 2;
 
   .js-contrast-blue &,
@@ -40,7 +42,7 @@
 .l-tease-news__posts {
   display: grid;
   gap: var(--size-400);
-  grid-column: 1 / 13;
+  grid-column: 2 / 12;
   grid-row: 2 / 3;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
