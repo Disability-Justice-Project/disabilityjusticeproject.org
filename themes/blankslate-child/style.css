@@ -1597,20 +1597,14 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
-.js-contrast-blue .l-tease-news,
-.js-contrast-yellow .l-tease-news {
-	background-color: var(--color-gray-darkest);
-}
-
 .l-tease-news__title {
 	line-height: var(--line-height-200);
 	grid-column: 2 / 12;
 	grid-row: 1 / 2;
 }
 
-.js-contrast-blue .l-tease-news__title,
-.js-contrast-yellow .l-tease-news__title {
-	color: var(--color-gray-lightest);
+.l-tease-news__emphasis {
+	color: var(--color-brick);
 }
 
 .l-tease-news__posts {
@@ -2635,6 +2629,22 @@ a:focus .c-logo #logotype {
 	fill: var(--color-black);
 }
 
+.js-contrast-blue .c-share__facebook:hover .c-share__icon, .js-contrast-blue .c-share__facebook:focus .c-share__icon, .js-contrast-blue
+.c-share__twitter:hover .c-share__icon, .js-contrast-blue
+.c-share__twitter:focus .c-share__icon, .js-contrast-blue
+.c-share__whatsapp:hover .c-share__icon, .js-contrast-blue
+.c-share__whatsapp:focus .c-share__icon {
+	fill: var(--color-white);
+}
+
+.js-contrast-blue .c-share__facebook:hover, .js-contrast-blue .c-share__facebook:focus, .js-contrast-blue
+.c-share__twitter:hover, .js-contrast-blue
+.c-share__twitter:focus, .js-contrast-blue
+.c-share__whatsapp:hover, .js-contrast-blue
+.c-share__whatsapp:focus {
+	background-color: var(--color-brick);
+}
+
 .js-contrast-yellow .c-share__facebook:hover, .js-contrast-yellow .c-share__facebook:focus, .js-contrast-yellow
 .c-share__twitter:hover, .js-contrast-yellow
 .c-share__twitter:focus, .js-contrast-yellow
@@ -2738,8 +2748,8 @@ a:focus .c-logo #logotype {
 @media (min-width: 70em) {
 	.c-tease-project {
 		grid-template-columns: repeat(12, 1fr);
+		align-items: end;
 		display: grid;
-		margin-top: var(--size-400);
 		padding-right: 0;
 		padding-left: 0;
 	}
@@ -2759,7 +2769,7 @@ a:focus .c-logo #logotype {
 }
 
 .js-contrast-blue .c-tease-project {
-	border-bottom-color: var(--color-gray-light);
+	border-bottom-color: var(--color-gray-darkest);
 }
 
 .js-contrast-yellow .c-tease-project {
@@ -2815,7 +2825,7 @@ a:focus .c-logo #logotype {
 }
 
 .js-contrast-blue .c-tease-project__link:hover, .js-contrast-blue .c-tease-project__link:focus {
-	color: var(--color-gold);
+	color: var(--color-brick);
 }
 
 .js-contrast-white .c-tease-project__link,
@@ -2863,6 +2873,11 @@ a:focus .c-logo #logotype {
 .js-contrast-white .c-tease-project__transcript,
 .js-contrast-yellow .c-tease-project__transcript {
 	color: var(--color-black);
+}
+
+.js-contrast-blue .c-tease-project__transcript:hover, .js-contrast-blue .c-tease-project__transcript:focus {
+	background-color: var(--color-brick);
+	color: var(--color-white);
 }
 
 .js-contrast-yellow .c-tease-project__transcript:hover, .js-contrast-yellow .c-tease-project__transcript:focus {
