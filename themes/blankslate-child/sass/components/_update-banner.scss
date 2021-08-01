@@ -1,5 +1,11 @@
 .c-update-banner {
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
+  margin-right: var(--size-200);
+  margin-left: var(--size-200);
+
+  @media (min-width: $breakpoint-700) {
+    grid-column: 2 / 12;
+  }
 }
 
 
