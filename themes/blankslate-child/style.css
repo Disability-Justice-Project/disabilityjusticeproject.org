@@ -1041,11 +1041,11 @@ h6 {
 }
 
 a {
-	color: #4169e1;
+	color: var(--color-brick);
 }
 
-a:hover, a:focus, a:active {
-	color: #191970;
+a:hover, a:focus {
+	text-decoration: none;
 }
 
 a:focus {
@@ -2677,7 +2677,7 @@ a:focus .c-logo #logotype {
 	.c-tease-project {
 		grid-template-columns: repeat(12, 1fr);
 		display: grid;
-		margin-top: 0;
+		margin-top: var(--size-400);
 		padding-right: 0;
 		padding-left: 0;
 	}
@@ -2689,12 +2689,6 @@ a:focus .c-logo #logotype {
 @media (min-width: 50em) {
 	.page-template-template-homepage .c-tease-project:nth-of-type(n+3) .c-tease-project__video {
 		margin-left: var(--size-900);
-	}
-}
-
-@media (min-width: 50em) {
-	.category-film .c-tease-project {
-		padding-left: var(--size-900);
 	}
 }
 
