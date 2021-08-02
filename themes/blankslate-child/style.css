@@ -2900,6 +2900,7 @@ a:focus .c-logo #logotype {
 	background-size: 30% 30%;
 	border-color: var(--color-gray-lightest);
 	color: var(--color-black);
+	height: var(--size-800);
 }
 
 @media (min-width: 70em) {
