@@ -17,7 +17,7 @@
         <p class="c-partnership__byline">
           A strategic partnership with
         </p>
-        <a href="https://disabilityrightsfund.org/">
+        <a class="c-partnership__link" href="https://disabilityrightsfund.org/">
           <img
             alt="Disability Rights Fund."
             class="c-partnership__logo"

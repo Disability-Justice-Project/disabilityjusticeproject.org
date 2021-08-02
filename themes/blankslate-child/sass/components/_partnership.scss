@@ -33,6 +33,16 @@
 }
 
 
+.c-partnership__link {
+  &:hover,
+  &:focus {
+    .c-partnership__logo {
+      opacity: 0.65;
+    }
+  }
+}
+
+
 .c-partnership__logo {
   margin-top: var(--size-150);
   width: 4.5rem;
