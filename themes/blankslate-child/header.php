@@ -39,7 +39,11 @@
 
 <?php wp_body_open(); ?>
 
-<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'disabilityjusticeproject' ); ?></a>
+<a
+  class="c-skipnav"
+  href="#title">
+  <?php esc_html_e( 'Skip to main content', 'disabilityjusticeproject' ); ?>
+</a>
 
 <header
   id="masthead"
