@@ -14,7 +14,7 @@
   <div class="l-landing">
 
     <?php if ( ! empty($hero)) : ?>
-      <div class="l-landing__hero">
+      <div id="title" class="l-landing__hero">
         <figure
           class="c-content__hero"
           role="figure"
@@ -30,7 +30,7 @@
     <p class="l-landing__topic c-content__topic">
       News
     </p>
-    <h1 id="title" class="l-landing__heading c-heading__large">
+    <h1 <?php if ( ! ($hero)) : ?>id="title"<?php endif; ?> class="l-landing__heading c-heading__large">
       <?php the_title(); ?>
     </h1>
 
