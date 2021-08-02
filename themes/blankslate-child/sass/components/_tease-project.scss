@@ -123,10 +123,10 @@
     background-size: 30% 30%;
     border-color: var(--color-gray-lightest);
     color: var(--color-black);
+    height: var(--size-800);
 
     @media (min-width: $breakpoint-700) {
       background-position-x: -10%;;
-      // background: var(--color-gray-lightest) url('/wp-content/themes/blankslate-child/images/icon-close.svg') no-repeat center left -1rem;
     }
   }
 
