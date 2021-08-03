@@ -98,6 +98,10 @@
   @media (min-width: $breakpoint-700) {
     grid-column: 5 / 10;
   }
+
+  .post-template-template-news & {
+    margin-bottom: calc(var(--size-950) * 2);
+  }
 }
 
 

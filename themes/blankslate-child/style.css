@@ -1516,6 +1516,10 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
+.post-template-template-news .l-landing__content {
+	margin-bottom: calc(var(--size-950) * 2);
+}
+
 .l-landing__section:nth-of-type(2n) {
 	margin-top: var(--size-900);
 }
