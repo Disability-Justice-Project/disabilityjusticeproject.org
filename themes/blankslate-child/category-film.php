@@ -7,7 +7,7 @@
 ?>
 
 <main id="content">
-  <h1 id="title" class="screen-reader-text">
+  <h1 id="title" class="sr-only">
     <?php
       $category = get_the_category();
       echo $category[0]->cat_name;

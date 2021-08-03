@@ -9,14 +9,16 @@
 
 
 .c-partnership__lockup {
+  align-items: flex-end;
   display: flex;
-  flex-direction: column;
-  margin-top: var(--size-250);
+  justify-content: flex-end;
+  margin-top: var(--size-350);
   margin-left: var(--size-200);
+  margin-right: var(--size-200);
 
   @media (min-width: $breakpoint-700) {
-    flex-direction: row;
-    margin-top: var(--size-150);
+    margin-top: var(--size-250);
+    margin-right: 0;
   }
 }
 
@@ -26,10 +28,7 @@
   line-height: var(--line-height-200);
   margin-right: var(--size-200);
   max-width: 9rem;
-
-  @media (min-width: $breakpoint-700) {
-    text-align: right;
-  }
+  text-align: right;
 }
 
 

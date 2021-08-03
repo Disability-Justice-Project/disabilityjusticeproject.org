@@ -8,7 +8,7 @@
     aria-modal="false">
     <h1
       id="accessibility-settings-modal-title"
-      class="screen-reader-text"
+      class="sr-only"
       tabindex="-1">
       Accessibility settings
     </h1>
@@ -18,7 +18,7 @@
           Type size
         </h2>
         <fieldset class="c-accessibility-modal__controls">
-          <legend class="screen-reader-text">Set type size</legend>
+          <legend class="sr-only">Set type size</legend>
           <label for="font-size-default">
             <span class="c-accessibility-modal__label">Default</span>
             <input id="font-size-default" class="c-accessibility-modal__radio" name="font-size" value="font-size-default" type="radio">
@@ -41,7 +41,7 @@
           Line spacing
         </h2>
         <fieldset class="c-accessibility-modal__controls">
-          <legend class="screen-reader-text">Set type size</legend>
+          <legend class="sr-only">Set type size</legend>
           <label for="line-height-default">
             <span class="c-accessibility-modal__label">Default</span>
             <input id="line-height-default" class="c-accessibility-modal__radio" name="line-height" value="line-height-default" type="radio">
@@ -64,7 +64,7 @@
           Contrast
         </h2>
         <fieldset class="c-accessibility-modal__controls">
-          <legend class="screen-reader-text">Adjust contrast</legend>
+          <legend class="sr-only">Adjust contrast</legend>
           <label for="contrast-default">
             <span class="c-accessibility-modal__label">Default</span>
             <input id="contrast-default" class="c-accessibility-modal__radio" name="contrast" value="contrast-default" type="radio">
@@ -92,7 +92,7 @@
           Highlight inputs
         </h2>
         <fieldset class="c-accessibility-modal__controls">
-          <legend class="screen-reader-text">Highlight style</legend>
+          <legend class="sr-only">Highlight style</legend>
           <label for="no-highlight">
             <span class="c-accessibility-modal__label">No highlight</span>
             <input id="no-highlight" class="c-accessibility-modal__radio" name="highlight-style" value="no-highlight" type="radio">
