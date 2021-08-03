@@ -8,7 +8,7 @@
   <div class="u-embed-responsive" onclick="location.href='<?php the_permalink(); ?>'">
     <img
       alt="Video thumbnail for <?php the_title(); ?>."
-      class="u-effect-gold-screen c-recommended-video__thumbnail"
+      class="c-recommended-video__thumbnail"
       src="https://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg">
   </div>
   <h3 class="c-recommended-video__title">
