@@ -37,7 +37,7 @@
         <p class="c-creator__bio">
           <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>&nbsp;
           <a class="c-creator__read-more" href="<?php the_permalink(); ?>">
-            Read&nbsp;more<span class="screen-reader-text"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
+            Read&nbsp;more<span class="sr-only"> about <?php echo esc_html( $associated_filmmaker->post_title ); ?></span>
           </a>
         </p>
       </div>
@@ -59,7 +59,7 @@
       <h4
         id="transcript-for-<?php echo sanitize_title(get_the_title()) ?>"
         data-transcript="title"
-        class="screen-reader-text"
+        class="sr-only"
         tabindex="-1">
         Transcript for <?php the_title(); ?>
       </h4>

@@ -17,7 +17,7 @@
   <div class="c-tease-news__excerpt">
     <?php the_excerpt(); ?>
     <p>
-      <a class="c-tease-news__read-more" href="<?php the_permalink(); ?>">Read more<span class="screen-reader-text"> about <?php the_title(); ?></span></a>
+      <a class="c-tease-news__read-more" href="<?php the_permalink(); ?>">Read more<span class="sr-only"> about <?php the_title(); ?></span></a>
     </p>
   </div>
 </div>
