@@ -2421,16 +2421,18 @@ a:focus .c-logo #logotype {
 }
 
 .c-partnership__lockup {
+	align-items: flex-end;
 	display: flex;
-	flex-direction: column;
-	margin-top: var(--size-250);
+	justify-content: flex-end;
+	margin-top: var(--size-350);
 	margin-left: var(--size-200);
+	margin-right: var(--size-200);
 }
 
 @media (min-width: 70em) {
 	.c-partnership__lockup {
-		flex-direction: row;
-		margin-top: var(--size-150);
+		margin-top: var(--size-250);
+		margin-right: 0;
 	}
 }
 
@@ -2439,12 +2441,7 @@ a:focus .c-logo #logotype {
 	line-height: var(--line-height-200);
 	margin-right: var(--size-200);
 	max-width: 9rem;
-}
-
-@media (min-width: 70em) {
-	.c-partnership__byline {
-		text-align: right;
-	}
+	text-align: right;
 }
 
 .c-partnership__link:hover .c-partnership__logo, .c-partnership__link:focus .c-partnership__logo {
