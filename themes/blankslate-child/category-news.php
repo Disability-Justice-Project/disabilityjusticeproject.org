@@ -15,7 +15,7 @@
     <?php
       $args = array(
         'category_name' => 'news',
-        'order'         => 'ASC',
+        'order'         => 'DSC',
         'no_found_rows' => true
       );
       $query = new WP_Query($args);
