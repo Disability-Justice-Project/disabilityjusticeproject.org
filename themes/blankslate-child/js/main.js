@@ -36,7 +36,7 @@
 
   transcriptButtons.click(function(event) {
     var transcriptButton = $(event.target);
-    var transcriptContent = transcriptButton.parents(".c-tease-project").find('[data-transcript="content"]');
+    var transcriptContent = transcriptButton.parents(".js-transcript").find('[data-transcript="content"]');
 
     if ( transcriptButton.attr('aria-pressed') == 'false' ) {
       transcriptButton.attr("aria-pressed", "true");
