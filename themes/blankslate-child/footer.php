@@ -30,5 +30,9 @@
 </footer>
   <?php wp_footer(); ?>
   <script src="/wp-content/themes/blankslate-child/js/main.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/wp-content/themes/blankslate-child/vendor/ableplayer/thirdparty/js.cookie.js"></script>
+  <script src="/wp-content/themes/blankslate-child/vendor/ableplayer/build/ableplayer.min.js"></script>
 </body>
 </html>

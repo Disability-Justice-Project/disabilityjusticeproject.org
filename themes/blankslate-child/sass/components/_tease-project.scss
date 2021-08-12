@@ -33,6 +33,8 @@
 
 
 .c-tease-project__video {
+  @include able-player-styling();
+
   margin-bottom: var(--size-200);
 
   @media (min-width: $breakpoint-700) {
