@@ -4,7 +4,9 @@
   position: relative;
 
   iframe,
-  img {
+  img,
+  video,
+  .able-wrapper {
     border: 0;
     height: 100%;
     position: absolute;
