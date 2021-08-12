@@ -5,6 +5,7 @@
   */
 
   get_header();
+  $mentor_last_name = get_field('mentor_last_name');
 ?>
 
 <main id="content" class="u-dark-on-light">
@@ -35,7 +36,7 @@
     <?php
       $args = array(
         'category_name' => 'mentor',
-        'orderby'       => 'title',
+        'orderby'       => '$mentor_last_name',
         'order'         => 'ASC',
         'no_found_rows' => true
       );
