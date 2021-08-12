@@ -7,9 +7,15 @@
 
 <div class="c-tease-project js-transcript">
   <div class="c-tease-project__video">
-    <div class="u-embed-responsive">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <video
+      id="<?php echo sanitize_title(get_the_title()) ?>"
+      data-able-player
+      data-youtube-id="<?php echo $video_id; ?>"
+      data-root-path="/wp-content/themes/blankslate-child/vendor/ableplayer/"
+      data-heading-level="3"
+      preload="auto"
+      poster="https://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg">
+    </video>
   </div>
   <div class="c-tease-project__content">
 
