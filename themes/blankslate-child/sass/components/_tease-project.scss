@@ -18,12 +18,6 @@
     }
   }
 
-  .page-template-template-homepage &:nth-of-type(n+3) .c-tease-project__video {
-    @media (min-width: $breakpoint-500) {
-      @include homepage-inset("margin", "left");
-    }
-  }
-
   .category-film &:last-of-type {
     border-bottom: none;
   }

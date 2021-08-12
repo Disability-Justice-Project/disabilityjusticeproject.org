@@ -2839,12 +2839,6 @@ a:focus .c-logo #logotype {
 	}
 }
 
-@media (min-width: 50em) {
-	.page-template-template-homepage .c-tease-project:nth-of-type(n+3) .c-tease-project__video {
-		margin-left: var(--size-900);
-	}
-}
-
 .category-film .c-tease-project:last-of-type {
 	border-bottom: none;
 }
