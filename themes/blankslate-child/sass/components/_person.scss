@@ -11,11 +11,15 @@ $_person-photo-size: 8rem;
   min-width: $_person-photo-size;
   width: $_person-photo-size;
 
-  @media (min-width: $breakpoint-700) {
-    grid-column: 4 / 5;
+  @media (min-width: $breakpoint-400) {
+    grid-column: 2 / 3;
     margin-top: var(--size-900);
     position: relative;
       right: var(--size-400);
+  }
+
+  @media (min-width: $breakpoint-700) {
+    grid-column: 4 / 5;
   }
 
   .js-contrast-yellow & {
@@ -29,9 +33,13 @@ $_person-photo-size: 8rem;
   grid-column: 1 / 2;
   margin-top: var(--size-200);
 
+  @media (min-width: $breakpoint-400) {
+    grid-column: 3 / 10;
+    margin-top: var(--size-700);
+  }
+
   @media (min-width: $breakpoint-700) {
     grid-column: 5 / 10;
-    margin-top: var(--size-700);
   }
 }
 
