@@ -19,13 +19,14 @@ Text Domain: blankslate-child
 @import "vendor/normalize";
 @import "wordpress/media";
 
+@import "vendor/ableplayer";
 @import "vendor/fonts";
-// @import "vendor/aria.modal";
 
 
 // Logic
 @import "logic/variables.breakpoints";
 @import "logic/variables.colors";
+@import "logic/mixin.able-player-styling";
 @import "logic/mixin.button";
 @import "logic/mixin.column-width";
 @import "logic/mixin.grid";
