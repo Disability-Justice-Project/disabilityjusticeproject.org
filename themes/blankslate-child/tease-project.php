@@ -5,7 +5,7 @@
   $video_id = get_field('video_id');
 ?>
 
-<div class="c-tease-project">
+<div class="c-tease-project js-transcript">
   <div class="c-tease-project__video">
     <div class="u-embed-responsive">
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,21 +50,6 @@
 
   </div>
 
-  <div class="c-tease-project__accordion-wrapper">
-    <section
-      aria-hidden="true"
-      aria-describedby="transcript-for-<?php echo sanitize_title(get_the_title()) ?>"
-      class="c-tease-project__accordion-content u-flow"
-      data-transcript="content">
-      <h4
-        id="transcript-for-<?php echo sanitize_title(get_the_title()) ?>"
-        data-transcript="title"
-        class="sr-only"
-        tabindex="-1">
-        Transcript for <?php the_title(); ?>
-      </h4>
-      <?php echo $transcript; ?>
-    </section>
-  </div>
+  <?php get_template_part('transcript');?>
 
 </div>

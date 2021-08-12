@@ -1,7 +1,6 @@
 <?php
   $associated_filmmaker = get_field('associated_filmmaker');
   $behind_the_scenes = get_field('behind_the_scenes');
-  $transcript = get_field('transcript');
 ?>
 
   <div class="l-landing__byline">
@@ -9,31 +8,16 @@
       <?php get_template_part('buttons-share');?>
     </aside>
   </div>
-  <div class="l-landing__content">
+  <div class="l-landing__content js-transcript">
     <div class="c-content c-content--project">
       <?php the_content(); ?>
 
       <div class="c-tease-project__tools">
-        <button
-          data-transcript="button"
-          aria-pressed="false"
-          type="button"
-          class="c-tease-project__transcript">
-          Transcript<span class="sr-only"> for <?php the_title(); ?></span>
-        </button>
+        <?php get_template_part('buttons-transcript');?>
       </div>
     </div>
 
-    <div class="c-tease-project__accordion-wrapper">
-      <section
-        aria-hidden="true"
-        aria-label="Transcript for <?php the_title(); ?>"
-        class="c-tease-project__accordion-content u-flow"
-        data-transcript="content"
-        tabindex="0">
-      <?php echo $transcript; ?>
-      </section>
-    </div>
+    <?php get_template_part('transcript');?>
 
     <?php if ( ! empty($behind_the_scenes)) : ?>
       <div class="c-content c-content--behind-the-scenes">
