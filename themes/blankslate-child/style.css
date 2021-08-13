@@ -2702,6 +2702,7 @@ img.u-effect-gold-screen:hover {
 .l-landing__topic {
 	border-top: var(--border-thin) solid var(--color-gray-light);
 	grid-column: 1 / 2;
+	margin-top: var(--size-100);
 }
 
 @media (min-width: 40em) {
@@ -3575,11 +3576,13 @@ img.u-effect-gold-screen:hover {
 .c-heading__large {
 	font-family: var(--font-primary);
 	font-size: var(--font-size-700);
+	line-height: var(--line-height-100);
 }
 
 .c-heading__medium {
 	font-family: var(--font-primary);
 	font-size: var(--font-size-450);
+	line-height: var(--line-height-100);
 }
 
 .js-contrast-blue .c-heading__medium {
@@ -4301,6 +4304,7 @@ a:focus .c-logo #logotype {
 @media (min-width: 70em) {
 	.c-update-banner {
 		grid-column: 2 / 12;
+		margin-left: 0;
 	}
 }
 
