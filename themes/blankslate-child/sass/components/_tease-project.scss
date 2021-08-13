@@ -39,7 +39,7 @@
 
   @media (min-width: $breakpoint-700) {
     grid-column: 2 / 8;
-    margin-bottom: 0;
+    margin-bottom: calc(var(--size-250) * -1);
   }
 }
 
