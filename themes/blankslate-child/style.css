@@ -4157,7 +4157,7 @@ a:focus .c-logo #logotype {
 @media (min-width: 70em) {
 	.c-tease-project__video {
 		grid-column: 2 / 8;
-		margin-bottom: 0;
+		margin-bottom: calc(var(--size-250) * -1);
 	}
 }
 
