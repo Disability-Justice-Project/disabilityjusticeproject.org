@@ -51,7 +51,7 @@
       <div class="c-content">
         <?php if ( ! empty($audio_version)) : ?>
           <h2 class="c-audio-player__title">
-            Listen now
+            Play audio version
           </h2>
           <?php get_template_part('audio-player'); ?>
         <?php endif; ?>
