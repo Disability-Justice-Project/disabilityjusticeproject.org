@@ -3490,6 +3490,7 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-creator__name-link:hover {
+	color: var(--color-gold);
 	text-decoration: underline;
 }
 
@@ -3854,7 +3855,7 @@ a:focus .c-logo #logotype {
 }
 
 .c-recommended-video__link:hover, .c-recommended-video__link:focus {
-	color: var(--color-white);
+	color: var(--color-gold);
 	text-decoration: underline;
 }
 
