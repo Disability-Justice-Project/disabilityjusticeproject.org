@@ -3575,11 +3575,13 @@ img.u-effect-gold-screen:hover {
 .c-heading__large {
 	font-family: var(--font-primary);
 	font-size: var(--font-size-700);
+	line-height: var(--line-height-100);
 }
 
 .c-heading__medium {
 	font-family: var(--font-primary);
 	font-size: var(--font-size-450);
+	line-height: var(--line-height-100);
 }
 
 .js-contrast-blue .c-heading__medium {
