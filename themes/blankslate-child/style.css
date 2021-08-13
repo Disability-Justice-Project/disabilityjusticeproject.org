@@ -3477,7 +3477,6 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-creator__info {
-	display: flex;
 	margin-top: var(--size-050);
 }
 
@@ -3496,15 +3495,29 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-creator__photo {
+	float: left;
+	shape-outside: circle(50%);
+	border: var(--size-100) solid var(--color-black);
 	background-color: var(--color-gold);
-	border-radius: 100%;
+	border-radius: 75%;
 	cursor: pointer;
-	height: var(--size-900);
-	width: var(--size-900);
+	height: var(--size-950);
+	position: relative;
+	bottom: var(--size-050);
+	width: var(--size-950);
+}
+
+.js-contrast-blue .c-creator__photo {
+	border-color: var(--color-dusk-tint);
+}
+
+.js-contrast-white .c-creator__photo {
+	border-color: var(--color-white);
 }
 
 .js-contrast-yellow .c-creator__photo {
 	background-color: var(--color-white);
+	border-color: var(--color-gold);
 }
 
 .c-creator__about-this-video {
@@ -3523,7 +3536,6 @@ img.u-effect-gold-screen:hover {
 
 .c-creator__bio {
 	font-size: var(--font-size-150);
-	margin-left: var(--size-200);
 	max-width: 65ch;
 }
 
