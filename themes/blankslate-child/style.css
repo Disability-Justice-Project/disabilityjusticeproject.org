@@ -2702,6 +2702,7 @@ img.u-effect-gold-screen:hover {
 .l-landing__topic {
 	border-top: var(--border-thin) solid var(--color-gray-light);
 	grid-column: 1 / 2;
+	margin-top: var(--size-100);
 }
 
 @media (min-width: 40em) {
@@ -4303,6 +4304,7 @@ a:focus .c-logo #logotype {
 @media (min-width: 70em) {
 	.c-update-banner {
 		grid-column: 2 / 12;
+		margin-left: 0;
 	}
 }
 
