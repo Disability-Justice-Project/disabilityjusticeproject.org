@@ -155,6 +155,11 @@
   font-family: var(--font-tertiary);
   grid-column: 1 / 13;
   margin-bottom: var(--size-600);
+
+  .single-post & {
+    position: relative;
+      bottom: var(--size-900);
+  }
 }
 
 
@@ -171,5 +176,11 @@
   @media (min-width: $breakpoint-700) {
     margin-top: var(--size-800);
     padding-top: 0;
+
+    .single-post & {
+      padding-right: var(--size-400);
+      padding-bottom: var(--size-800);
+      padding-left: var(--size-400);
+    }
   }
 }

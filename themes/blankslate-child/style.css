@@ -4263,6 +4263,11 @@ a:focus .c-logo #logotype {
 	margin-bottom: var(--size-600);
 }
 
+.single-post .c-tease-project__accordion-wrapper {
+	position: relative;
+	bottom: var(--size-900);
+}
+
 .c-tease-project__accordion-content {
 	max-width: 74ch;
 	margin: 0 auto;
@@ -4278,6 +4283,11 @@ a:focus .c-logo #logotype {
 	.c-tease-project__accordion-content {
 		margin-top: var(--size-800);
 		padding-top: 0;
+	}
+	.single-post .c-tease-project__accordion-content {
+		padding-right: var(--size-400);
+		padding-bottom: var(--size-800);
+		padding-left: var(--size-400);
 	}
 }
 
