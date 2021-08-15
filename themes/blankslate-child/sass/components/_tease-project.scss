@@ -33,7 +33,7 @@
 
 
 .c-tease-project__video {
-  @include able-player-styling();
+  @include able-player-video();
 
   margin-bottom: var(--size-200);
 
