@@ -15,7 +15,7 @@
   figcaption,
   li,
   p {
-    margin-top: var(--size-200);
+    margin-top: var(--size-300);
   }
 
   // Font Family
@@ -42,6 +42,11 @@
     &:focus {
       text-decoration: none;
     }
+  }
+
+  p,
+  li {
+    line-height: var(--line-height-700);
   }
 }
 

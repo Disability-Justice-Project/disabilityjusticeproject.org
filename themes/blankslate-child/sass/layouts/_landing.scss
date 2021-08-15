@@ -17,7 +17,7 @@
 
 
 .l-landing__hero {
-  @include able-player-styling();
+  @include able-player-video();
 
   margin-bottom: 2.5rem;
   grid-column: 1 / 3;
