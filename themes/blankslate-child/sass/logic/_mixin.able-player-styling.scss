@@ -25,3 +25,22 @@
   }
 }
 
+@mixin able-player-audio() {
+  .able {
+    box-shadow: none !important;
+  }
+
+  .able-seekbar-head,
+  .able-seekbar-played {
+    background-color: var(--color-brick) !important;
+  }
+
+  .able-seekbar{
+    background-color: var(--color-black) !important;
+    border: none !important;
+  }
+
+  .able-seekbar-loaded {
+    background-color: var(--color-gray-dark) !important;
+  }
+}
