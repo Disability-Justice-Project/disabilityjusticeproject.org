@@ -3338,11 +3338,23 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-audio-player__wrapper {
+	margin-top: calc(var(--size-400) * -1);
 	margin-bottom: var(--size-600);
 }
 
 .c-audio-player__wrapper .able {
 	box-shadow: none !important;
+}
+
+.c-audio-player__wrapper .able,
+.c-audio-player__wrapper .able-player,
+.c-audio-player__wrapper .able-controller {
+	background-color: transparent !important;
+}
+
+.c-audio-player__wrapper .able-controller {
+	border-bottom: none;
+	outline: var(--border-thin) solid var(--color-gray-dark);
 }
 
 .c-audio-player__wrapper .able-seekbar-head,
@@ -3357,6 +3369,25 @@ img.u-effect-gold-screen:hover {
 
 .c-audio-player__wrapper .able-seekbar-loaded {
 	background-color: var(--color-gray-dark) !important;
+}
+
+.c-audio-player__wrapper [aria-label="Play"] svg,
+.c-audio-player__wrapper [aria-label="Pause"] svg {
+	fill: var(--color-brick) !important;
+}
+
+.c-audio-player__wrapper [role="button"] svg {
+	fill: var(--color-gray-darkest);
+}
+
+.c-audio-player__wrapper .able-elapsedTime,
+.c-audio-player__wrapper .able-duration,
+.c-audio-player__wrapper .able-status {
+	color: var(--color-gray-darkest) !important;
+}
+
+.c-audio-player__wrapper .able-status {
+	font-style: normal !important;
 }
 
 .c-content h1,

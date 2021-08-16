@@ -30,6 +30,17 @@
     box-shadow: none !important;
   }
 
+  .able,
+  .able-player,
+  .able-controller {
+    background-color: transparent !important;
+  }
+
+  .able-controller {
+    border-bottom: none;
+    outline: var(--border-thin) solid var(--color-gray-dark);
+  }
+
   .able-seekbar-head,
   .able-seekbar-played {
     background-color: var(--color-brick) !important;
@@ -42,5 +53,24 @@
 
   .able-seekbar-loaded {
     background-color: var(--color-gray-dark) !important;
+  }
+
+  [aria-label="Play"] svg,
+  [aria-label="Pause"] svg {
+    fill: var(--color-brick) !important;
+  }
+
+  [role="button"] svg {
+    fill: var(--color-gray-darkest);
+  }
+
+  .able-elapsedTime,
+  .able-duration,
+  .able-status {
+    color: var(--color-gray-darkest) !important;
+  }
+
+  .able-status {
+    font-style: normal !important;
   }
 }
