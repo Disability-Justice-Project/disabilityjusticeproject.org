@@ -1,5 +1,5 @@
 .c-audio-player__wrapper {
   @include able-player-audio();
-
+  margin-top: calc(var(--size-400) * -1);
   margin-bottom: var(--size-600);
 }
