@@ -1,0 +1,35 @@
+.c-input__group {
+  align-items: center;
+  display: flex;
+  margin-top: var(--size-250);
+
+  .c-input__label {
+    font-size: var(--font-size-200);
+    width: 6rem;
+  }
+
+  input:not([type="checkbox"]),
+  textarea {
+    flex: 2;
+  }
+}
+
+
+.c-input__group--textarea {
+  align-items: flex-start;
+}
+
+
+.c-input__submit[type="submit"] {
+  @include form-submit();
+}
+
+.c-input__input[type="text"],
+.c-input__textarea {
+  @include form-input();
+}
+
+
+.c-input__textarea {
+  height: calc(var(--size-900) * 2);
+}

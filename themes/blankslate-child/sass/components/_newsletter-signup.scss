@@ -1,0 +1,42 @@
+.c-newsletter-signup {
+  background-color: var(--color-white);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-200);
+  padding: var(--size-200) var(--size-400);
+
+  @media (min-width: $breakpoint-600) {
+    flex-direction: row;
+  }
+}
+
+
+.c-newsletter-signup__label {
+  color: var(--color-brick);
+  font-weight: var(--type-weight-bold);
+  line-height: var(--line-height-200);
+}
+
+
+.c-newsletter-signup__input[type="email"] {
+  @include form-input();
+
+  width: 100%;
+
+  @media (min-width: $breakpoint-600) {
+    flex-grow: 1;
+  }
+}
+
+
+.c-newsletter-signup__submit[type="submit"] {
+  @include form-submit();
+
+  padding: var(--size-200) var(--size-600);
+  width: 100%;
+
+  @media (min-width: $breakpoint-600) {
+    width: unset;
+  }
+}
