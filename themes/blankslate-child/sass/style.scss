@@ -29,6 +29,7 @@ Text Domain: blankslate-child
 @import "logic/mixin.able-player-styling";
 @import "logic/mixin.button";
 @import "logic/mixin.column-width";
+@import "logic/mixin.forms";
 @import "logic/mixin.grid";
 @import "logic/mixin.homepage-inset";
 @import "logic/mixin.read-more-link";
@@ -69,6 +70,7 @@ Text Domain: blankslate-child
 @import "layouts/grid";
 @import "layouts/header";
 @import "layouts/landing";
+@import "layouts/newsletter-signup";
 @import "layouts/tease-news";
 
 // Components
@@ -90,8 +92,10 @@ Text Domain: blankslate-child
 @import "components/creator";
 @import "components/headings";
 @import "components/footer";
+@import "components/input";
 @import "components/logo";
 @import "components/nav-primary";
+@import "components/newsletter-signup";
 @import "components/partnership";
 @import "components/person";
 @import "components/recommended-video";

@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: 1fr;
     padding-top: var(--size-800);
-    padding-bottom: var(--size-950);
   }
 
   @media (min-width: $breakpoint-500) {
