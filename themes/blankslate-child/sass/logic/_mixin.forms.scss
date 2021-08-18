@@ -1,0 +1,14 @@
+@mixin form-input() {
+  border: var(--border-thin) solid var(--color-gray-dark);
+  border-radius: 0;
+  padding: var(--size-150);
+}
+
+
+@mixin form-submit() {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  letter-spacing: var(--tracking-open);
+  padding: var(--size-150);
+  text-transform: uppercase;
+}
