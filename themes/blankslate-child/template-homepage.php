@@ -30,6 +30,7 @@
   </div>
 
   <?php get_template_part('recent-news');?>
+  <?php get_template_part('newsletter-signup');?>
 </main>
 
 <?php get_footer(); ?>

@@ -30,7 +30,6 @@
     <?php endwhile; ?>
 
   </div>
-  <?php get_template_part('newsletter-signup');?>
 </main>
 
 <?php get_footer(); ?>
