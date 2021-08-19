@@ -3797,7 +3797,7 @@ a:focus .c-logo #logotype {
 
 .c-newsletter-signup {
 	background-color: var(--color-white);
-	align-items: center;
+	align-items: top;
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-200);
@@ -3816,17 +3816,20 @@ a:focus .c-logo #logotype {
 	line-height: var(--line-height-200);
 }
 
+.c-newsletter-signup__input-wrapper {
+	width: 100%;
+}
+
+.c-newsletter-signup__instructions {
+	color: var(--color-gray-darkest);
+	font-size: var(--font-size-200);
+}
+
 .c-newsletter-signup__input[type="email"] {
 	border: var(--border-thin) solid var(--color-gray-dark);
 	border-radius: 0;
 	padding: var(--size-150);
 	width: 100%;
-}
-
-@media (min-width: 60em) {
-	.c-newsletter-signup__input[type="email"] {
-		flex-grow: 1;
-	}
 }
 
 .c-newsletter-signup__submit[type="submit"] {
@@ -3842,6 +3845,7 @@ a:focus .c-logo #logotype {
 @media (min-width: 60em) {
 	.c-newsletter-signup__submit[type="submit"] {
 		width: unset;
+		height: var(--size-600);
 	}
 }
 
