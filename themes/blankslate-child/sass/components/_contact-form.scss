@@ -1,0 +1,106 @@
+.c-contact-form {
+  margin-top: var(--size-400);
+}
+
+
+.c-contact-form__disclosure {
+  width: 100%;
+
+  &[open] {
+    .c-contact-form__summary {
+      background: var(--color-gray-lightest) url('/wp-content/themes/blankslate-child/images/icon-close.svg') no-repeat center left -15%;
+      background-size: 30% 30%;
+      border-color: var(--color-gray-lightest);
+    }
+  }
+}
+
+
+.c-contact-form__summary {
+  align-items: center;
+  border: var(--border-thin) solid var(--color-gray-dark);
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--size-150) var(--size-200);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-gold);
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+
+.c-contact-form__title,
+.c-contact-form__subtitle {
+  font-size: var(--font-size-200);
+  line-height: var(--line-height-200);
+  padding-right: var(--size-350);
+  padding-left: var(--size-350);
+}
+
+
+.c-contact-form {
+  p:empty {
+    display: none;
+  }
+
+  label {
+    font-size: var(--font-size-200);
+
+    @media (min-width: $breakpoint-500) {
+      width: 6rem;
+    }
+  }
+
+  .wpcf7-list-item {
+    margin-left: 0 !important;
+  }
+
+  .wpcf7-list-item-label {
+    color: var(--color-gray-darkest);
+    font-family: var(--font-primary) !important;
+    line-height: var(--line-height-100);
+    padding-left: var(--size-100);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: var(--border-thin) solid var(--color-gray-dark);
+    border-radius: 0;
+    padding: var(--size-150);
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-primary) !important;
+    letter-spacing: var(--tracking-open);
+    padding: var(--size-150);
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-gold);
+      color: var(--color-black);
+    }
+
+    &:active {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.c-input__group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--size-300);
+
+  @media (min-width: $breakpoint-500) {
+    flex-direction: row;
+  }
+
+  div:first-of-type {
+    width: 100%;
+
+    @media (min-width: $breakpoint-500) {
+      flex: 1;
+    }
+  }
+}
+
+
+.c-input__sublabel {
+  color: var(--color-gray-darkest);
+  font-size: var(--font-size-150);
+  font-family: var(--font-primary) !important;
+  margin-top: 0 !important;
+}
