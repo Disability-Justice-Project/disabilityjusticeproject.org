@@ -1,0 +1,21 @@
+.l-newsletter-signup {
+  padding-right: var(--size-200);
+  padding-bottom: var(--size-700);
+  padding-left: var(--size-200);
+
+  .page-template-template-homepage & {
+    background-color: var(--color-gray-lightest);
+  }
+}
+
+.l-newsletter-signup__wrapper {
+  padding-right: var(--size-250);
+  padding-left: var(--size-250);
+
+  @media (min-width: $breakpoint-500) {
+    @include grid-inset("padding", "large");
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
