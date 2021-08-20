@@ -5,10 +5,10 @@
 <aside class="c-contact-form">
   <details class="c-contact-form__disclosure">
     <summary role="button" class="c-contact-form__summary">
-      <span class="u-color-text-gray-darkest c-contact-form__title">
-        Have you experienced discrimination because because of your disability?
+      <span class="c-contact-form__title">
+      <?php echo $contact_prompt; ?>
       </span>
-      <span class="u-color-text-brick c-contact-form__subtitle">
+      <span class="c-contact-form__subtitle">
         We want to hear your story.
       </span>
     </summary>

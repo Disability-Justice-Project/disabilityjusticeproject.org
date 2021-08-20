@@ -7,13 +7,11 @@ $_person-photo-size: 8rem;
   border-radius: 100%;
   grid-column: 1 / 2;
   height: $_person-photo-size;
-  margin-top: var(--size-400);
   min-width: $_person-photo-size;
   width: $_person-photo-size;
 
   @media (min-width: $breakpoint-400) {
     grid-column: 2 / 3;
-    margin-top: var(--size-900);
     position: relative;
       right: var(--size-400);
   }
@@ -24,6 +22,20 @@ $_person-photo-size: 8rem;
 
   .js-contrast-yellow & {
     background-color: var(--color-brick);
+  }
+}
+
+
+.c-filmmaker__photo {
+  margin-top: var(--size-400);
+}
+
+
+.c-mentor__photo {
+  margin-top: var(--size-400);
+
+  @media (min-width: $breakpoint-400) {
+    margin-top: var(--size-900);
   }
 }
 
@@ -40,6 +52,20 @@ $_person-photo-size: 8rem;
 
   @media (min-width: $breakpoint-700) {
     grid-column: 5 / 10;
+  }
+}
+
+
+.c-filmmaker__content {
+  margin-top: var(--size-200);
+}
+
+
+.c-mentor__content {
+  margin-top: var(--size-200);
+
+  @media (min-width: $breakpoint-400) {
+    margin-top: var(--size-700);
   }
 }
 

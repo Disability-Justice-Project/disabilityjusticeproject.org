@@ -19,9 +19,21 @@
 
 
 .c-input__sublabel {
-  color: var(--color-gray-darkest);
   font-size: var(--font-size-150);
   font-family: var(--font-primary) !important;
   line-height: var(--line-height-100);
   margin-top: 0 !important;
+
+  .post-template-template-news & {
+    color: var(--color-gray-dark);
+  }
+
+  .post-template-default & {
+    color: var(--color-gray-medium);
+  }
+
+  .post-template-default.js-contrast-blue &,
+  .post-template-default.js-contrast-yellow & {
+    color: var(--color-gray-dark);
+  }
 }
