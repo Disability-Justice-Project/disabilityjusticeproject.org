@@ -3743,6 +3743,7 @@ img.u-effect-gold-screen:hover {
 	color: var(--color-gray-darkest);
 	font-size: var(--font-size-150);
 	font-family: var(--font-primary) !important;
+	line-height: var(--line-height-100);
 	margin-top: 0 !important;
 }
 
