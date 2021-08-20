@@ -2856,6 +2856,11 @@ img.u-effect-gold-screen:hover {
 	}
 }
 
+.js-contrast-blue .l-recommended-videos__title,
+.js-contrast-yellow .l-recommended-videos__title {
+	color: var(--color-white);
+}
+
 .l-recommended-videos__list {
 	display: flex;
 	flex-direction: column;
@@ -4136,16 +4141,13 @@ a:focus .c-logo #logotype {
 	display: inline;
 }
 
-.js-contrast-blue .c-recommended-video__about-this-video {
-	color: var(--color-gray-medium);
-}
-
 .c-recommended-video__excerpt {
 	font-size: var(--font-size-200);
 	margin-top: var(--size-100);
 }
 
-.js-contrast-blue .c-recommended-video__excerpt {
+.js-contrast-blue .c-recommended-video__excerpt,
+.js-contrast-yellow .c-recommended-video__excerpt {
 	color: var(--color-white);
 }
 
