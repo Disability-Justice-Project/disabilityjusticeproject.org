@@ -7,7 +7,6 @@
   get_header();
   $byline = get_field('byline');
   $audio_version = get_field('audio_version');
-  $contact_prompt = get_field('contact_prompt');
   $hero = get_the_post_thumbnail_url();
 ?>
 
@@ -35,7 +34,6 @@
       <?php the_title(); ?>
     </h1>
 
-
     <div class="l-landing__byline">
       <?php if ( ! empty($byline)) : ?>
         <p>
@@ -47,7 +45,6 @@
       </aside>
     </div>
 
-
     <div class="l-landing__content">
       <div class="c-content">
         <?php if ( ! empty($audio_version)) : ?>
@@ -57,30 +54,9 @@
           <?php get_template_part('audio-player'); ?>
         <?php endif; ?>
         <?php the_content(); ?>
-
-        <aside class="c-contact-form">
-          <details class="c-contact-form__disclosure">
-            <summary role="button" class="c-contact-form__summary">
-              <span class="u-color-text-gray-darkest c-contact-form__title">
-                Have you experienced discrimination because because of your disability?
-              </span>
-              <span class="u-color-text-brick c-contact-form__subtitle">
-                We want to hear your story.
-              </span>
-            </summary>
-            <form>
-              <legend class="sr-only">
-                Contact
-              </legend>
-              <?php echo do_shortcode( '[contact-form-7 id="384" title="Your Story"]' ); ?>
-            </form>
-          </details>
-        </aside>
-
+        <?php get_template_part('contact-form');?>
       </div>
     </div>
-
-
 
   </div>
   <?php get_template_part('recent-news');?>
