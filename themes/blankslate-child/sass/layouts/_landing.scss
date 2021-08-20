@@ -172,6 +172,11 @@
     margin-left: 0;
     grid-column: 2 / 12;
   }
+
+  .js-contrast-blue &,
+  .js-contrast-yellow & {
+    color: var(--color-white);
+  }
 }
 
 

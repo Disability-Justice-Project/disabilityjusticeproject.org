@@ -1,35 +1,39 @@
 .c-input__group {
-  align-items: center;
-  display: flex;
-  margin-top: var(--size-250);
-
-  .c-input__label {
-    font-size: var(--font-size-200);
-    width: 6rem;
-  }
-
-  input:not([type="checkbox"]),
-  textarea {
-    flex: 2;
-  }
-}
-
-
-.c-input__group--textarea {
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--size-300);
+
+  @media (min-width: $breakpoint-500) {
+    flex-direction: row;
+  }
+
+  div:first-of-type {
+    width: 100%;
+
+    @media (min-width: $breakpoint-500) {
+      flex: 1;
+    }
+  }
 }
 
 
-.c-input__submit[type="submit"] {
-  @include form-submit();
-}
+.c-input__sublabel {
+  font-size: var(--font-size-150);
+  font-family: var(--font-primary) !important;
+  line-height: var(--line-height-100);
+  margin-top: 0 !important;
 
-.c-input__input[type="text"],
-.c-input__textarea {
-  @include form-input();
-}
+  .post-template-template-news & {
+    color: var(--color-gray-dark);
+  }
 
+  .post-template-default & {
+    color: var(--color-gray-medium);
+  }
 
-.c-input__textarea {
-  height: calc(var(--size-900) * 2);
+  .post-template-default.js-contrast-blue &,
+  .post-template-default.js-contrast-yellow & {
+    color: var(--color-gray-dark);
+  }
 }

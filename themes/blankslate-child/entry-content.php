@@ -18,15 +18,6 @@
     </div>
 
     <?php get_template_part('transcript');?>
-
-    <?php if ( ! empty($behind_the_scenes)) : ?>
-      <div class="c-content c-content--behind-the-scenes">
-        <h1 class="c-heading__large">
-          Behind the scenes
-        </h1>
-        <?php echo $behind_the_scenes; ?>
-      </div>
-    <?php endif; ?>
   </div>
 
   <img
@@ -40,6 +31,18 @@
     <div class="c-filmmaker__bio">
       <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>
     </div>
+
+    <?php if ( ! empty($behind_the_scenes)) : ?>
+      <div class="c-content c-content--behind-the-scenes">
+        <h1 class="c-heading__large">
+          Behind the scenes
+        </h1>
+        <?php echo $behind_the_scenes; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php get_template_part('contact-form');?>
+
   </div>
 
 

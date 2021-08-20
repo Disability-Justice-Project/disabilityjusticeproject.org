@@ -34,7 +34,6 @@
       <?php the_title(); ?>
     </h1>
 
-
     <div class="l-landing__byline">
       <?php if ( ! empty($byline)) : ?>
         <p>
@@ -46,7 +45,6 @@
       </aside>
     </div>
 
-
     <div class="l-landing__content">
       <div class="c-content">
         <?php if ( ! empty($audio_version)) : ?>
@@ -56,10 +54,9 @@
           <?php get_template_part('audio-player'); ?>
         <?php endif; ?>
         <?php the_content(); ?>
+        <?php get_template_part('contact-form');?>
       </div>
     </div>
-
-
 
   </div>
   <?php get_template_part('recent-news');?>
