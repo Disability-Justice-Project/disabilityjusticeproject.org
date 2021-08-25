@@ -3750,6 +3750,10 @@ img.u-effect-gold-screen:hover {
 	margin-bottom: var(--size-500);
 }
 
+.c-content__toc li {
+	margin-top: var(--size-050);
+}
+
 .c-creator {
 	margin-top: var(--size-300);
 }
