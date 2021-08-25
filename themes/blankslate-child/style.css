@@ -3688,7 +3688,6 @@ img.u-effect-gold-screen:hover {
 
 .c-content__topic {
 	color: var(--color-brick);
-	letter-spacing: var(--tracking-open);
 	padding-top: var(--size-100);
 }
 
