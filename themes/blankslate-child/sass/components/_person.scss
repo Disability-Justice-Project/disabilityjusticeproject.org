@@ -41,6 +41,7 @@ $_person-photo-size: 8rem;
 
 
 .c-filmmaker__content,
+.c-filmmaker__behind-the-scenes,
 .c-mentor__content {
   grid-column: 1 / 2;
   margin-top: var(--size-200);
@@ -58,6 +59,11 @@ $_person-photo-size: 8rem;
 
 .c-filmmaker__content {
   margin-top: var(--size-200);
+}
+
+
+.c-filmmaker__behind-the-scenes {
+  margin-top: var(--size-800);
 }
 
 
