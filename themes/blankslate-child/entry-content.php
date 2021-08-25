@@ -26,6 +26,7 @@
     src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
   <div id="filmmaker" class="c-filmmaker__content">
     <h3 class="c-filmmaker__name">
+      <span class="u-color-text-brick">Filmmaker:</span>
       <?php echo esc_html( $associated_filmmaker->post_title ); ?>
     </h3>
     <div class="c-filmmaker__bio">
