@@ -3,3 +3,10 @@
   margin-top: calc(var(--size-400) * -1);
   margin-bottom: var(--size-600);
 }
+
+
+.c-audio-player__title {
+  font-size: var(--font-size-250);
+  font-weight: var(--type-weight-bold);
+  margin-top: var(--size-250) !important;
+}
