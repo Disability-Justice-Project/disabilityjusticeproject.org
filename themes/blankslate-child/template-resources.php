@@ -13,7 +13,7 @@
   <div class="l-landing__hero"></div>
 
     <p class="l-landing__topic c-content__topic">
-      Tips and tricks
+      Resources for Filmmakers
     </p>
     <h1 id="title" class="l-landing__heading c-heading__large">
       Resources

@@ -26,23 +26,25 @@
     src="<?php echo get_the_post_thumbnail($associated_filmmaker, 'large'); ?>
   <div id="filmmaker" class="c-filmmaker__content">
     <h3 class="c-filmmaker__name">
+      <span class="u-color-text-brick">Filmmaker:</span>
       <?php echo esc_html( $associated_filmmaker->post_title ); ?>
     </h3>
     <div class="c-filmmaker__bio">
       <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>
     </div>
-
-    <?php if ( ! empty($behind_the_scenes)) : ?>
-      <div class="c-content c-content--behind-the-scenes">
-        <h1 class="c-heading__large">
-          Behind the scenes
-        </h1>
-        <?php echo $behind_the_scenes; ?>
-      </div>
-    <?php endif; ?>
-
-    <?php get_template_part('contact-form');?>
-
   </div>
+
+  <?php if ( ! empty($behind_the_scenes)) : ?>
+    <p class="l-landing__section l-landing__topic c-content__topic">
+        Behind the scenes
+      </p>
+    <div id="behind-the-scenes" class="u-flow c-filmmaker__behind-the-scenes">
+      <?php echo $behind_the_scenes; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php get_template_part('contact-form');?>
+
+</div>
 
 

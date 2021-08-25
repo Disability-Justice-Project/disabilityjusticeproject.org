@@ -2,7 +2,7 @@
   $contact_prompt = get_field('contact_prompt');
 ?>
 
-<aside class="c-contact-form">
+<aside class="l-contact-form c-contact-form">
   <details class="c-contact-form__disclosure">
     <summary role="button" class="c-contact-form__summary">
       <span class="c-contact-form__title">
