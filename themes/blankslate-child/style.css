@@ -4218,6 +4218,13 @@ a:focus .c-logo #logotype {
 	font-family: var(--font-tertiary);
 }
 
+.c-mentor__title {
+	color: var(--color-gray-darkest);
+	display: block;
+	font-size: var(--font-size-250);
+	font-weight: var(--type-weight-regular);
+}
+
 .c-recommended-video {
 	flex: 1;
 }
