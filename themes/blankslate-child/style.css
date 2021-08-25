@@ -2686,6 +2686,10 @@ img.u-effect-gold-screen:hover {
 	box-shadow: none !important;
 }
 
+.l-landing__hero .able-wrapper .able-status {
+	font-style: normal !important;
+}
+
 .l-landing__hero .able-wrapper .able-media-container {
 	overflow: hidden !important;
 	padding-top: 56.25%  !important;
@@ -2703,6 +2707,40 @@ img.u-effect-gold-screen:hover {
 
 .l-landing__hero .able-wrapper .able-media-container .able-big-play-button {
 	display: none !important;
+}
+
+.l-landing__hero .able-wrapper .able-status {
+	font-style: normal !important;
+}
+
+.l-landing__hero .able-wrapper [aria-label="Preferences"],
+.l-landing__hero .able-wrapper [aria-label="Show transcript"] {
+	display: none !important;
+}
+
+.l-landing__hero .able-wrapper .able-status-bar {
+	min-height: 2.25em !important;
+}
+
+.l-landing__hero .able-wrapper .able-captions {
+	font-family: var(--font-primary) !important;
+}
+
+.l-landing__hero .able-wrapper .able-seekbar-head {
+	background-color: var(--color-gold) !important;
+}
+
+.l-landing__hero .able-wrapper .able-seekbar-played {
+	background-color: var(--color-white) !important;
+}
+
+.l-landing__hero .able-wrapper .able-seekbar {
+	background-color: var(--color-black) !important;
+	border: none !important;
+}
+
+.l-landing__hero .able-wrapper .able-seekbar-loaded {
+	background-color: var(--color-gray-dark) !important;
 }
 
 @media (min-width: 40em) {
@@ -3390,6 +3428,10 @@ img.u-effect-gold-screen:hover {
 	box-shadow: none !important;
 }
 
+.c-audio-player__wrapper .able-status {
+	font-style: normal !important;
+}
+
 .c-audio-player__wrapper .able,
 .c-audio-player__wrapper .able-player,
 .c-audio-player__wrapper .able-controller {
@@ -3399,20 +3441,6 @@ img.u-effect-gold-screen:hover {
 .c-audio-player__wrapper .able-controller {
 	border-bottom: none;
 	outline: var(--border-thin) solid var(--color-gray-dark);
-}
-
-.c-audio-player__wrapper .able-seekbar-head,
-.c-audio-player__wrapper .able-seekbar-played {
-	background-color: var(--color-brick) !important;
-}
-
-.c-audio-player__wrapper .able-seekbar {
-	background-color: var(--color-black) !important;
-	border: none !important;
-}
-
-.c-audio-player__wrapper .able-seekbar-loaded {
-	background-color: var(--color-gray-dark) !important;
 }
 
 .c-audio-player__wrapper [aria-label="Play"] svg,
@@ -3430,8 +3458,21 @@ img.u-effect-gold-screen:hover {
 	color: var(--color-gray-darkest) !important;
 }
 
-.c-audio-player__wrapper .able-status {
-	font-style: normal !important;
+.c-audio-player__wrapper .able-seekbar-head {
+	background-color: var(--color-brick) !important;
+}
+
+.c-audio-player__wrapper .able-seekbar-played {
+	background-color: var(--color-gray-medium) !important;
+}
+
+.c-audio-player__wrapper .able-seekbar {
+	background-color: var(--color-black) !important;
+	border: none !important;
+}
+
+.c-audio-player__wrapper .able-seekbar-loaded {
+	background-color: var(--color-gray-darkest) !important;
 }
 
 .c-audio-player__title {
@@ -4518,6 +4559,10 @@ a:focus .c-logo #logotype {
 	box-shadow: none !important;
 }
 
+.c-tease-project__video .able-wrapper .able-status {
+	font-style: normal !important;
+}
+
 .c-tease-project__video .able-wrapper .able-media-container {
 	overflow: hidden !important;
 	padding-top: 56.25%  !important;
@@ -4535,6 +4580,40 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__video .able-wrapper .able-media-container .able-big-play-button {
 	display: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-status {
+	font-style: normal !important;
+}
+
+.c-tease-project__video .able-wrapper [aria-label="Preferences"],
+.c-tease-project__video .able-wrapper [aria-label="Show transcript"] {
+	display: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-status-bar {
+	min-height: 2.25em !important;
+}
+
+.c-tease-project__video .able-wrapper .able-captions {
+	font-family: var(--font-primary) !important;
+}
+
+.c-tease-project__video .able-wrapper .able-seekbar-head {
+	background-color: var(--color-gold) !important;
+}
+
+.c-tease-project__video .able-wrapper .able-seekbar-played {
+	background-color: var(--color-white) !important;
+}
+
+.c-tease-project__video .able-wrapper .able-seekbar {
+	background-color: var(--color-black) !important;
+	border: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-seekbar-loaded {
+	background-color: var(--color-gray-dark) !important;
 }
 
 @media (min-width: 70em) {

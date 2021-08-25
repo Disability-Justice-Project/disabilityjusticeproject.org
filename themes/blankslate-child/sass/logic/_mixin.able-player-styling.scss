@@ -1,8 +1,20 @@
+@mixin _able-player-shadow() {
+  .able {
+    box-shadow: none !important;
+  }
+}
+
+@mixin _able-player-status() {
+  .able-status {
+    font-style: normal !important;
+  }
+}
+
+
 @mixin able-player-video() {
   .able-wrapper {
-    .able {
-      box-shadow: none !important;
-    }
+    @include _able-player-shadow();
+    @include _able-player-status();
 
     .able-media-container {
       overflow: hidden !important;
@@ -22,13 +34,46 @@
         display: none !important;
       }
     }
+
+    .able-status {
+      font-style: normal !important;
+    }
+
+    [aria-label="Preferences"],
+    [aria-label="Show transcript"] {
+      display: none !important;
+    }
+
+    .able-status-bar {
+      min-height: 2.25em !important;
+    }
+
+    .able-captions {
+      font-family: var(--font-primary) !important;
+    }
+
+    .able-seekbar-head {
+      background-color: var(--color-gold) !important;
+    }
+
+    .able-seekbar-played {
+      background-color: var(--color-white) !important;
+    }
+
+    .able-seekbar{
+      background-color: var(--color-black) !important;
+      border: none !important;
+    }
+
+    .able-seekbar-loaded {
+      background-color: var(--color-gray-dark) !important;
+    }
   }
 }
 
 @mixin able-player-audio() {
-  .able {
-    box-shadow: none !important;
-  }
+  @include _able-player-shadow();
+  @include _able-player-status();
 
   .able,
   .able-player,
@@ -39,20 +84,6 @@
   .able-controller {
     border-bottom: none;
     outline: var(--border-thin) solid var(--color-gray-dark);
-  }
-
-  .able-seekbar-head,
-  .able-seekbar-played {
-    background-color: var(--color-brick) !important;
-  }
-
-  .able-seekbar{
-    background-color: var(--color-black) !important;
-    border: none !important;
-  }
-
-  .able-seekbar-loaded {
-    background-color: var(--color-gray-dark) !important;
   }
 
   [aria-label="Play"] svg,
@@ -70,7 +101,20 @@
     color: var(--color-gray-darkest) !important;
   }
 
-  .able-status {
-    font-style: normal !important;
+  .able-seekbar-head {
+    background-color: var(--color-brick) !important;
+  }
+
+  .able-seekbar-played {
+    background-color: var(--color-gray-medium) !important;
+  }
+
+  .able-seekbar{
+    background-color: var(--color-black) !important;
+    border: none !important;
+  }
+
+  .able-seekbar-loaded {
+    background-color: var(--color-gray-darkest) !important;
   }
 }
