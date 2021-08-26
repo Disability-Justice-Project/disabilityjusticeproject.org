@@ -144,4 +144,15 @@
     return false;
   });
 
+
+  // Toggle search
+  var searchToggle = $('[data-search="toggle"]');
+  var searchInput = $('[data-search="input"]');
+  var searchSubmit = $('[data-search="submit"]');
+  var searchClose = $('[data-search="close"]');
+  searchClose.click(function(event) {
+    searchToggle.removeAttr("open");
+    return false;
+  });
+
   })(jQuery);
