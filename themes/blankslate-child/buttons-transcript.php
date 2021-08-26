@@ -3,5 +3,5 @@
   aria-pressed="false"
   type="button"
   class="c-tease-project__transcript">
-  Transcript<span class="sr-only"> for <?php the_title(); ?></span>
+  Descriptive Transcript<span class="sr-only"> for <?php the_title(); ?></span>
 </button>
