@@ -4429,10 +4429,21 @@ a:focus .c-logo #logotype {
 	width: 100%;
 }
 
+.c-search__submit {
+	background: var(--color-white) url("/wp-content/themes/blankslate-child/images/icon-search.svg") no-repeat center;
+	background-size: 65%;
+}
+
 .c-search__submit,
 .c-search__close {
-	background-color: var(--color-white);
-	width: var(--size-700);
+	background-color: var(--color-white) !important;
+	width: var(--size-700) !important;
+}
+
+.c-search__submit:hover, .c-search__submit:focus,
+.c-search__close:hover,
+.c-search__close:focus {
+	background-color: var(--color-gold) !important;
 }
 
 .c-search__submit-icon,
