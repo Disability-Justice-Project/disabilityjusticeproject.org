@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "logo a11y"
-    "nav  nav";
+    "logo a11y a11y"
+    "nav  nav  search";
   padding-top: var(--size-150);
   padding-bottom: var(--size-200);
 
@@ -12,7 +12,7 @@
     align-items: end;
     border-bottom: var(--border-thin) solid var(--color-gray-light);
     grid-template-columns: 1fr;
-    grid-template-areas: "logo nav a11y";
+    grid-template-areas: "logo nav search a11y";
     padding-right: var(--size-200);
     padding-bottom: var(--size-300);
   }
@@ -50,4 +50,10 @@
     border-top: none;
     margin-top: 0;
   }
+}
+
+
+.l-header__search {
+  grid-area: search;
+  margin-right: var(--size-200);
 }
