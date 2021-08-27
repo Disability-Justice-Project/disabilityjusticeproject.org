@@ -1,5 +1,5 @@
 $_search-height: var(--size-700);
-$_search-icon-size: var(--size-350);
+$_search-icon-size: var(--size-250);
 
 
 .c-search {
@@ -68,7 +68,11 @@ $_search-icon-size: var(--size-350);
 
 
 .c-search__input[type="search"] {
-  border: none;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 none transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
   font-size: var(--font-size-300);
   padding-left: var(--size-300);
@@ -78,7 +82,7 @@ $_search-icon-size: var(--size-350);
 
 .c-search__submit {
   background: var(--color-white) url('/wp-content/themes/blankslate-child/images/icon-search.svg') no-repeat center;
-  background-size: 65%;
+  background-size: 45%;
 }
 
 
