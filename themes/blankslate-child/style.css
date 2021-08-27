@@ -2546,13 +2546,13 @@ img.u-effect-gold-screen:hover {
 
 @media (min-width: 40em) {
 	.post-template-default .l-contact-form {
-		grid-column: 3 / 10;
+		grid-column: 2 / 12;
 	}
 }
 
 @media (min-width: 70em) {
 	.post-template-default .l-contact-form {
-		grid-column: 5 / 10;
+		grid-column: 2 / 12;
 	}
 }
 
@@ -2948,6 +2948,15 @@ img.u-effect-gold-screen:hover {
 
 .page-template-template-homepage .l-newsletter-signup {
 	background-color: var(--color-gray-lightest);
+}
+
+.page-template-template-about .l-newsletter-signup {
+	padding-top: var(--size-700);
+	background-color: var(--color-gray-lightest);
+}
+
+.single-post .l-newsletter-signup {
+	background-color: var(--color-gray-darkest);
 }
 
 .l-newsletter-signup__wrapper {
