@@ -1,0 +1,25 @@
+.l-search-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  @media (min-width: $breakpoint-400) {
+    @include grid();
+  }
+
+  @media (min-width: $breakpoint-700) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.l-search-results__title,
+.l-search-results__results {
+  margin-bottom: 2.5rem;
+  grid-column: 1 / 3;
+
+  @media (min-width: $breakpoint-400) {
+    grid-column: 2 / 12;
+  }
+}
