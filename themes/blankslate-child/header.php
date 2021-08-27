@@ -88,7 +88,7 @@
     class="main-navigation l-header__nav c-nav-primary"
     aria-label="Primary">
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-    <?php get_template_part('search');?>
+    <?php get_search_form(); ?>
   </nav>
 </header>
 

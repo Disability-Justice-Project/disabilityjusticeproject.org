@@ -73,6 +73,7 @@ Text Domain: blankslate-child
 @import "layouts/header";
 @import "layouts/landing";
 @import "layouts/newsletter-signup";
+@import "layouts/search-results";
 @import "layouts/tease-news";
 
 // Components
@@ -103,6 +104,7 @@ Text Domain: blankslate-child
 @import "components/person";
 @import "components/recommended-video";
 @import "components/search";
+@import "components/search-result";
 @import "components/share";
 @import "components/skipnav";
 @import "components/tease-news";
