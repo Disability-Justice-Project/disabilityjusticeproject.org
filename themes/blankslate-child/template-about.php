@@ -71,6 +71,7 @@
 
       <div class="l-landing__spacer"></div>
   </div>
+  <?php get_template_part('newsletter-signup');?>
 </main>
 
 <?php get_footer(); ?>

@@ -6,6 +6,15 @@
   .page-template-template-homepage & {
     background-color: var(--color-gray-lightest);
   }
+
+  .page-template-template-about & {
+    padding-top: var(--size-700);
+    background-color: var(--color-gray-lightest);
+  }
+
+  .single-post & {
+    background-color: var(--color-gray-darkest);
+  }
 }
 
 .l-newsletter-signup__wrapper {
