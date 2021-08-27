@@ -2546,13 +2546,13 @@ img.u-effect-gold-screen:hover {
 
 @media (min-width: 40em) {
 	.post-template-default .l-contact-form {
-		grid-column: 3 / 10;
+		grid-column: 2 / 12;
 	}
 }
 
 @media (min-width: 70em) {
 	.post-template-default .l-contact-form {
-		grid-column: 5 / 10;
+		grid-column: 2 / 12;
 	}
 }
 
@@ -2948,6 +2948,15 @@ img.u-effect-gold-screen:hover {
 
 .page-template-template-homepage .l-newsletter-signup {
 	background-color: var(--color-gray-lightest);
+}
+
+.page-template-template-about .l-newsletter-signup {
+	padding-top: var(--size-700);
+	background-color: var(--color-gray-lightest);
+}
+
+.single-post .l-newsletter-signup {
+	background-color: var(--color-gray-darkest);
 }
 
 .l-newsletter-signup__wrapper {
@@ -4454,7 +4463,11 @@ a:focus .c-logo #logotype {
 }
 
 .c-search__input[type="search"] {
-	border: none;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	border: 0 none transparent !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 	border-radius: 0;
 	font-size: var(--font-size-300);
 	padding-left: var(--size-300);
@@ -4463,7 +4476,7 @@ a:focus .c-logo #logotype {
 
 .c-search__submit {
 	background: var(--color-white) url("/wp-content/themes/blankslate-child/images/icon-search.svg") no-repeat center;
-	background-size: 65%;
+	background-size: 45%;
 }
 
 .c-search__submit,
@@ -4480,8 +4493,8 @@ a:focus .c-logo #logotype {
 
 .c-search__submit-icon,
 .c-search__close-icon {
-	height: var(--size-350);
-	width: var(--size-350);
+	height: var(--size-250);
+	width: var(--size-250);
 }
 
 .c-search__submit-icon {
@@ -4512,6 +4525,7 @@ a:focus .c-logo #logotype {
 
 .c-search-result__category a {
 	color: var(--color-gray-medium);
+	font-weight: var(--type-weight-bold);
 }
 
 .c-share__facebook,

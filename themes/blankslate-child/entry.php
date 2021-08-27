@@ -28,3 +28,4 @@
 </div>
 
 <?php get_template_part('tease-videos');?>
+<?php get_template_part('newsletter-signup');?>

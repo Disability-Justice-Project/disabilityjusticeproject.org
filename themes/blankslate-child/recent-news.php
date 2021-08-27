@@ -6,7 +6,7 @@
     <?php
       $args = array(
         'category_name' => 'news',
-        'posts_per_page' => 3,
+        'posts_per_page' => 6,
         'no_found_rows' => true
       );
       $query = new WP_Query($args);
