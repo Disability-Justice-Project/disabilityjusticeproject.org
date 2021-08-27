@@ -41,6 +41,19 @@ function excerpt($limit) {
   return $excerpt;
 }
 
+
+// Limits search results to specific categories
+// 11 = Film
+// 13 = News
+function searchcategory($query) {
+  if ($query->is_search) {
+    $query->set('cat','11,4,6');
+  }
+  return $query;
+}
+add_filter('pre_get_posts','searchcategory');
+
+
 // Get random posts
 add_filter( 'the_posts', function( $posts, \WP_Query $query )
 {
