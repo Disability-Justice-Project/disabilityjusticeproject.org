@@ -149,6 +149,16 @@
 }
 
 
+.c-tease-project__descriptive {
+  display: none;
+
+  @media (min-width: $breakpoint-400) {
+    display: inline;
+  }
+}
+
+
+
 .c-tease-project__accordion-wrapper {
   background-color: var(--color-gray-lightest);
   color: var(--color-black);
