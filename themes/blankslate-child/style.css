@@ -4452,7 +4452,7 @@ a:focus .c-logo #logotype {
 	position: absolute;
 	top: 8rem;
 	right: 1rem;
-	width: calc(100vw - 2.75rem);
+	width: calc(100vw - 1.8rem);
 }
 
 @media (min-width: 75em) {
@@ -4943,6 +4943,16 @@ a:focus .c-logo #logotype {
 
 .js-contrast-yellow .c-tease-project__transcript:hover, .js-contrast-yellow .c-tease-project__transcript:focus {
 	background-color: var(--color-white);
+}
+
+.c-tease-project__descriptive {
+	display: none;
+}
+
+@media (min-width: 40em) {
+	.c-tease-project__descriptive {
+		display: inline;
+	}
 }
 
 .c-tease-project__accordion-wrapper {
