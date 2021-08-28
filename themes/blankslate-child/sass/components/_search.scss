@@ -58,7 +58,7 @@ $_search-icon-size: var(--size-250);
   position: absolute;
     top: 8rem;
     right: 1rem;
-  width: calc(100vw - 2.75rem);
+  width: calc(100vw - 1.8rem);
 
   @media (min-width: $breakpoint-750) {
     top: var(--size-450);
