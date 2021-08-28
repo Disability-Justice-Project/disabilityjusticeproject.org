@@ -7,6 +7,9 @@
  * @package Disability_Justice_Project
  */
 
+ // Import shortcodes
+include('custom-shortcodes.php');
+
 
 // Restrict blocks available to site authors
 function my_plugin_allowed_block_types( $allowed_block_types, $post ) {
