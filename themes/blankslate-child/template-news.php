@@ -54,7 +54,6 @@
           <?php get_template_part('audio-player'); ?>
         <?php endif; ?>
         <?php the_content(); ?>
-        <?php get_template_part('contact-form');?>
       </div>
     </div>
 

@@ -3529,10 +3529,12 @@ img.u-effect-gold-screen:hover {
 
 .post-template-template-news .c-contact-form {
 	margin-top: var(--size-500);
+	margin-bottom: var(--size-500);
 }
 
 .post-template-default .c-contact-form {
-	margin-top: var(--size-700);
+	margin-top: var(--size-500);
+	margin-bottom: var(--size-500);
 }
 
 .c-contact-form__disclosure {
