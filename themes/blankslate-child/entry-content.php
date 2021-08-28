@@ -43,8 +43,6 @@
     </div>
   <?php endif; ?>
 
-  <?php get_template_part('contact-form');?>
-
 </div>
 
 
