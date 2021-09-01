@@ -14,7 +14,7 @@
       data-root-path="/wp-content/themes/blankslate-child/vendor/ableplayer/"
       data-heading-level="3"
       preload="auto"
-      poster="https://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg">
+      poster="https://img.youtube.com/vi/<?php echo $video_id; ?>/maxresdefault.jpg">
     </video>
   </div>
   <div class="c-tease-project__content">
