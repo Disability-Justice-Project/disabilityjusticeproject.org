@@ -2714,6 +2714,10 @@ img.u-effect-gold-screen:hover {
 	display: none !important;
 }
 
+.l-landing__hero .able-wrapper .able-poster {
+	top: unset !important;
+}
+
 .l-landing__hero .able-wrapper .able-status {
 	font-style: normal !important;
 }
@@ -4806,6 +4810,10 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__video .able-wrapper .able-media-container .able-big-play-button {
 	display: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-poster {
+	top: unset !important;
 }
 
 .c-tease-project__video .able-wrapper .able-status {

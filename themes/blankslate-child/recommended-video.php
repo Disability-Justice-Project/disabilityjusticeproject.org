@@ -9,7 +9,7 @@
     <img
       alt="Video thumbnail for <?php the_title(); ?>."
       class="c-recommended-video__thumbnail"
-      src="https://img.youtube.com/vi/<?php echo $video_id; ?>/maxresdefault.jpg">
+      src="https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg">
   </div>
   <h3 class="c-recommended-video__title">
     <a
