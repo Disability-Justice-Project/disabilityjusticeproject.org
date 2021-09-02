@@ -5,6 +5,9 @@
     </a>
   </h2>
   <p class="c-search-result__excerpt">
-  <span class="c-search-result__category"><?php the_category( '</div><div>' ); ?></span>: <?php echo excerpt(35); ?>
+    <?php if (has_category()): ?>
+      <span class="c-search-result__category"><?php the_category( '</div><div>' ); ?></span>:
+    <?php endif; ?>
+  <?php echo excerpt(35); ?>
   </p>
 </article>
