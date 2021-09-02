@@ -48,13 +48,13 @@ function excerpt($limit) {
 // Limits search results to specific categories
 // 11 = Film
 // 13 = News
-function searchcategory($query) {
-  if ($query->is_search) {
-    $query->set('cat','11,4,6');
-  }
-  return $query;
-}
-add_filter('pre_get_posts','searchcategory');
+// function searchcategory($query) {
+//   if ($query->is_search) {
+//     $query->set('cat','11,4,6');
+//   }
+//   return $query;
+// }
+// add_filter('pre_get_posts','searchcategory');
 
 
 // Get random posts
