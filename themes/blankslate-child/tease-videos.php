@@ -7,16 +7,20 @@
     <?php
       $args = array(
         'category_name' => 'film',
-        'posts_per_page' => 3,
+        'posts_per_page' => 6,
         'orderby' => 'date',
         'order' => 'DESC',
         'no_found_rows' => 'true',
-        '_shuffle_and_pick' => 3
+        '_shuffle_and_pick' => 6
       );
       $query = new WP_Query($args);
 
       while($query -> have_posts()) : $query -> the_post(); ?>
         <?php get_template_part('recommended-video'); ?>
     <?php endwhile; ?>
+
+    <a class="c-recommended-video__show-all" href="/category/film/">
+      Show all videos
+    </a>
   </div>
 </div>
