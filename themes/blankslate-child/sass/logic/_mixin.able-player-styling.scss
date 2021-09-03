@@ -43,11 +43,6 @@
       font-style: normal !important;
     }
 
-    [aria-label="Preferences"],
-    [aria-label="Show transcript"] {
-      display: none !important;
-    }
-
     .able-status-bar {
       min-height: 2.25em !important;
     }
@@ -71,6 +66,17 @@
 
     .able-seekbar-loaded {
       background-color: var(--color-gray-dark) !important;
+    }
+
+    .able-transcript {
+      background-color: #000000 !important;
+    }
+
+    .able-highlight,
+    .able-transcript span:active,
+    .able-transcript span:focus,
+    .able-transcript span:hover {
+      color: #000000 !important;
     }
   }
 }
