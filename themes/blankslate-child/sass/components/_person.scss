@@ -54,6 +54,10 @@ $_person-photo-size: 8rem;
   @media (min-width: $breakpoint-700) {
     grid-column: 5 / 10;
   }
+
+  p:last-of-type {
+    margin-bottom: var(--size-800);
+  }
 }
 
 
