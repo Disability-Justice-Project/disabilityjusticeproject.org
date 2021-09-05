@@ -4414,12 +4414,11 @@ a:focus .c-logo #logotype {
 .c-recommended-video__show-all {
 	border: var(--border-thin) solid var(--color-white);
 	color: var(--color-white);
+	font-weight: var(--type-weight-bold);
 	grid-column: 1 / 2;
-	letter-spacing: var(--tracking-open);
 	padding: var(--size-150);
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .c-recommended-video__show-all:hover, .c-recommended-video__show-all:focus {
