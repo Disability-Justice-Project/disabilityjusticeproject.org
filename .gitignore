@@ -4,6 +4,7 @@ themes/twentynineteen/
 themes/twentytwenty/
 themes/twentytwentyone/
 themes/blankslate-child/node_modules/
+uploads/*
 *.css.map
 
 
