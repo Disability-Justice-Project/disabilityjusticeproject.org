@@ -5,7 +5,7 @@
 ?>
 
 <div class="c-recommended-video">
-  <div class="u-embed-responsive" onclick="location.href='<?php the_permalink(); ?>'">
+  <div onclick="location.href='<?php the_permalink(); ?>'">
     <img
       alt="Video thumbnail for <?php the_title(); ?>."
       class="c-recommended-video__thumbnail"

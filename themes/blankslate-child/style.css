@@ -2715,6 +2715,16 @@ img.u-effect-gold-screen:hover {
 	display: none !important;
 }
 
+.l-landing__hero .able-wrapper .able-button-handler-transcript {
+	display: none;
+}
+
+@media (min-width: 70em) {
+	.l-landing__hero .able-wrapper .able-button-handler-transcript {
+		display: initial;
+	}
+}
+
 .l-landing__hero .able-wrapper .able-poster {
 	top: unset !important;
 }
@@ -4357,6 +4367,10 @@ a:focus .c-logo #logotype {
 	font-weight: var(--type-weight-regular);
 }
 
+.category-staff .c-mentor__title {
+	color: var(--color-gray-medium);
+}
+
 .c-recommended-video__thumbnail {
 	border: 1px solid transparent;
 	background-color: var(--color-white);
@@ -4400,12 +4414,11 @@ a:focus .c-logo #logotype {
 .c-recommended-video__show-all {
 	border: var(--border-thin) solid var(--color-white);
 	color: var(--color-white);
+	font-weight: var(--type-weight-bold);
 	grid-column: 1 / 2;
-	letter-spacing: var(--tracking-open);
 	padding: var(--size-150);
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .c-recommended-video__show-all:hover, .c-recommended-video__show-all:focus {
@@ -4860,6 +4873,16 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__video .able-wrapper .able-media-container .able-big-play-button {
 	display: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-button-handler-transcript {
+	display: none;
+}
+
+@media (min-width: 70em) {
+	.c-tease-project__video .able-wrapper .able-button-handler-transcript {
+		display: initial;
+	}
 }
 
 .c-tease-project__video .able-wrapper .able-poster {
