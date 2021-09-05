@@ -2715,6 +2715,16 @@ img.u-effect-gold-screen:hover {
 	display: none !important;
 }
 
+.l-landing__hero .able-wrapper .able-button-handler-transcript {
+	display: none;
+}
+
+@media (min-width: 70em) {
+	.l-landing__hero .able-wrapper .able-button-handler-transcript {
+		display: initial;
+	}
+}
+
 .l-landing__hero .able-wrapper .able-poster {
 	top: unset !important;
 }
@@ -4864,6 +4874,16 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__video .able-wrapper .able-media-container .able-big-play-button {
 	display: none !important;
+}
+
+.c-tease-project__video .able-wrapper .able-button-handler-transcript {
+	display: none;
+}
+
+@media (min-width: 70em) {
+	.c-tease-project__video .able-wrapper .able-button-handler-transcript {
+		display: initial;
+	}
 }
 
 .c-tease-project__video .able-wrapper .able-poster {

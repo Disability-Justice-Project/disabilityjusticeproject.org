@@ -35,6 +35,14 @@
       }
     }
 
+    .able-button-handler-transcript {
+      display: none;
+
+      @media (min-width: $breakpoint-700) {
+        display: initial;
+      }
+    }
+
     .able-poster {
       top: unset !important;
     }
