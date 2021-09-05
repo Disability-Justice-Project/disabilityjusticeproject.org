@@ -25,15 +25,15 @@
         <nav class="c-content__toc" aria-label="Table of contents">
           <ul>
             <li><a href="#what-is-the-disability-justice-project"><abbr>FAQ</abbr></a></li>
-            <li><a href="#staff">Our team</a></li>
             <li><a href="#accessibility-statement">Accessibility statement</a></li>
+            <li><a href="#our-team">Our team</a></li>
           </ul>
         </nav>
         <?php the_content(); ?>
       </div>
     </div>
 
-    <p id="mentors" class="l-landing__section l-landing__topic c-content__topic">
+    <p id="our-team" class="l-landing__section l-landing__topic c-content__topic">
       Our team
     </p>
     <h2 class="l-landing__section l-landing__heading help c-heading__large">
