@@ -108,4 +108,8 @@ $_person-photo-size: 8rem;
   display: block;
   font-size: var(--font-size-250);
   font-weight: var(--type-weight-regular);
+
+  .category-staff & {
+    color: var(--color-gray-medium);
+  }
 }

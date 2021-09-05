@@ -4357,6 +4357,10 @@ a:focus .c-logo #logotype {
 	font-weight: var(--type-weight-regular);
 }
 
+.category-staff .c-mentor__title {
+	color: var(--color-gray-medium);
+}
+
 .c-recommended-video__thumbnail {
 	border: 1px solid transparent;
 	background-color: var(--color-white);
