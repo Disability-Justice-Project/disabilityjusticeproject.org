@@ -30,7 +30,7 @@
       <?php echo esc_html( $associated_filmmaker->post_title ); ?>
     </h3>
     <div class="c-filmmaker__bio">
-      <?php echo esc_html( $associated_filmmaker->post_excerpt ); ?>
+      <?php echo( $associated_filmmaker->post_content ); ?>
     </div>
   </div>
 
