@@ -38,7 +38,7 @@
     </h2>
     <?php
       $args = array(
-        'category_name' => 'fellow',
+        'category_name' => 'additional-filmmakers',
         'orderby' => '$order_by',
         'order'   => 'ASC',
         'no_found_rows' => true,
