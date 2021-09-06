@@ -22,7 +22,7 @@
     </h2>
     <?php
       $args = array(
-        'category_name' => '2021',
+        'category_name' => '2021-djp-fellow',
         'orderby' => '$order_by',
         'order'   => 'ASC',
         'no_found_rows' => true,
