@@ -17,8 +17,8 @@
       <?php the_title(); ?>
     </h1>
 
-    <h2 id="2021" class="l-landing__heading c-heading__medium">
-      2021
+    <h2 id="2021-djp-fellows" class="l-landing__heading c-heading__medium">
+      2021 DJP Fellows
     </h2>
     <?php
       $args = array(
@@ -33,8 +33,8 @@
         <?php get_template_part('filmmaker'); ?>
     <?php endwhile; ?>
 
-    <h2 id="fellows" class="l-landing__heading c-heading__medium">
-      Fellows
+    <h2 id="additional-filmmakers" class="l-landing__heading c-heading__medium">
+      Additional Filmmakers
     </h2>
     <?php
       $args = array(
