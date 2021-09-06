@@ -1,14 +1,26 @@
-.c-heading__large {
+.c-heading__large,
+.c-heading__medium,
+.c-heading__small {
   font-family: var(--font-primary);
-  font-size: var(--font-size-700);
   line-height: var(--line-height-100);
 }
 
 
+.c-heading__large {
+  font-size: var(--font-size-700);
+}
+
+
 .c-heading__medium {
-  font-family: var(--font-primary);
   font-size: var(--font-size-450);
-  line-height: var(--line-height-100);
+
+  .js-contrast-blue & {
+    color: var(--color-white);
+  }
+}
+
+.c-heading__small {
+  font-size: var(--font-size-300);
 
   .js-contrast-blue & {
     color: var(--color-white);
