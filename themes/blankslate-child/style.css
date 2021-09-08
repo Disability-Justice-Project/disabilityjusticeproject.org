@@ -1620,6 +1620,11 @@ div.able-skin-2020 div.able-seekbar-wrapper {
 	font-style: italic;
 }
 
+.able-prefs-form.able-modal-dialog button.modal-button,
+.able-prefs-form.able-modal-dialog button.modalCloseButton {
+	color: var(--color-black) !important;
+}
+
 *,
 *::before,
 *::after {
@@ -2769,6 +2774,10 @@ img.u-effect-gold-screen:hover {
 	color: #000000 !important;
 }
 
+.l-landing__hero .able-wrapper .able-popup li[role="menuitem"]:nth-of-type(2) {
+	display: none !important;
+}
+
 @media (min-width: 40em) {
 	.l-landing__hero {
 		grid-column: 2 / 12;
@@ -3839,11 +3848,13 @@ img.u-effect-gold-screen:hover {
 }
 
 .c-creator__name {
+	color: var(--color-gold);
 	font-weight: var(--type-weight-bold);
 	font-size: var(--size-250);
 }
 
 .c-creator__name-link {
+	color: var(--color-white);
 	cursor: pointer;
 }
 
@@ -4938,6 +4949,10 @@ a:focus .c-logo #logotype {
 .c-tease-project__video .able-wrapper .able-transcript span:focus,
 .c-tease-project__video .able-wrapper .able-transcript span:hover {
 	color: #000000 !important;
+}
+
+.c-tease-project__video .able-wrapper .able-popup li[role="menuitem"]:nth-of-type(2) {
+	display: none !important;
 }
 
 @media (min-width: 70em) {

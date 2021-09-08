@@ -86,6 +86,12 @@
     .able-transcript span:hover {
       color: #000000 !important;
     }
+
+    .able-popup {
+      li[role="menuitem"]:nth-of-type(2) {
+        display: none !important;
+      }
+    }
   }
 }
 
@@ -134,5 +140,13 @@
 
   .able-seekbar-loaded {
     background-color: var(--color-gray-darkest) !important;
+  }
+}
+
+
+.able-prefs-form.able-modal-dialog {
+  button.modal-button,
+  button.modalCloseButton {
+    color: var(--color-black) !important;
   }
 }
