@@ -9,12 +9,14 @@
 
 
 .c-creator__name {
+  color: var(--color-gold);
   font-weight: var(--type-weight-bold);
   font-size: var(--size-250);
 }
 
 
 .c-creator__name-link {
+  color: var(--color-white);
   cursor: pointer;
 
   &:hover {
