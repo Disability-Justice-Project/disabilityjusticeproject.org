@@ -13,6 +13,7 @@
       data-root-path="/wp-content/themes/blankslate-child/vendor/ableplayer/"
       data-heading-level="2"
       preload="auto"
+      playsinline
       poster="https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg">
     </video>
   </div>
