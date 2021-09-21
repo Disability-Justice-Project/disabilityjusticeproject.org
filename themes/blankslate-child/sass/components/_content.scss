@@ -48,6 +48,28 @@
   li {
     line-height: var(--line-height-700);
   }
+
+  // Pullquotes
+  .wp-block-quote {
+    p {
+      color: var(--color-gray-dark);
+      display: inline;
+      font-family: var(--font-primary);
+      font-size: var(--font-size-400);
+      font-weight: var(--type-weight-bold);
+      line-height: var(--line-height-300);
+    }
+
+    cite {
+      color: var(--color-black);
+      display: inline;
+      font-family: var(--font-primary);
+      font-weight: var(--type-weight-bold);
+      font-size: var(--font-size-300);
+      font-style: normal;
+      margin-left: var(--size-100);
+    }
+  }
 }
 
 

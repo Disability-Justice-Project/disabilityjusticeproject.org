@@ -2279,6 +2279,19 @@ h6 {
 	width: 1em;
 }
 
+figcaption {
+	color: var(--color-gray-dark);
+	margin-top: var(--size-150);
+}
+
+.js-contrast-blue figcaption {
+	color: var(--color-gray-darkest);
+}
+
+figcaption:empty {
+	display: none;
+}
+
 a {
 	color: var(--color-brick);
 }
@@ -3794,22 +3807,28 @@ img.u-effect-gold-screen:hover {
 	line-height: var(--line-height-700);
 }
 
+.c-content .wp-block-quote p {
+	color: var(--color-gray-dark);
+	display: inline;
+	font-family: var(--font-primary);
+	font-size: var(--font-size-400);
+	font-weight: var(--type-weight-bold);
+	line-height: var(--line-height-300);
+}
+
+.c-content .wp-block-quote cite {
+	color: var(--color-black);
+	display: inline;
+	font-family: var(--font-primary);
+	font-weight: var(--type-weight-bold);
+	font-size: var(--font-size-300);
+	font-style: normal;
+	margin-left: var(--size-100);
+}
+
 .c-content__hero {
 	border-top: none;
 	margin-top: var(--size-450);
-}
-
-.c-content__hero figcaption {
-	color: var(--color-gray-dark);
-	margin-top: var(--size-150);
-}
-
-.js-contrast-blue .c-content__hero figcaption {
-	color: var(--color-gray-darkest);
-}
-
-.c-content__hero figcaption:empty {
-	display: none;
 }
 
 .c-content__topic {
