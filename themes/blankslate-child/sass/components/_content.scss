@@ -54,19 +54,6 @@
 .c-content__hero {
   border-top: none;
   margin-top: var(--size-450);
-
-  figcaption {
-    color: var(--color-gray-dark);
-    margin-top: var(--size-150);
-
-    .js-contrast-blue & {
-      color: var(--color-gray-darkest);
-    }
-  }
-
-  figcaption:empty {
-    display: none;
-  }
 }
 
 
