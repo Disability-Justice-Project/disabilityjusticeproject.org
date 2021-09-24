@@ -73,6 +73,16 @@
 }
 
 
+.wp-block-image {
+  margin-top: var(--size-300);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 .c-content__hero {
   border-top: none;
   margin-top: var(--size-450);
