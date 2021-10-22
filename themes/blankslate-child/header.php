@@ -9,7 +9,10 @@
  * @package Disability_Justice_Project
  */
 
+  global $wp;
+  $current_url = home_url( add_query_arg( array(), $wp->request ) );
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,6 +22,23 @@
   <link rel="icon" href="/wp-content/themes/blankslate-child/images/favicon.ico">
   <link rel="icon" href="/wp-content/themes/blankslate-child/images/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/wp-content/themes/blankslate-child/images/apple-touch-icon.png">
+
+  <meta name="description" content="<?php echo excerpt(55); ?>">
+  <?php if( is_front_page() ) { ?>
+    <meta property="og:title" content="Disability Justice Project">
+  <?php } else { ?>
+    <meta property="og:title" content="<?php the_title(); ?> - Disability Justice Project">
+  <?php } ?>
+  <meta property="og:description" content="<?php echo excerpt(55); ?>">
+  <?php if( is_front_page() ) { ?>
+    <meta property="og:image" content="/wp-content/themes/blankslate-child/images/summary_large_image.png">
+  <?php } else { ?>
+    <meta property="og:image" content="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'medium' ); ?>">
+  <?php } ?>
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="<?php echo($current_url) ?>">
 
   <?php wp_head(); ?>
 </head>
