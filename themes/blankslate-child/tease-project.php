@@ -16,6 +16,7 @@
       preload="auto"
       playsinline
       poster="https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg">
+      <track kind="captions">
     </video>
   </div>
   <div class="c-tease-project__content">
