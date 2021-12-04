@@ -12,87 +12,87 @@
 
 
 @mixin able-player-video() {
-  .able-wrapper {
-    @include _able-player-shadow();
-    @include _able-player-status();
+  // .able-wrapper {
+  //   @include _able-player-shadow();
+  //   @include _able-player-status();
 
-    .able-media-container {
-      overflow: hidden !important;
-      padding-top: 56.25%  !important;
-      position: relative  !important;
+  //   .able-media-container {
+  //     overflow: hidden !important;
+  //     padding-top: 56.25%  !important;
+  //     position: relative  !important;
 
-      iframe {
-        border: 0  !important;
-        height: 100%  !important;
-        position: absolute  !important;
-          top: 0  !important;
-          left: 0  !important;
-        width: 100%  !important;
-      }
+  //     iframe {
+  //       border: 0  !important;
+  //       height: 100%  !important;
+  //       position: absolute  !important;
+  //         top: 0  !important;
+  //         left: 0  !important;
+  //       width: 100%  !important;
+  //     }
 
-      .able-big-play-button {
-        display: none !important;
-      }
-    }
+  //     .able-big-play-button {
+  //       display: none !important;
+  //     }
+  //   }
 
-    .able-button-handler-transcript {
-      display: none;
+  //   .able-button-handler-transcript {
+  //     display: none;
 
-      @media (min-width: $breakpoint-700) {
-        display: initial;
-      }
-    }
+  //     @media (min-width: $breakpoint-700) {
+  //       display: initial;
+  //     }
+  //   }
 
-    .able-poster {
-      top: unset !important;
-    }
+  //   .able-poster {
+  //     top: unset !important;
+  //   }
 
-    .able-status {
-      font-style: normal !important;
-    }
+  //   .able-status {
+  //     font-style: normal !important;
+  //   }
 
-    .able-status-bar {
-      min-height: 2.25em !important;
-    }
+  //   .able-status-bar {
+  //     min-height: 2.25em !important;
+  //   }
 
-    .able-captions {
-      font-family: var(--font-primary) !important;
-    }
+  //   .able-captions {
+  //     font-family: var(--font-primary) !important;
+  //   }
 
-    .able-seekbar-head {
-      background-color: var(--color-gold) !important;
-    }
+  //   .able-seekbar-head {
+  //     background-color: var(--color-gold) !important;
+  //   }
 
-    .able-seekbar-played {
-      background-color: var(--color-white) !important;
-    }
+  //   .able-seekbar-played {
+  //     background-color: var(--color-white) !important;
+  //   }
 
-    .able-seekbar{
-      background-color: var(--color-black) !important;
-      border: none !important;
-    }
+  //   .able-seekbar{
+  //     background-color: var(--color-black) !important;
+  //     border: none !important;
+  //   }
 
-    .able-seekbar-loaded {
-      background-color: var(--color-gray-dark) !important;
-    }
+  //   .able-seekbar-loaded {
+  //     background-color: var(--color-gray-dark) !important;
+  //   }
 
-    .able-transcript {
-      background-color: #000000 !important;
-    }
+  //   .able-transcript {
+  //     background-color: #000000 !important;
+  //   }
 
-    .able-highlight,
-    .able-transcript span:active,
-    .able-transcript span:focus,
-    .able-transcript span:hover {
-      color: #000000 !important;
-    }
+  //   .able-highlight,
+  //   .able-transcript span:active,
+  //   .able-transcript span:focus,
+  //   .able-transcript span:hover {
+  //     color: #000000 !important;
+  //   }
 
-    .able-popup {
-      li[role="menuitem"]:nth-of-type(2) {
-        display: none !important;
-      }
-    }
-  }
+  //   .able-popup {
+  //     li[role="menuitem"]:nth-of-type(2) {
+  //       display: none !important;
+  //     }
+  //   }
+  // }
 }
 
 @mixin able-player-audio() {
@@ -145,8 +145,8 @@
 
 
 .able-prefs-form.able-modal-dialog {
-  button.modal-button,
-  button.modalCloseButton {
-    color: var(--color-black) !important;
-  }
+  // button.modal-button,
+  // button.modalCloseButton {
+  //   color: var(--color-black) !important;
+  // }
 }
