@@ -20,7 +20,7 @@
       $args = array(
         'category_name' => 'film',
         'orderby' => 'title',
-        'order'   => 'ASC',
+        'order'   => 'DSC',
         'no_found_rows' => true,
       );
       $query = new WP_Query($args);
