@@ -12,6 +12,12 @@
   color: var(--color-gold);
   font-weight: var(--type-weight-bold);
   font-size: var(--size-250);
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-brick);
+  }
 }
 
 
@@ -22,6 +28,12 @@
   &:hover {
     color: var(--color-gold);
     text-decoration: underline;
+  }
+
+  .js-contrast-blue &,
+  .js-contrast-white &,
+  .js-contrast-yellow & {
+    color: var(--color-black);
   }
 }
 

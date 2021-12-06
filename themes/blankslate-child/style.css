@@ -1620,11 +1620,6 @@ div.able-skin-2020 div.able-seekbar-wrapper {
 	font-style: italic;
 }
 
-.able-prefs-form.able-modal-dialog button.modal-button,
-.able-prefs-form.able-modal-dialog button.modalCloseButton {
-	color: var(--color-black) !important;
-}
-
 *,
 *::before,
 *::after {
@@ -2704,91 +2699,6 @@ img.u-effect-gold-screen:hover {
 .l-landing__hero {
 	margin-bottom: 2.5rem;
 	grid-column: 1 / 3;
-}
-
-.l-landing__hero .able-wrapper .able {
-	box-shadow: none !important;
-}
-
-.l-landing__hero .able-wrapper .able-status {
-	font-style: normal !important;
-}
-
-.l-landing__hero .able-wrapper .able-media-container {
-	overflow: hidden !important;
-	padding-top: 56.25%  !important;
-	position: relative  !important;
-}
-
-.l-landing__hero .able-wrapper .able-media-container iframe {
-	border: 0  !important;
-	height: 100%  !important;
-	position: absolute  !important;
-	top: 0  !important;
-	left: 0  !important;
-	width: 100%  !important;
-}
-
-.l-landing__hero .able-wrapper .able-media-container .able-big-play-button {
-	display: none !important;
-}
-
-.l-landing__hero .able-wrapper .able-button-handler-transcript {
-	display: none;
-}
-
-@media (min-width: 70em) {
-	.l-landing__hero .able-wrapper .able-button-handler-transcript {
-		display: initial;
-	}
-}
-
-.l-landing__hero .able-wrapper .able-poster {
-	top: unset !important;
-}
-
-.l-landing__hero .able-wrapper .able-status {
-	font-style: normal !important;
-}
-
-.l-landing__hero .able-wrapper .able-status-bar {
-	min-height: 2.25em !important;
-}
-
-.l-landing__hero .able-wrapper .able-captions {
-	font-family: var(--font-primary) !important;
-}
-
-.l-landing__hero .able-wrapper .able-seekbar-head {
-	background-color: var(--color-gold) !important;
-}
-
-.l-landing__hero .able-wrapper .able-seekbar-played {
-	background-color: var(--color-white) !important;
-}
-
-.l-landing__hero .able-wrapper .able-seekbar {
-	background-color: var(--color-black) !important;
-	border: none !important;
-}
-
-.l-landing__hero .able-wrapper .able-seekbar-loaded {
-	background-color: var(--color-gray-dark) !important;
-}
-
-.l-landing__hero .able-wrapper .able-transcript {
-	background-color: #000000 !important;
-}
-
-.l-landing__hero .able-wrapper .able-highlight,
-.l-landing__hero .able-wrapper .able-transcript span:active,
-.l-landing__hero .able-wrapper .able-transcript span:focus,
-.l-landing__hero .able-wrapper .able-transcript span:hover {
-	color: #000000 !important;
-}
-
-.l-landing__hero .able-wrapper .able-popup li[role="menuitem"]:nth-of-type(2) {
-	display: none !important;
 }
 
 @media (min-width: 40em) {
@@ -3881,6 +3791,12 @@ img.u-effect-gold-screen:hover {
 	font-size: var(--size-250);
 }
 
+.js-contrast-blue .c-creator__name,
+.js-contrast-white .c-creator__name,
+.js-contrast-yellow .c-creator__name {
+	color: var(--color-brick);
+}
+
 .c-creator__name-link {
 	color: var(--color-white);
 	cursor: pointer;
@@ -3889,6 +3805,12 @@ img.u-effect-gold-screen:hover {
 .c-creator__name-link:hover {
 	color: var(--color-gold);
 	text-decoration: underline;
+}
+
+.js-contrast-blue .c-creator__name-link,
+.js-contrast-white .c-creator__name-link,
+.js-contrast-yellow .c-creator__name-link {
+	color: var(--color-black);
 }
 
 .c-creator__photo {
@@ -4896,91 +4818,6 @@ a:focus .c-logo #logotype {
 
 .c-tease-project__video {
 	margin-bottom: var(--size-200);
-}
-
-.c-tease-project__video .able-wrapper .able {
-	box-shadow: none !important;
-}
-
-.c-tease-project__video .able-wrapper .able-status {
-	font-style: normal !important;
-}
-
-.c-tease-project__video .able-wrapper .able-media-container {
-	overflow: hidden !important;
-	padding-top: 56.25%  !important;
-	position: relative  !important;
-}
-
-.c-tease-project__video .able-wrapper .able-media-container iframe {
-	border: 0  !important;
-	height: 100%  !important;
-	position: absolute  !important;
-	top: 0  !important;
-	left: 0  !important;
-	width: 100%  !important;
-}
-
-.c-tease-project__video .able-wrapper .able-media-container .able-big-play-button {
-	display: none !important;
-}
-
-.c-tease-project__video .able-wrapper .able-button-handler-transcript {
-	display: none;
-}
-
-@media (min-width: 70em) {
-	.c-tease-project__video .able-wrapper .able-button-handler-transcript {
-		display: initial;
-	}
-}
-
-.c-tease-project__video .able-wrapper .able-poster {
-	top: unset !important;
-}
-
-.c-tease-project__video .able-wrapper .able-status {
-	font-style: normal !important;
-}
-
-.c-tease-project__video .able-wrapper .able-status-bar {
-	min-height: 2.25em !important;
-}
-
-.c-tease-project__video .able-wrapper .able-captions {
-	font-family: var(--font-primary) !important;
-}
-
-.c-tease-project__video .able-wrapper .able-seekbar-head {
-	background-color: var(--color-gold) !important;
-}
-
-.c-tease-project__video .able-wrapper .able-seekbar-played {
-	background-color: var(--color-white) !important;
-}
-
-.c-tease-project__video .able-wrapper .able-seekbar {
-	background-color: var(--color-black) !important;
-	border: none !important;
-}
-
-.c-tease-project__video .able-wrapper .able-seekbar-loaded {
-	background-color: var(--color-gray-dark) !important;
-}
-
-.c-tease-project__video .able-wrapper .able-transcript {
-	background-color: #000000 !important;
-}
-
-.c-tease-project__video .able-wrapper .able-highlight,
-.c-tease-project__video .able-wrapper .able-transcript span:active,
-.c-tease-project__video .able-wrapper .able-transcript span:focus,
-.c-tease-project__video .able-wrapper .able-transcript span:hover {
-	color: #000000 !important;
-}
-
-.c-tease-project__video .able-wrapper .able-popup li[role="menuitem"]:nth-of-type(2) {
-	display: none !important;
 }
 
 @media (min-width: 70em) {
