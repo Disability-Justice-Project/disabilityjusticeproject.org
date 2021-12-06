@@ -8,7 +8,7 @@
 <div class="c-tease-project js-transcript">
   <div class="c-tease-project__video">
     <div class="u-embed-responsive">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $video_id; ?>/&cc_load_policy=1" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $video_id; ?>/&cc_load_policy=1?color=white&autoplay=0" title="YouTube: <?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 <!--
       <video
