@@ -7,7 +7,7 @@
       "uuidString" : "FDF09C14-788E-4A4D-A218-DA6A56580A0D"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34335",
   "files" : {
     "\/admin\/admin-init.php" : {
       "cB" : 0,
@@ -15,14 +15,6 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/admin\/admin-init.php",
-      "oF" : 0
-    },
-    "\/admin\/admin-notice.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/admin\/admin-notice.php",
       "oF" : 0
     },
     "\/admin\/img\/shortpixel.png" : {
@@ -166,15 +158,42 @@
       "oAP" : "\/functions\/thumbnail-display.php",
       "oF" : 0
     },
-    "\/js\/min\/svgs-admin-notice-update-min.js" : {
+    "\/includes\/svg-attributes.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/includes\/svg-attributes.php",
+      "oF" : 0
+    },
+    "\/includes\/svg-tags.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/includes\/svg-tags.php",
+      "oF" : 0
+    },
+    "\/js\/gutenberg-filters.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/js\/min\/svgs-admin-notice-update-min-min.js",
+      "oAP" : "\/js\/min\/gutenberg-filters-min.js",
+      "oF" : 2,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/min\/gutenberg-filters-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/min\/gutenberg-filters-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/js\/min\/svgs-inline-min.js" : {
@@ -185,18 +204,7 @@
       "oA" : 0,
       "oAP" : "\/js\/min\/svgs-inline-min-min.js",
       "oF" : 0,
-      "sC" : 1,
-      "tS" : 0
-    },
-    "\/js\/svgs-admin-notice-update.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/min\/svgs-admin-notice-update-min.js",
-      "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/js\/svgs-inline.js" : {
@@ -207,7 +215,7 @@
       "oA" : 0,
       "oAP" : "\/js\/min\/svgs-inline-min.js",
       "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/languages\/svgsupport-es_ES.mo" : {
@@ -261,6 +269,7 @@
     "\/scss\/svgs-admin-edit-post.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -275,6 +284,7 @@
     "\/scss\/svgs-admin-simple-mode.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -289,6 +299,7 @@
     "\/scss\/svgs-admin.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -303,6 +314,7 @@
     "\/scss\/svgs-attachment.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -334,6 +346,577 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/vendor\/autoload.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/autoload.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/autoload_classmap.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/autoload_classmap.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/autoload_namespaces.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/autoload_namespaces.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/autoload_psr4.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/autoload_psr4.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/autoload_real.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/autoload_real.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/autoload_static.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/autoload_static.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/ClassLoader.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/ClassLoader.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/installed.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/vendor\/composer\/installed-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/vendor\/composer\/installed.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/installed.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/InstalledVersions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/InstalledVersions.php",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/LICENSE" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/LICENSE",
+      "oF" : 0
+    },
+    "\/vendor\/composer\/platform_check.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/composer\/platform_check.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/.github\/workflows\/tests.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/.github\/workflows\/tests.yml",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/.gitignore",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/.travis.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/.travis.yml",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/composer-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/LICENSE" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/LICENSE",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/phpunit.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/phpunit.xml",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/README.html",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AllowedAttributes.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AllowedAttributes.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AllowedTags.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AllowedTags.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AttributeInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/data\/AttributeInterface.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/data\/TagInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/data\/TagInterface.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/data\/XPath.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/data\/XPath.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Resolver.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Resolver.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Subject.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Subject.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Usage.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/ElementReference\/Usage.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/Exceptions\/NestingException.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/Exceptions\/NestingException.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/Helper.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/Helper.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/Sanitizer.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/Sanitizer.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/src\/svg-scanner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/src\/svg-scanner.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/AllowedAttributesTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/AllowedAttributesTest.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/AllowedTagsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/AllowedTagsTest.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/ariaDataClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/ariaDataClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/ariaDataTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/ariaDataTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/badXmlTestOne.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/badXmlTestOne.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/entityClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/entityClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/entityTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/entityTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/externalClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/externalClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/externalTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/externalTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefCleanOne.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefCleanOne.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefCleanTwo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefCleanTwo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefTestOne.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefTestOne.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefTestTwo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/hrefTestTwo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgCleanOne.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgCleanOne.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgCleanOneMinified.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgCleanOneMinified.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgTestOne.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/svgTestOne.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosCleanTwo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosCleanTwo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosTestTwo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useDosTestTwo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/useTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLaughsClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLaughsClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLaughsTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLaughsTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLoopClean.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLoopClean.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLoopTest.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xlinkLoopTest.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xmlCleanOne.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xmlCleanOne.xml",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xmlTestOne.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/data\/xmlTestOne.xml",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/Fixtures\/TestAllowedAttributes.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/Fixtures\/TestAllowedAttributes.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/Fixtures\/TestAllowedTags.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/Fixtures\/TestAllowedTags.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/SanitizerTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/SanitizerTest.php",
+      "oF" : 0
+    },
+    "\/vendor\/enshrined\/svg-sanitize\/tests\/SubjectTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/vendor\/enshrined\/svg-sanitize\/tests\/SubjectTest.php",
+      "oF" : 0
     }
   },
   "hooks" : [
@@ -347,7 +930,7 @@
     "displayValue" : "trunk",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/svg-support.png",
-    "iconImageWasSetByUser" : 0
+    "iconImageWasSetByUser" : 1
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -645,144 +1228,6 @@
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
-    "coffeeLintFlags2" : {
-      "arrow_spacing" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camel_case_classes" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "colon_assignment_spacing" : {
-        "active" : 0,
-        "flagValue" : 1
-      },
-      "cyclomatic_complexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "duplicate_key" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "ensure_comprehensions" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "indentation" : {
-        "active" : 1,
-        "flagValue" : 2
-      },
-      "line_endings" : {
-        "active" : 0,
-        "flagValue" : 0
-      },
-      "max_line_length" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "missing_fat_arrows" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newlines_after_classes" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "no_backticks" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_debugger" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_empty_functions" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_empty_param_list" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_implicit_braces" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_implicit_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_interpolation_in_single_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_nested_string_interpolation" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_private_function_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_stand_alone_at" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_tabs" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_throwing_strings" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_semicolons" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_whitespace" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_unnecessary_double_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_unnecessary_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "non_empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prefer_english_operator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "space_operators" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "spacing_after_comma" : {
-        "active" : 1,
-        "flagValue" : -1
-      }
-    },
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
@@ -1282,7 +1727,8 @@
         "optionString" : ""
       },
       "no-multi-assign" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'ignoreNonDeclaration': false}"
       },
       "no-multi-spaces" : {
         "active" : 0,
@@ -1405,7 +1851,8 @@
         "active" : 1
       },
       "no-sequences" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowInParentheses': true}"
       },
       "no-setter-return" : {
         "active" : 1
@@ -1492,6 +1939,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
@@ -1611,6 +2061,9 @@
       "prefer-numeric-literals" : {
         "active" : 0
       },
+      "prefer-object-has-own" : {
+        "active" : 0
+      },
       "prefer-object-spread" : {
         "active" : 0
       },
@@ -1643,7 +2096,8 @@
         "optionString" : "'always'"
       },
       "require-atomic-updates" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowProperties': false}"
       },
       "require-await" : {
         "active" : 0
@@ -1769,354 +2223,6 @@
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
-    "jsHintFlags2" : {
-      "asi" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "bitwise" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "boss" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "browserify" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camelcase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "curly" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "debug" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "dojo" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "elision" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqeqeq" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqnull" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es3" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "esnext" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "evil" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "expr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "forin" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "freeze" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "funcscope" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "futurehostile" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "globalstrict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "immed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "indent" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "iterator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jasmine" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jquery" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "lastsemic" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "latedef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "laxbreak" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "laxcomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "loopfunc" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxcomplexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "maxdepth" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "maxparams" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxstatements" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "mocha" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "mootools" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "moz" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "multistr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newcap" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noarg" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nocomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "noempty" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonbsp" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonew" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nonstandard" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "notypeof" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noyield" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "onecase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "phantom" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "proto" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prototypejs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "qunit" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "regexp" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "rhino" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "scripturl" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shadow" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shelljs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "singleGroups" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "strict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "sub" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "supernew" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "typed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "undef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "unused" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "varstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "withstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "worker" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "wsh" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "yui" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
-    "jsLintFlags2" : {
-      "bitwise" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es6" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "eval" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "for" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "white" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
@@ -2127,7 +2233,6 @@
       "minifierStyle" : 1,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
       "transpilerStyle" : 1
     },
     "languageDefaultsCSS" : {
@@ -2192,7 +2297,7 @@
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 3,
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
@@ -2425,6 +2530,7 @@
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
+    "tsExactOptionalPropertyTypes" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
@@ -2433,6 +2539,7 @@
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
+    "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
@@ -2453,6 +2560,7 @@
     "tsStripInternal" : 0,
     "tsSuppressExcessPropertyErrors" : 0,
     "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseUnknownInCatchVariables" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

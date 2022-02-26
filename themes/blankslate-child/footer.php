@@ -13,6 +13,7 @@
     ?>
     <div class="l-footer__partnership c-partnership">
       <p class="c-footer__tagline"><?php echo $disabilityjusticeproject_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+      <p class="c-footer__tagline">Help us shift the narrative on disability justice <a class="c-footer_donate-button" href="">Donate</a></p>
       <div class="c-partnership__lockup">
         <p class="c-partnership__byline">
           A strategic partnership with
