@@ -1,0 +1,37 @@
+.c-donate {
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--size-100);
+  margin-left: var(--size-600);
+
+
+  @media (min-width: $breakpoint-700) {
+    align-items: flex-end;
+    margin-right: 0;
+  }
+}
+
+
+.c-donate__lockup {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--size-350);
+  margin-left: var(--size-200);
+  margin-right: var(--size-200);
+
+  @media (min-width: $breakpoint-700) {
+    margin-top: var(--size-250);
+    margin-right: 0;
+  }
+}
+
+
+.c-donate__link {
+  &:hover,
+  &:focus {
+    .c-partnership__logo {
+      opacity: 0.65;
+    }
+  }
+}
