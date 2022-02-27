@@ -3071,29 +3071,39 @@ function acf_get_attachment( $attachment ) {
 }
 
 
-/**
- *  This function will truncate and return a string
- *
- *  @date    8/08/2014
- *  @since   5.0.0
- *
- *  @param string $text   The text to truncate.
- *  @param int    $length The number of characters to allow in the string.
- *
- *  @return  string
- */
+/*
+*  acf_get_truncated
+*
+*  This function will truncate and return a string
+*
+*  @type    function
+*  @date    8/08/2014
+*  @since   5.0.0
+*
+*  @param   $text (string)
+*  @param   $length (int)
+*  @return  (string)
+*/
+
 function acf_get_truncated( $text, $length = 64 ) {
+
+	// vars
 	$text       = trim( $text );
-	$the_length = function_exists( 'mb_strlen' ) ? mb_strlen( $text ) : strlen( $text );
+	$the_length = strlen( $text );
 
-	$cut_length = $length - 3;
-	$return     = function_exists( 'mb_substr' ) ? mb_substr( $text, 0, $cut_length ) : substr( $text, 0, $cut_length );
+	// cut
+	$return = substr( $text, 0, ( $length - 3 ) );
 
-	if ( $the_length > $cut_length ) {
+	// ...
+	if ( $the_length > ( $length - 3 ) ) {
+
 		$return .= '...';
+
 	}
 
+	// return
 	return $return;
+
 }
 
 /*

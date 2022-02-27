@@ -55,4 +55,5 @@ if ( bodhi_svgs_advanced_mode() ) {
 		// add_filter( 'post_thumbnail_html', 'bodhi_svgs_auto_insert_class', 10 );
 	}
 
+
 }

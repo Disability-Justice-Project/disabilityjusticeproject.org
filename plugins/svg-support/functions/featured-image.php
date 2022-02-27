@@ -41,49 +41,23 @@ if ( bodhi_svgs_advanced_mode() ) {
 /**
  * Save featured image meta data when saved
  */
-
 function bodhi_svgs_save_featured_image_meta( $post_id, $post, $update ) {
 
-	// if gutenberg is active, disable the classic editor checkbox
-	if( isset($_REQUEST['hidden_post_status']) ){
+	$value = 0;
+	if ( isset( $_REQUEST['inline_featured_image'] ) ) {
+		$value = 1;
+	}
 
-		$value = 0;
-		if ( isset( $_REQUEST['inline_featured_image'] ) ) {
-			$value = 1;
-		}
+	// Check if post type supports 'thumbnail' (Featured Image)
+	if ( post_type_supports( get_post_type( $post_id ), 'thumbnail' ) ) {
 
-		// Check if post type supports 'thumbnail' (Featured Image)
-		if ( post_type_supports( get_post_type( $post_id ), 'thumbnail' ) ) {
-
-			// set meta value to either 1 or 0
-			update_post_meta( $post_id, 'inline_featured_image', $value );
-
-		}
+		// set meta value to either 1 or 0
+		update_post_meta( $post_id, 'inline_featured_image', $value );
 
 	}
 
 }
-
-
 add_action( 'save_post', 'bodhi_svgs_save_featured_image_meta', 10, 3 );
-
-
-/*
-*	Save featured image meta for Gutenberg Editor
-*/
-
-function bodhi_svgs_register_meta() {
-
-    register_meta( 'post', 'inline_featured_image', array(
-        'show_in_rest' => true,
-        'single' => true,
-        'type' => 'boolean',
-		'auth_callback' => '__return_true'
-    ) );
-
-}
-
-add_action( 'init', 'bodhi_svgs_register_meta' );
 
 /**
  * Add class to the featured image output on front end
@@ -106,7 +80,7 @@ function bodhi_svgs_add_class_to_thumbnail( $thumb ) {
 
 		}
 
-		if ( is_singular() ) {
+		if ( is_single() ) {
 
 			$thumb = str_replace( 'attachment-', $target_class . ' attachment-', $thumb );
 

@@ -39,20 +39,6 @@ function bodhi_svgs_admin_css() {
 }
 add_action( 'admin_enqueue_scripts', 'bodhi_svgs_admin_css' );
 
-/*
-*	Enqueue Block editor JS
-*/
-
-function bodhi_svgs_block_editor() {
-
-	if ( bodhi_svgs_advanced_mode() ) {
-		wp_enqueue_script('bodhi-svgs-gutenberg-filters', BODHI_SVGS_PLUGIN_URL . '/js/gutenberg-filters.js', ['wp-edit-post']);
-	}
-
-}
-
-add_action( 'enqueue_block_editor_assets', 'bodhi_svgs_block_editor' );
-
 /**
  * Enqueue front end CSS
  */
