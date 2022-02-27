@@ -1,23 +1,10 @@
 .c-partnership {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $breakpoint-700) {
-    align-items: flex-end;
-  }
-}
-
-
-.c-partnership__lockup {
   align-items: flex-end;
   display: flex;
   justify-content: flex-end;
-  margin-top: var(--size-350);
-  margin-left: var(--size-200);
   margin-right: var(--size-200);
 
-  @media (min-width: $breakpoint-700) {
-    margin-top: var(--size-250);
+  @media (min-width: $breakpoint-500) {
     margin-right: 0;
   }
 }
@@ -29,16 +16,6 @@
   margin-right: var(--size-200);
   max-width: 9rem;
   text-align: right;
-}
-
-
-.c-partnership__link {
-  &:hover,
-  &:focus {
-    .c-partnership__logo {
-      opacity: 0.65;
-    }
-  }
 }
 
 

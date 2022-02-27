@@ -1,8 +1,85 @@
 .c-footer__tagline {
   font-size: var(--size-300);
-  padding: var(--size-300) var(--size-200) 0 var(--size-200);
+  padding-top: var(--size-300);
+  padding-right:  var(--size-200);
 
   @media (min-width: $breakpoint-700) {
     padding: 0;
+    text-align: right;
+
+    &:nth-of-type(2) {
+      margin-top: var(--size-100);
+    }
+  }
+}
+
+
+.c-footer__donate-button {
+  @include form-input();
+
+  background-color: var(--color-brick);
+  border: none;
+  color: var(--color-white);
+  font-size: var(--font-size-150);
+  letter-spacing: var(--tracking-open);
+  margin-left: var(--size-150);
+  padding: var(--size-100) var(--size-600);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  &:active {
+    background-color: var(--color-gray-darkest);
+    color: var(--color-gray-dark);
+  }
+
+  @media (min-width: $breakpoint-600) {
+    width: unset;
+  }
+}
+
+
+.c-footer-social__follow-us {
+  color: var(--color-white);
+  font-size: var(--font-size-150);
+}
+
+
+.c-footer-social__list {
+  display: flex;
+  gap: 0 var(--size-200);
+  list-style-type: none;
+  position: relative;
+    bottom: 0.3rem;
+}
+
+
+.c-footer-social__list__link {
+  color: var(--color-gold);
+  font-size: var(--font-size-150);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3rem;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: var(--color-white);
+  }
+}
+
+
+.c-footer-social__list__link--howto {
+  color: var(--color-white);
+
+  &:active {
+    color: var(--color-gold);
   }
 }
