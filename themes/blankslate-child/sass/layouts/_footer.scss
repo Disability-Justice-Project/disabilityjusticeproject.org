@@ -1,10 +1,16 @@
 .l-footer {
-  @include grid();
-
   border-top: var(--border-thin) solid var(--color-gray-light);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: var(--size-500) 0 var(--size-400) 0;
   justify-content: space-between;
+
+  @media (min-width: $breakpoint-700) {
+    @include grid();
+
+    display: grid;
+
+  }
 
   .js-contrast-blue &,
   .js-contrast-white &,
@@ -16,45 +22,18 @@
 
 
 .l-footer__logo {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   height: auto;
   width: 12rem;
-}
 
-
-.l-footer__donate {
-  grid-column: 1 / 12;
-  grid-row: 2 / 3;
-
-  @media (min-width: $breakpoint-500) {
-    grid-column: 2 / 12;
-    grid-row: 1 / 2;
-  }
-}
-
-
-.l-footer__social {
-  grid-column: 1 / 12;
-  grid-row: 3 / 4;
-
-  margin-top: var(--size-600);
-  margin-left: var(--size-650);
-
-  @media (min-width: $breakpoint-500) {
-    grid-column: 1 / 8;
+  @media (min-width: $breakpoint-700) {
+    grid-column: 1 / 3;
   }
 }
 
 
 .l-footer__partnership {
-  grid-column: 1 / 12;
-  grid-row: 4 / 5;
-
-  margin-top: var(--size-600);
-
-  @media (min-width: $breakpoint-500) {
-    grid-column: 8 / 12;
-    grid-row: 3 / 4;
+  @media (min-width: $breakpoint-700) {
+    grid-column: 3 / 12;
+    margin-top: var(--size-250);
   }
 }
