@@ -34,7 +34,7 @@ if ( bodhi_svgs_advanced_mode() ) {
 		if ( strpos( $html, '.svg' ) !== FALSE ) {
 
 			// strip html for svg files
-			$html = preg_replace( '/(width|height|title|alt|class)=".*"\s/', 'class="' . $class . '"', $html );;
+			$html = preg_replace( '/(width|height|title|alt|class)=".*"\s/', 'class="' . esc_attr($class) . '"', $html );
 
 		} else {
 
@@ -54,6 +54,5 @@ if ( bodhi_svgs_advanced_mode() ) {
 		add_filter( 'image_send_to_editor', 'bodhi_svgs_auto_insert_class', 10 );
 		// add_filter( 'post_thumbnail_html', 'bodhi_svgs_auto_insert_class', 10 );
 	}
-
 
 }

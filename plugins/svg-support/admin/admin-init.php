@@ -47,11 +47,28 @@ function bodhi_svg_support_settings_page() {
 }
 
 /**
+ * Sanitize class before saving
+ */
+
+function bodhi_sanitize_fields( $value ) {
+
+	$value['css_target'] = esc_attr( sanitize_text_field( $value['css_target'] ) );
+
+	return $value;
+
+}
+
+
+/**
  * Register settings in the database
  */
 function bodhi_svgs_register_settings() {
 
-	register_setting( 'bodhi_svgs_settings_group', 'bodhi_svgs_settings' );
+	$args = array(
+		'sanitize_callback' => 'bodhi_sanitize_fields'
+	);
+
+	register_setting( 'bodhi_svgs_settings_group', 'bodhi_svgs_settings', $args );
 
 }
 add_action( 'admin_init', 'bodhi_svgs_register_settings' );
@@ -88,7 +105,7 @@ function bodhi_svgs_specific_pages_settings() {
 	$screen = get_current_screen();
 
 	// check if we're on SVG Support settings page
-	if ( is_object($screen) && $screen->id == 'settings_page_svg-support' ) {
+	if ( is_object( $screen ) && $screen->id == 'settings_page_svg-support' ) {
 
 		return true;
 
@@ -110,7 +127,7 @@ function bodhi_svgs_specific_pages_media_library() {
 	$screen = get_current_screen();
 
 	// check if we're on Media Library page
-	if ( is_object($screen) && $screen->id == 'upload' ) {
+	if ( is_object( $screen ) && $screen->id == 'upload' ) {
 
 		return true;
 

@@ -58,7 +58,9 @@ function bodhi_svgs_help_tab () {
 	// standard usage tab content
 	$bodhi_svgs_help_tab_usage_standard = '<h3>' . __( 'Standard Usage', 'svg-support' ) . '</h3>';
 
-	$bodhi_svgs_help_tab_usage_standard .= '<p>' . __( 'You can simply upload SVG files to your media library like any other image. Make sure to select "Restrict to Administrators" if you only want to allow admins to upload SVG files.', 'svg-support' ) . '</p>';
+	$bodhi_svgs_help_tab_usage_standard .= '<p>' . __( 'You can simply upload SVG files to your media library like any other image.<br>Make sure to select "Restrict to Administrators" if you only want to allow admins to upload SVG files.', 'svg-support' ) . '</p>';
+
+	$bodhi_svgs_help_tab_usage_standard .= '<p>' . __( 'If you want to enable sanitization or minification of uploaded SVG files, please enable advanced settings and then enable sanitization and/or minification.', 'svg-support' ) . '</p>';
 
 	// register standard usage tab
 	$screen->add_help_tab( array(
@@ -79,7 +81,7 @@ function bodhi_svgs_help_tab () {
 
 	$bodhi_svgs_help_tab_inlining_svg .= '<p>' . __( 'The whole IMG tag element will now be dynamically replaced by the actual code of your SVG, making the inner content targetable.', 'svg-support' ) . '<br>' . __( 'This allows you to target elements within your SVG using CSS.', 'svg-support' ) . '</p>';
 
-	$bodhi_svgs_help_tab_inlining_svg .= '<p><em>' . __( 'Please Note:', 'svg-support' ) . '</em><br><em>- ' . __( 'You will likely need to set your own height and width in your CSS for SVG files to display correctly.', 'svg-support' ) . '</em><br><em>- ' . __( 'Your uploaded image needs to be an SVG file for this plugin to replace the img tag with the inline SVG code. It will not create SVG files for you.', 'svg-support' ) . '</em></p>';
+	$bodhi_svgs_help_tab_inlining_svg .= '<p><em>' . __( 'Please Note:', 'svg-support' ) . '</em><br><em>- ' . __( 'You will likely need to set your own height and width in your CSS for SVG files to display correctly.', 'svg-support' ) . '</em><br><em>- ' . __( 'Your uploaded image needs to be an SVG file for this plugin to replace the img tag with the inline SVG code. It will not create SVG files for you.', 'svg-support' ) . '</em><br><em>- ' . __( 'You can set this target class on any element and the script will traverse all children of that target element looking for IMG tags with SVG in the src to replace.', 'svg-support' ) . '</em></p>';
 
 	// register inline SVG tab
 	$screen->add_help_tab( array(
@@ -131,7 +133,7 @@ function bodhi_svgs_help_tab () {
 	// donations tab content
 	$bodhi_svgs_help_tab_donations = '<h3>' . __( 'Donations', 'svg-support' ) . '</h3>';
 
-	$bodhi_svgs_help_tab_donations .= '<p>' . __( 'SVG Support (this plugin) has grown to be used by over 100,000 websites actively and is maintained solely by one person. I couldn\'t possibly tell you how many hours have gone into the development, maintenance and support of this plugin. If you find it useful and would like to donate to help keep it going, that would be amazing! I truly appreciate the support and how far this has come.', 'svg-support' ) . '</p>';
+	$bodhi_svgs_help_tab_donations .= '<p>' . __( 'SVG Support (this plugin) has grown to be used by over 800,000 websites actively and is maintained solely by one person. I couldn\'t possibly tell you how many hours have gone into the development, maintenance and support of this plugin. If you find it useful and would like to donate to help keep it going, that would be amazing! I truly appreciate the support and how far this has come.', 'svg-support' ) . '</p>';
 
 	$bodhi_svgs_help_tab_donations .= '<p><strong>' . __( 'Donation Methods:', 'svg-support' ) . '</strong></p>';
 
