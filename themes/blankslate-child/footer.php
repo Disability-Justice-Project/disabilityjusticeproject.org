@@ -13,7 +13,7 @@
     ?>
     <div class="l-footer__donate c-donate">
       <p class="c-footer__tagline"><?php echo $disabilityjusticeproject_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-      <p class="c-footer__tagline">Help us shift the narrative on disability justice&nbsp;<a class="c-footer__donate-button" href="https://secure.donationpay.org/documentaries/film_no_stats.php?f=disabilityjusticeproject">Donate</a></p>
+      <p class="c-footer__donate-message">Help us shift the narrative on disability justice&nbsp;<a class="c-footer__donate-button" href="https://secure.donationpay.org/documentaries/film_no_stats.php?f=disabilityjusticeproject">Donate</a></p>
     </div>
   <?php endif; ?>
 
