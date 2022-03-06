@@ -1,26 +1,27 @@
-.c-partnership {
-  align-items: flex-end;
+.c-partnership,
+.c-footer__donate-message {
   display: flex;
   justify-content: flex-end;
-  margin-right: var(--size-200);
+}
 
-  @media (min-width: $breakpoint-500) {
-    margin-right: 0;
-  }
+.c-partnership {
+  align-items: flex-end;
 }
 
 
-.c-partnership__byline {
+.c-footer__donate-message {
+  align-items: baseline;
   font-size: var(--font-size-200);
   line-height: var(--line-height-200);
+  margin-top: var(--size-200);
   margin-right: var(--size-200);
-  max-width: 9rem;
   text-align: right;
 }
 
 
 .c-partnership__logo {
   margin-top: var(--size-150);
+  margin-left: var(--size-200);
   width: 4.5rem;
 
   @media (min-width: $breakpoint-700) {
