@@ -23,7 +23,6 @@
   font-size: var(--font-size-150);
   letter-spacing: var(--tracking-open);
   margin-top: var(--size-250);
-  margin-left: var(--size-150);
   padding: var(--size-100) var(--size-600);
   text-decoration: none;
   text-transform: uppercase;
@@ -39,7 +38,8 @@
     color: var(--color-gray-dark);
   }
 
-  @media (min-width: $breakpoint-600) {
+  @media (min-width: $breakpoint-500) {
+    margin-left: var(--size-150);
     width: unset;
   }
 }
