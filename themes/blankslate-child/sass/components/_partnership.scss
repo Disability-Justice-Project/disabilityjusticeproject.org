@@ -11,11 +11,17 @@
 
 .c-footer__donate-message {
   align-items: baseline;
+  display: flex;
+  flex-direction: column;
   font-size: var(--font-size-200);
   line-height: var(--line-height-200);
   margin-top: var(--size-200);
   margin-right: var(--size-200);
   text-align: right;
+
+  @media (min-width: $breakpoint-500) {
+    flex-direction: row;
+  }
 }
 
 
