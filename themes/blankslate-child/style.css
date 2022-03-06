@@ -3622,20 +3622,49 @@ img.u-effect-gold-screen:hover {
 	font-size: var(--font-size-200);
 }
 
-@media (min-width: 50em) {
-	.c-contact-form label {
-		width: 6rem;
-	}
+.c-contact-form__lockup {
+	margin-left: var(--size-400);
+}
+
+.c-contact-form__consent {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1rem 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "checkbox label" "contact  contact";
+	margin-top: var(--size-300);
+}
+
+.c-contact-form__label {
+	grid-area: label;
+	padding-left: var(--size-100);
+}
+
+.c-contact-form__checkbox {
+	grid-area: checkbox;
+}
+
+.c-contact-form__checkbox:checked ~ .c-contact-form__mail-button {
+	opacity: 1.0;
+	pointer-events: auto;
+	cursor: pointer;
 }
 
 .c-contact-form__mail-button {
-	background-color: var(--color-black);
-	color: var(--color-white);
+	background-color: var(--color-brick);
+	color: var(--color-white) !important;
+	display: inline-block;
 	font-family: var(--font-primary) !important;
+	grid-area: contact;
 	letter-spacing: var(--tracking-open);
-	padding: var(--size-150);
+	margin-top: var(--size-300);
+	margin-right: auto;
+	padding: var(--size-100) var(--size-350);
+	text-decoration: none;
 	text-transform: uppercase;
-	width: 100%;
+	opacity: 0.3;
+	pointer-events: none;
+	cursor: not-allowed;
 }
 
 .c-contact-form__mail-button:hover, .c-contact-form__mail-button:focus {
@@ -3646,10 +3675,6 @@ img.u-effect-gold-screen:hover {
 .c-contact-form__mail-button:active {
 	background-color: var(--color-black);
 	color: var(--color-white);
-}
-
-.post-template-default .c-contact-form__mail-button {
-	margin-top: var(--size-400);
 }
 
 .c-content h1,
