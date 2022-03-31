@@ -3622,74 +3622,59 @@ img.u-effect-gold-screen:hover {
 	font-size: var(--font-size-200);
 }
 
-@media (min-width: 50em) {
-	.c-contact-form label {
-		width: 6rem;
-	}
+.c-contact-form__lockup {
+	margin-left: var(--size-400);
 }
 
-.c-contact-form .wpcf7-checkbox {
-	display: block;
+.c-contact-form__consent {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1rem 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "checkbox label" "contact  contact";
+	margin-top: var(--size-300);
 }
 
-.post-template-default .c-contact-form .wpcf7-checkbox {
-	margin-top: var(--size-200) !important;
-}
-
-.c-contact-form .wpcf7-list-item {
-	margin-left: 0 !important;
-}
-
-.c-contact-form .wpcf7-list-item-label {
-	font-family: var(--font-primary) !important;
-	line-height: var(--line-height-100);
+.c-contact-form__label {
+	grid-area: label;
 	padding-left: var(--size-100);
 }
 
-.post-template-template-news .c-contact-form .wpcf7-list-item-label {
-	color: var(--color-gray-black);
+.c-contact-form__checkbox {
+	grid-area: checkbox;
 }
 
-.post-template-default .c-contact-form .wpcf7-list-item-label {
-	color: var(--color-white);
+.c-contact-form__checkbox:checked ~ .c-contact-form__mail-button {
+	opacity: 1.0;
+	pointer-events: auto;
+	cursor: pointer;
 }
 
-.post-template-default.js-contrast-blue .c-contact-form .wpcf7-list-item-label,
-.post-template-default.js-contrast-yellow .c-contact-form .wpcf7-list-item-label {
-	color: var(--color-black);
-}
-
-.c-contact-form input[type="text"],
-.c-contact-form input[type="email"],
-.c-contact-form textarea {
-	border: var(--border-thin) solid var(--color-gray-dark);
-	border-radius: 0;
-	padding: var(--size-150);
-	width: 100%;
-}
-
-.c-contact-form input[type="submit"] {
-	background-color: var(--color-black);
-	color: var(--color-white);
+.c-contact-form__mail-button {
+	background-color: var(--color-brick);
+	color: var(--color-white) !important;
+	display: inline-block;
 	font-family: var(--font-primary) !important;
+	grid-area: contact;
 	letter-spacing: var(--tracking-open);
-	padding: var(--size-150);
+	margin-top: var(--size-300);
+	margin-right: auto;
+	padding: var(--size-100) var(--size-350);
+	text-decoration: none;
 	text-transform: uppercase;
-	width: 100%;
+	opacity: 0.3;
+	pointer-events: none;
+	cursor: not-allowed;
 }
 
-.c-contact-form input[type="submit"]:hover, .c-contact-form input[type="submit"]:focus {
+.c-contact-form__mail-button:hover, .c-contact-form__mail-button:focus {
 	background-color: var(--color-gold);
 	color: var(--color-black);
 }
 
-.c-contact-form input[type="submit"]:active {
+.c-contact-form__mail-button:active {
 	background-color: var(--color-black);
 	color: var(--color-white);
-}
-
-.post-template-default .c-contact-form input[type="submit"] {
-	margin-top: var(--size-400);
 }
 
 .c-content h1,
